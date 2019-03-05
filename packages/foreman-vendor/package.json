@@ -1,0 +1,26 @@
+{
+  "name": "@theforeman/vendor",
+  "version": "0.1.0",
+  "description": "foreman supported 3rd-party node_modules",
+  "license": "MIT",
+  "repository": "https://github.com/sharvit/foreman-vendor",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "lint": "eslint . --ext js --ext json"
+  },
+  "main": "dist/vendor.bundle.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-plugin-patternfly-react": "^0.2.2",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.2"
+  },
+  "keywords": []
+}
