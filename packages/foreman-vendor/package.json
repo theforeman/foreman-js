@@ -7,20 +7,69 @@
   "engines": {
     "node": ">=6"
   },
+  "sideEffects": true,
   "scripts": {
     "prebuild": "rimraf dist",
-    "lint": "eslint . --ext js --ext json"
+    "build": "webpack --config webpack.config.js",
+    "lint": "eslint ."
   },
-  "main": "dist/vendor.bundle.js",
+  "main": "dist/foreman-vendor.bundle.js",
   "files": [
-    "dist"
+    "dist",
+    "lib",
+    "webpack.externals.js"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@novnc/novnc": "^1.0.0",
+    "axios": "^0.17.1",
+    "babel-plugin-transform-rename-import": "^2.3.0",
+    "babel-polyfill": "^6.26.0",
+    "brace": "^0.10.0",
+    "classnames": "^2.2.5",
+    "datatables.net": "~1.10.12",
+    "datatables.net-bs": "~1.10.12",
+    "diff": "~3.0.0",
+    "ipaddr.js": "~1.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "~2.2.4",
+    "jquery-flot": "~0.8.3",
+    "jquery-ujs": "~1.2.0",
+    "jquery.cookie": "~1.4.1",
+    "jstz": "~1.0.7",
+    "lodash": "^4.17.11",
+    "multiselect": "~0.9.12",
+    "number_helpers": "^0.1.1",
+    "patternfly-react": "^2.29.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.8.1",
+    "react-bootstrap": "0.32.1",
+    "react-debounce-input": "^3.2.0",
+    "react-diff-view": "^1.8.1",
+    "react-dom": "^16.8.1",
+    "react-ellipsis-with-tooltip": "^1.0.8",
+    "react-numeric-input": "^2.0.7",
+    "react-onclickoutside": "^6.6.2",
+    "react-password-strength": "^2.1.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.6.0",
+    "redux-form": "7.2.0",
+    "redux-form-validators": "^2.1.2",
+    "redux-logger": "^2.8.1",
+    "redux-thunk": "^2.2.0",
+    "seamless-immutable": "^7.1.2",
+    "select2": "~3.5.2-browserify",
+    "urijs": "^1.18.10",
+    "uuid": "^3.3.2"
+  },
   "devDependencies": {
+    "compression-webpack-plugin": "^2.0.0",
     "eslint": "^5.10.0",
     "eslint-plugin-patternfly-react": "^0.2.2",
     "prettier": "^1.15.3",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-inject-plugin": "^1.1.2"
   },
   "keywords": []
 }
