@@ -17,18 +17,23 @@
   "files": [
     "dist",
     "lib",
-    "webpack.externals.js"
+    "webpack.externals.js",
+    "webpack.vendor.js",
+    "babel.preset.js",
+    "eslint.extends.js"
   ],
   "dependencies": {
     "@novnc/novnc": "^1.0.0",
     "axios": "^0.17.1",
     "babel-plugin-transform-rename-import": "^2.3.0",
     "babel-polyfill": "^6.26.0",
+    "bootstrap-sass": "^3.4.1",
     "brace": "^0.10.0",
     "classnames": "^2.2.5",
     "datatables.net": "~1.10.12",
     "datatables.net-bs": "~1.10.12",
     "diff": "~3.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "ipaddr.js": "~1.2.0",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "~2.2.4",
@@ -39,6 +44,7 @@
     "lodash": "^4.17.11",
     "multiselect": "~0.9.12",
     "number_helpers": "^0.1.1",
+    "patternfly": "^3.58.0",
     "patternfly-react": "^2.29.0",
     "prop-types": "^15.6.0",
     "react": "^16.8.1",
@@ -63,10 +69,15 @@
   },
   "devDependencies": {
     "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^2.1.1",
     "eslint": "^5.10.0",
     "eslint-plugin-patternfly-react": "^0.2.2",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
     "prettier": "^1.15.3",
     "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-inject-plugin": "^1.1.2"

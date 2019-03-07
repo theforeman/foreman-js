@@ -1,4 +1,10 @@
+/*
+  @theforeman/vendor/webpack.vendor
+
+  List of exported npm packages by @theforeman/vendor
+ */
 module.exports = [
+  './webpack.vendor.scss',
   /**
    * React related
    */
@@ -22,8 +28,6 @@ module.exports = [
   'prop-types',
   'seamless-immutable',
   'isomorphic-fetch',
-  // 'react-intl',
-  // 'intl',
 
   /*
    * jquery related
@@ -68,5 +72,5 @@ module.exports = [
   'jstz',
   'urijs',
   'uuid',
-  '@novnc/novnc/core/rfb.js',
+  '@novnc/novnc/core/rfb',
 ];

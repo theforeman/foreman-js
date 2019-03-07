@@ -1,6 +1,7 @@
 const path = require('path');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
-const WebpackExportForemanVendorPlugin = require('./lib/webpack-export-foreman-vendor-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WebpackExportForemanVendorPlugin = require('./lib/WebpackExportForemanVendorPlugin');
 
 const vendorModules = require('./webpack.vendor');
 
@@ -22,9 +23,25 @@ const config = {
     chunkIds: 'named',
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /(\.png|\.gif)$/,
+        use: 'url-loader',
+      },
+    ],
+  },
+
   plugins: [
     new WebpackExportForemanVendorPlugin({ vendorModules }),
     new CompressionWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'foreman-vendor.bundle.css',
+    }),
   ],
 };
 

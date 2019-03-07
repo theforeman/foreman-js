@@ -21,8 +21,8 @@ npm install --save @theforeman/vendor
 ## Usage
 
 1. Serve the bundled js file from the './dist' folder
-2. Add the externals into your webpack configuration
 
+2. Add the externals into your webpack configuration:
 ```js
 // webpack.config.js
 const tfmVendorExternals = require('@theforeman/vendor/webpack.externals');
@@ -36,11 +36,40 @@ module.exports = {
 
 ## Development enviorment
 
-// TODO
+1. Adds `@theforeman/vendor/babel.preset.js` to your `.babelrc`:
+```
+{
+  "presets": [
+    "@theforeman/vendor/babel.preset.js"
+  ]
+}
+
+```
+
+2. Extend your `.eslintrc` file with `@theforeman/vendor/eslint.extends.js`:
+```
+{
+  "plugins": ["patternfly-react"],
+  "extends": [
+    "plugin:patternfly-react/recommended",
+    "./node_modules/@theforeman/vendor/eslint.extends.js"
+  ]
+}
+```
 
 ## Testing enviorment
 
-// TODO
+1. Add to you `package.json`:
+```json
+{
+  "jest": {
+    "moduleDirectories": [
+      "@theforeman/vendor/node_modules",
+      "node_modules"
+    ]
+  }
+}
+```
 
 ## License
 
