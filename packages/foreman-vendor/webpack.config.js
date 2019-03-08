@@ -37,11 +37,11 @@ const config = {
   },
 
   plugins: [
-    new WebpackExportForemanVendorPlugin({ vendorModules }),
-    new CompressionWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'foreman-vendor.bundle.css',
     }),
+    new WebpackExportForemanVendorPlugin({ vendorModules }),
+    new CompressionWebpackPlugin(),
   ],
 };
 

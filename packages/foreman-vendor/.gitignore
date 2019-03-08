@@ -57,5 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# webpack-analyze
+dist-analyze
+
 # compiled
 dist
