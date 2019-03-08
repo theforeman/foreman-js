@@ -66,6 +66,7 @@ module.exports = [
   /**
    * Other packages
    */
+  'lodash',
   'axios',
   'diff',
   'ipaddr.js',
