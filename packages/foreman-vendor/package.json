@@ -18,6 +18,7 @@
   "files": [
     "dist",
     "lib",
+    "scss",
     "webpack.externals.js",
     "webpack.vendor.js",
     "babel.preset.js",
