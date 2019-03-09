@@ -18,9 +18,18 @@
 npm install --save @theforeman/vendor
 ```
 
-## Usage
-
-1. Serve the bundled js file from the './dist' folder
+1. Serve the bundled js,css file from the './dist' folder:
+```bash
+dist
+├── foreman-vendor.bundle.css
+├── foreman-vendor.bundle.css.gz
+├── foreman-vendor.bundle.css.map
+├── foreman-vendor.bundle.css.map.gz
+├── foreman-vendor.bundle.js
+├── foreman-vendor.bundle.js.gz
+├── foreman-vendor.bundle.js.map
+└── foreman-vendor.bundle.js.map.gz
+```
 
 2. Add the externals into your webpack configuration:
 ```js
@@ -34,7 +43,16 @@ module.exports = {
 };
 ```
 
-## Development enviorment
+### Stylesheets
+
+`@theforeman/vendor` based on patternfly-react. It build the patternfly-react partials into the `./dist/foreman-vendor.bundle.css` and provides their variables and mixins sets to reuse.
+
+```css
+@import "~@theforeman/vendor/scss/variables";
+@import "~@theforeman/vendor/scss/mixins";
+```
+
+### Development enviorment
 
 1. Adds `@theforeman/vendor/babel.preset.js` to your `.babelrc`:
 ```
@@ -57,7 +75,7 @@ module.exports = {
 }
 ```
 
-## Testing enviorment
+### Testing enviorment
 
 1. Add to you `package.json`:
 ```json
@@ -68,6 +86,22 @@ module.exports = {
       "node_modules"
     ]
   }
+}
+```
+
+### Storybook
+
+1. Add to your `.storybook/webpack.config.js`:
+
+```js
+{
+  resolve: {
+    modules: [
+      path.join(__dirname, '..', 'node_modules/@theforeman/vendor/node_modules'),
+      path.join(__dirname, '..', 'node_modules'),
+      'node_modules/',
+    ],
+  },
 }
 ```
 
