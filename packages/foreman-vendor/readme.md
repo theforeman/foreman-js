@@ -18,20 +18,7 @@
 npm install --save @theforeman/vendor
 ```
 
-1. Serve the bundled js,css file from the './dist' folder:
-```bash
-dist
-├── foreman-vendor.bundle.css
-├── foreman-vendor.bundle.css.gz
-├── foreman-vendor.bundle.css.map
-├── foreman-vendor.bundle.css.map.gz
-├── foreman-vendor.bundle.js
-├── foreman-vendor.bundle.js.gz
-├── foreman-vendor.bundle.js.map
-└── foreman-vendor.bundle.js.map.gz
-```
-
-2. Add the externals into your webpack configuration:
+1. Add the ForemanVendorPlugin into your webpack plugins list:
 ```js
 // webpack.config.js
 const ForemanVendorPlugin = require('@theforeman/vendor/webpack.plugin');
