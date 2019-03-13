@@ -2,8 +2,8 @@
 
 > foreman supported 3rd-party node_modules
 
-[![Package Version](https://img.shields.io/npm/v/foreman-vendor.svg?style=flat-square)](https://www.npmjs.com/package/foreman-vendor)
-[![Downloads Status](https://img.shields.io/npm/dm/foreman-vendor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=foreman-vendor&from=2016-04-01)
+[![Package Version](https://img.shields.io/npm/v/@theforeman/vendor.svg?style=flat-square)](https://www.npmjs.com/package/@theforeman/vendor)
+[![Downloads Status](https://img.shields.io/npm/dm/@theforeman/vendor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=@theforeman/vendor&from=2016-04-01)
 [![Build Status: Linux](https://img.shields.io/travis/sharvit/foreman-vendor/master.svg?style=flat-square)](https://travis-ci.org/sharvit/foreman-vendor)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
