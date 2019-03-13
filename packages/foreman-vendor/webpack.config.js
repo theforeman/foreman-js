@@ -1,20 +1,26 @@
 const path = require('path');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { StatsWriterPlugin } = require('webpack-stats-plugin');
+const { version } = require('./package.json');
 const WebpackExportForemanVendorPlugin = require('./lib/WebpackExportForemanVendorPlugin');
 
 const vendorModules = require('./webpack.vendor');
 
+const filename = `[name].bundle-v${version}-[hash]`;
+
 const config = {
   mode: 'production',
 
-  entry: vendorModules,
+  entry: {
+    'foreman-vendor': vendorModules,
+  },
 
   devtool: 'source-maps',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'foreman-vendor.bundle.js',
+    filename: `${filename}.js`,
   },
 
   optimization: {
@@ -37,8 +43,15 @@ const config = {
   },
 
   plugins: [
+    new StatsWriterPlugin({
+      filename: 'manifest.json',
+      fields: null,
+      transform(data, opts) {
+        return JSON.stringify(data.assetsByChunkName);
+      },
+    }),
     new MiniCssExtractPlugin({
-      filename: 'foreman-vendor.bundle.css',
+      filename: `${filename}.css`,
     }),
     new WebpackExportForemanVendorPlugin({ vendorModules }),
     new CompressionWebpackPlugin(),

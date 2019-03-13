@@ -34,12 +34,16 @@ dist
 2. Add the externals into your webpack configuration:
 ```js
 // webpack.config.js
-const tfmVendorExternals = require('@theforeman/vendor/webpack.externals');
+const ForemanVendorPlugin = require('@theforeman/vendor/webpack.plugin');
 
 module.exports = {
   entry: { ... },
   output: { ... },
-  externals: tfmVendorExternals,
+  module: { ... },
+  plugins: [
+    new ForemanVendorPlugin(),
+    ...
+  ],
 };
 ```
 
