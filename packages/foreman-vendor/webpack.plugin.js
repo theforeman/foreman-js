@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // eslint-disable-next-line import/no-unresolved
 const vendorManifest = require('./dist/manifest.json');
-const externals = require('./webpack.externals');
+const externals = require('./lib/webpack-externals');
 
 /**
  * Build for webpack@3

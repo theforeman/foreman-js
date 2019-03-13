@@ -14,13 +14,12 @@
     "analyze": "./scripts/webpack-analyze.sh",
     "lint": "eslint ."
   },
-  "main": "dist/foreman-vendor.bundle.js",
+  "main": "dist/manifest.json",
   "files": [
     "dist",
     "lib",
     "scss",
-    "webpack.externals.js",
-    "webpack.vendor.js",
+    "webpack.plugin.js",
     "babel.preset.js",
     "eslint.extends.js"
   ],

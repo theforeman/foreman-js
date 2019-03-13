@@ -15,8 +15,8 @@
   };
   ```
  */
-const { createModuleKey } = require('./lib/helpers');
-const vendorModules = require('./webpack.vendor');
+const { createModuleKey } = require('./helpers');
+const vendorModules = require('./webpack-vendor');
 
 const externals = {};
 

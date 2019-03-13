@@ -1,5 +1,5 @@
 const { snakeCase, toUpper } = require('lodash');
-const vendorModules = require('../webpack.vendor');
+const vendorModules = require('./webpack-vendor');
 
 const createVendorModulesAliases = () =>
   vendorModules.map(module => ({

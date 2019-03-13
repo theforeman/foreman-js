@@ -5,7 +5,7 @@ const { StatsWriterPlugin } = require('webpack-stats-plugin');
 const { version } = require('./package.json');
 const WebpackExportForemanVendorPlugin = require('./lib/WebpackExportForemanVendorPlugin');
 
-const vendorModules = require('./webpack.vendor');
+const vendorModules = require('./lib/webpack-vendor');
 
 const filename = `[name].bundle-v${version}-[hash]`;
 
