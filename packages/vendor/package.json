@@ -1,11 +1,14 @@
 {
   "name": "@theforeman/vendor",
-  "version": "0.1.0-beta.6",
+  "version": "0.0.0",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": "https://github.com/sharvit/foreman-vendor",
   "engines": {
     "node": ">=6"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "sideEffects": true,
   "scripts": {
@@ -25,7 +28,7 @@
     "copy-webpack-plugin": "^4.6.0"
   },
   "devDependencies": {
-    "@theforeman/vendor-core": "^0.1.0-beta.6",
+    "@theforeman/vendor-core": "^0.0.0",
     "compression-webpack-plugin": "^2.0.0",
     "css-loader": "^2.1.1",
     "eslint": "^5.10.0",
