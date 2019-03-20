@@ -1,59 +1,11 @@
 {
   "name": "foreman-js",
   "version": "0.1.0",
-  "description": "foreman supported 3rd-party node_modules",
+  "description": "Foreman javascript packages",
   "license": "MIT",
   "repository": "https://github.com/sharvit/foreman-js",
-  "author": {
-    "name": "Avi Sharvit",
-    "email": "asharvit@redhat.com",
-    "url": ""
-  },
-  "engines": {
-    "node": ">=6"
-  },
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist --ignore **/*.test.js",
-    "test:watch": "jest --watch",
-    "test": "jest --coverage",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "lint": "eslint ./src"
-  },
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "dependencies": {},
+  "scripts": {},
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
-    "babel-plugin-add-module-exports": "^1.0.0",
-    "coveralls": "^3.0.2",
-    "eslint": "^5.10.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "jest": "^23.6.0",
-    "prettier": "^1.15.3",
-    "rimraf": "^2.6.2"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ]
-  },
-  "keywords": []
+    "lerna": "^3.13.1"
+  }
 }
