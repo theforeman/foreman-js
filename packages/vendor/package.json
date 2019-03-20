@@ -1,0 +1,47 @@
+{
+  "name": "@theforeman/vendor",
+  "version": "0.1.0-beta.5",
+  "description": "foreman supported 3rd-party node_modules",
+  "license": "MIT",
+  "repository": "https://github.com/sharvit/foreman-vendor",
+  "engines": {
+    "node": ">=6"
+  },
+  "sideEffects": true,
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "webpack --config webpack.config.js",
+    "analyze": "./scripts/webpack-analyze.sh",
+    "lint": "eslint ."
+  },
+  "main": "dist/manifest.json",
+  "files": [
+    "dist",
+    "lib",
+    "scss",
+    "webpack.plugin.js"
+  ],
+  "dependencies": {
+    "copy-webpack-plugin": "^4.6.0"
+  },
+  "devDependencies": {
+    "@theforeman/vendor-core": "0.1.0-beta.5",
+    "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.10.0",
+    "eslint-plugin-patternfly-react": "^0.2.2",
+    "lodash": "^4.17.11",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-inject-plugin": "^1.1.2",
+    "webpack-stats-plugin": "^0.2.1"
+  },
+  "keywords": []
+}

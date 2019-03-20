@@ -1,0 +1,29 @@
+{
+  "name": "@theforeman/vendor-dev",
+  "version": "0.1.0-beta.5",
+  "description": "foreman supported 3rd-party node_modules",
+  "license": "MIT",
+  "repository": "https://github.com/sharvit/foreman-vendor",
+  "engines": {
+    "node": ">=6"
+  },
+  "sideEffects": true,
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "files": [
+    "lib",
+    "babel.preset.js",
+    "eslint.extends.js"
+  ],
+  "dependencies": {
+    "@theforeman/vendor-core": "0.1.0-beta.5",
+    "babel-plugin-transform-rename-import": "^2.3.0",
+    "eslint-import-resolver-alias": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-plugin-patternfly-react": "^0.2.2",
+    "prettier": "^1.15.3"
+  }
+}

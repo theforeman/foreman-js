@@ -1,25 +1,25 @@
 /*
-  @theforeman/vendor/eslint.extends
+  @theforeman/vendor-dev/eslint.extends
   Adds @theforeman/vendor relevant eslint configuration to your .eslintrc
 
   How to use it:
-  Extend your `.eslintrc` file with `@theforeman/vendor/eslint.extends.js`:
+  Extend your `.eslintrc` file with `@theforeman/vendor-dev/eslint.extends.js`:
   ```
   {
     "extends": [
-      "./node_modules/@theforeman/vendor/eslint.extends.js"
+      "./node_modules/@theforeman/vendor-dev/eslint.extends.js"
     ]
   }
   ```
  */
-const { createVendorModulesAliases } = require('./lib/helpers.js');
+const createVendorModulesAliases = require('./lib/createVendorModulesAliases');
 
 module.exports = {
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        packageDir: ['./', './node_modules/@theforeman/vendor/'],
+        packageDir: ['./', './node_modules/@theforeman/vendor-core/'],
       },
     ],
   },

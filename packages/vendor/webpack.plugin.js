@@ -2,9 +2,9 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const createWebpackExternals = require('./lib/createWebpackExternals');
 // eslint-disable-next-line import/no-unresolved
 const vendorManifest = require('./dist/manifest.json');
-const externals = require('./lib/webpack-externals');
 
 /**
  * Build for webpack@3
@@ -28,6 +28,8 @@ class WebpackExportForemanVendorPlugin {
    * add the vendor-modules as externals to the webpack config
    */
   applyExternals(compiler) {
+    const externals = createWebpackExternals();
+
     if (!compiler.options.externals) {
       compiler.options.externals = [externals];
     } else if (Array.isArray(compiler.options.externals)) {

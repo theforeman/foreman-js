@@ -1,5 +1,5 @@
 {
-  "name": "@theforeman/vendor",
+  "name": "@theforeman/vendor-core",
   "version": "0.1.0-beta.5",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
@@ -9,19 +9,13 @@
   },
   "sideEffects": true,
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "webpack --config webpack.config.js",
-    "analyze": "./scripts/webpack-analyze.sh",
     "lint": "eslint ."
   },
-  "main": "dist/manifest.json",
+  "main": "index.js",
   "files": [
-    "dist",
+    "index.js",
     "lib",
-    "scss",
-    "webpack.plugin.js",
-    "babel.preset.js",
-    "eslint.extends.js"
+    "scss"
   ],
   "dependencies": {
     "@novnc/novnc": "^1.0.0",
@@ -31,7 +25,6 @@
     "bootstrap-sass": "^3.4.1",
     "brace": "^0.10.0",
     "classnames": "^2.2.5",
-    "copy-webpack-plugin": "^4.6.0",
     "datatables.net": "~1.10.12",
     "datatables.net-bs": "~1.10.12",
     "diff": "~3.0.0",
@@ -70,21 +63,8 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "compression-webpack-plugin": "^2.0.0",
-    "css-loader": "^2.1.1",
     "eslint": "^5.10.0",
     "eslint-plugin-patternfly-react": "^0.2.2",
-    "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.11.0",
-    "prettier": "^1.15.3",
-    "rimraf": "^2.6.2",
-    "sass-loader": "^7.1.0",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.29.6",
-    "webpack-bundle-analyzer": "^3.1.0",
-    "webpack-cli": "^3.2.3",
-    "webpack-inject-plugin": "^1.1.2",
-    "webpack-stats-plugin": "^0.2.1"
-  },
-  "keywords": []
+    "prettier": "^1.15.3"
+  }
 }

@@ -1,5 +1,5 @@
 const { default: InjectPlugin } = require('webpack-inject-plugin');
-const { createModuleExport } = require('./helpers');
+const createModuleExport = require('./createModuleExport');
 
 function customLoader({ vendorModules }) {
   const results = vendorModules

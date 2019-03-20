@@ -4,7 +4,6 @@
   List of exported npm packages by @theforeman/vendor
  */
 module.exports = [
-  './lib/webpack-vendor.scss',
   /**
    * React related
    */

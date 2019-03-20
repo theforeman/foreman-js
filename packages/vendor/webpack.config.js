@@ -2,10 +2,11 @@ const path = require('path');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { StatsWriterPlugin } = require('webpack-stats-plugin');
-const { version } = require('./package.json');
-const WebpackExportForemanVendorPlugin = require('./lib/WebpackExportForemanVendorPlugin');
+const { vendorModules } = require('@theforeman/vendor-core');
 
-const vendorModules = require('./lib/webpack-vendor');
+const { version } = require('./package.json');
+const createVendorEntry = require('./lib/createVendorEntry');
+const WebpackExportForemanVendorPlugin = require('./lib/WebpackExportForemanVendorPlugin');
 
 const filename = `[name].bundle-v${version}-[hash]`;
 
@@ -13,7 +14,7 @@ const config = {
   mode: 'production',
 
   entry: {
-    'foreman-vendor': vendorModules,
+    'foreman-vendor': createVendorEntry(),
   },
 
   devtool: 'source-maps',
@@ -27,6 +28,16 @@ const config = {
     sideEffects: false,
     usedExports: false,
     chunkIds: 'named',
+  },
+
+  resolve: {
+    modules: [
+      path.resolve(__dirname, './node_modules/'),
+      path.resolve(
+        __dirname,
+        './node_modules/@theforeman/vendor-core/node_modules/'
+      ),
+    ],
   },
 
   module: {
