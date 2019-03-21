@@ -1,6 +1,16 @@
 {
+  "version": "independent",
+  "npmClient": "npm",
   "packages": [
     "packages/*"
   ],
-  "version": "independent"
+  "command": {
+    "command": {
+      "version": {
+        "allowBranch": "master",
+        "message": "chore(release): publish",
+        "ignoreChanges": ["**/*.md", "**/*.test.js", "**/__mocks__/**/*"]
+      }
+    }
+  }
 }
