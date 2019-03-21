@@ -3,7 +3,11 @@
   "version": "0.1.0-alpha.1",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
-  "repository": "https://github.com/sharvit/foreman-vendor",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sharvit/foreman-js",
+    "directory": "packages/vendor"
+  },
   "engines": {
     "node": ">=6"
   },
