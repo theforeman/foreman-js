@@ -3,16 +3,6 @@ notifications:
   email: false
 node_js: 10
 script:
-  - yarn lint
-  - yarn test
-  - yarn build
-after_success: yarn coveralls
-deploy:
-  skip_cleanup: true
-  provider: npm
-  email: asharvit@redhat.com
-  api_key: $NPM_TOKEN
-  on:
-    node: 10
-    tags: true
-    repo: sharvit/foreman-js
+  - lerna bootstrap
+  - lerna run build
+  - lerna run test
