@@ -21,26 +21,21 @@ git remote add upstream https://github.com/sharvit/foreman-js
 Install dependencies:
 
 ```sh
-yarn
+npm install
+lerna bootstrap
 ```
 
 Run test suits to validate the project is working:
 
 ```sh
-yarn test
+lerna run test
 ```
 
 Run linter to validate the project code:
 
 ```sh
-yarn lint
-# to fix linting errors
-yarn lint --fix
+lerna run lint
 ```
-
-
-
-## Committing and Pushing changes
 
 ## Committing and Pushing changes
 
@@ -53,7 +48,6 @@ git checkout -b my-branch
 Commit and push your changes:
 
 
-
 ```sh
 git add .
 
@@ -62,10 +56,4 @@ git commit
 git push origin my-branch
 ```
 
-Open this project on [GitHub](https://github.com/sharvit/generator-node-mdl), then click “Compare & pull request”.
-
-## Help needed
-
-Please checkout the [`roadmap.md`](./other/roadmap.md) and the open issues.
-
-Also, please watch the repo and respond to questions/bug reports/feature requests, Thanks!
+Open this project on [GitHub](https://github.com/sharvit/foreman-js), then click “Compare & pull request”.
