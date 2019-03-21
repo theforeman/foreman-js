@@ -1,11 +1,11 @@
 {
   "name": "@theforeman/vendor-core",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/sharvit/foreman-js",
+    "type": "git",
+    "url": "https://github.com/sharvit/foreman-js",
     "directory": "packages/vendor-core"
   },
   "engines": {
