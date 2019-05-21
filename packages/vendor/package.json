@@ -17,7 +17,7 @@
   "sideEffects": true,
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "webpack --config webpack.config.js",
+    "build": "node ./node_modules/.bin/webpack --max_old_space_size=8192 --config webpack.config.js",
     "analyze": "./scripts/webpack-analyze.sh",
     "lint": "eslint ."
   },

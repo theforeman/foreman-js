@@ -2,7 +2,7 @@ const path = require('path');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { StatsWriterPlugin } = require('webpack-stats-plugin');
-const { vendorModules } = require('@theforeman/vendor-core');
+const { modules } = require('@theforeman/vendor-core');
 
 const { version } = require('./package.json');
 const createVendorEntry = require('./lib/createVendorEntry');
@@ -27,6 +27,8 @@ const config = {
   optimization: {
     sideEffects: false,
     usedExports: false,
+    namedModules: true,
+    namedChunks: true,
     chunkIds: 'named',
   },
 
@@ -64,7 +66,7 @@ const config = {
     new MiniCssExtractPlugin({
       filename: `${filename}.css`,
     }),
-    new WebpackExportForemanVendorPlugin({ vendorModules }),
+    new WebpackExportForemanVendorPlugin({ modules }),
     new CompressionWebpackPlugin(),
   ],
 };

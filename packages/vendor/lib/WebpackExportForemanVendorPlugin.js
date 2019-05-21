@@ -1,10 +1,9 @@
 const { default: InjectPlugin } = require('webpack-inject-plugin');
-const createModuleExport = require('./createModuleExport');
 
-function customLoader({ vendorModules }) {
-  const results = vendorModules
-    .map(module => createModuleExport(module))
-    .join('\n');
+function customLoader({ modules }) {
+  const results = modules.map(module => module.createModuleExport()).join(' ');
+
+  console.log('results', results);
 
   return () => results;
 }

@@ -1,9 +1,9 @@
-const { vendorModules, vendorModulePath } = require('@theforeman/vendor-core');
+const { modules } = require('@theforeman/vendor-core');
 
 const createVendorModulesAliases = () =>
-  vendorModules.map(module => ({
-    original: module,
-    replacement: vendorModulePath(module),
+  modules.map(module => ({
+    original: module.name,
+    replacement: module.path,
   }));
 
 module.exports = createVendorModulesAliases;

@@ -1,8 +1,11 @@
-const { vendorModules, vendorModulePath } = require('@theforeman/vendor-core');
+const { modules } = require('@theforeman/vendor-core');
 
-const createVendorEntry = () => [
-  './scss/vendor.scss',
-  ...vendorModules.map(module => vendorModulePath(module)),
-];
+const createVendorEntry = () => {
+  const entry = ['./scss/vendor.scss', ...modules.map(module => module.path)];
+
+  console.log('entry', entry);
+
+  return entry;
+};
 
 module.exports = createVendorEntry;
