@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -17,7 +17,7 @@
   "sideEffects": true,
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "node ./node_modules/.bin/webpack --max_old_space_size=8192 --config webpack.config.js",
+    "build": "node --max_old_space_size=8192 ./node_modules/.bin/webpack --config webpack.config.js",
     "analyze": "./scripts/webpack-analyze.sh",
     "lint": "eslint ."
   },
@@ -32,7 +32,7 @@
     "copy-webpack-plugin": "^4.6.0"
   },
   "devDependencies": {
-    "@theforeman/vendor-core": "^0.1.0-alpha.2",
+    "@theforeman/vendor-core": "^0.1.0-alpha.3",
     "compression-webpack-plugin": "^2.0.0",
     "css-loader": "^2.1.1",
     "eslint": "^5.10.0",
