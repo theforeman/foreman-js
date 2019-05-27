@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sharvit/foreman-js",
+    "url": "https://github.com/theforeman/foreman-js",
     "directory": "packages/vendor-core"
   },
   "engines": {
