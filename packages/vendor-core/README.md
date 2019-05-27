@@ -4,7 +4,7 @@
 
 [![Package Version](https://img.shields.io/npm/v/@theforeman/vendor-core.svg?style=flat-square)](https://www.npmjs.com/package/@theforeman/vendor-core)
 [![Downloads Status](https://img.shields.io/npm/dm/@theforeman/vendor-core.svg?style=flat-square)](https://npm-stat.com/charts.html?package=@theforeman/vendor-core&from=2016-04-01)
-[![Build Status: Linux](https://img.shields.io/travis/sharvit/foreman-js/master.svg?style=flat-square)](https://travis-ci.org/sharvit/foreman-js)
+[![Build Status: Linux](https://img.shields.io/travis/theforeman/foreman-js/master.svg?style=flat-square)](https://travis-ci.org/theforeman/foreman-js)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Foreman javascript packages",
   "license": "MIT",
-  "repository": "https://github.com/sharvit/foreman-js",
+  "repository": "https://github.com/theforeman/foreman-js",
   "scripts": {
     "postinstall": "npm run bootstrap",
     "lerna": "lerna",
@@ -13,7 +13,8 @@
     "link:in": "lerna link",
     "link:out": "lerna exec npm link",
     "build": "node --max_old_space_size=8192 ./node_modules/.bin/lerna run build",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "lint": "lerna run lint"
   },
   "devDependencies": {
     "lerna": "^3.14.1"

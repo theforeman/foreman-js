@@ -15,20 +15,20 @@ First, [fork](https://guides.github.com/activities/forking) then clone the repo:
 ```sh
 git clone https://github.com/your-username/foreman-js
 cd foreman-js
-git remote add upstream https://github.com/sharvit/foreman-js
+git remote add upstream https://github.com/theforeman/foreman-js
 ```
 
 Install dependencies:
 
 ```sh
 npm install
-lerna bootstrap
 ```
 
 Run test suits to validate the project is working:
+Notice it will run the test command for each sub-package.
 
 ```sh
-lerna run test
+npm test
 ```
 
 Run linter to validate the project code:
@@ -56,4 +56,4 @@ git commit
 git push origin my-branch
 ```
 
-Open this project on [GitHub](https://github.com/sharvit/foreman-js), then click “Compare & pull request”.
+Open this project on [GitHub](https://github.com/theforeman/foreman-js), then click “Compare & pull request”.

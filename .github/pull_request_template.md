@@ -50,4 +50,4 @@
 
 * [ ] My change requires a change to the documentation.
 * [ ] I have updated the documentation accordingly.
-* [ ] I have read the [`contributing.md`](https://github.com/sharvit/foreman-js/blob/master/contributing.md).
+* [ ] I have read the [`contributing.md`](https://github.com/theforeman/foreman-js/blob/master/contributing.md).
