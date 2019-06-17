@@ -12,17 +12,21 @@
   }
   ```
  */
-const createVendorModulesAliases = require('./lib/createVendorModulesAliases');
+const resolveBabelPath = require('./lib/resolveBabelPath');
 
-module.exports = {
-  env: {
-    test: {
-      plugins: [
-        [
-          require.resolve('babel-plugin-transform-rename-import'),
-          { replacements: createVendorModulesAliases() },
-        ],
-      ],
-    },
-  },
-};
+const plugins = [];
+
+if (process.env.NODE_ENV === 'test') {
+  const testPlugins = [
+    [
+      require.resolve('babel-plugin-module-resolver'),
+      {
+        extensions: ['.js'],
+        resolvePath: resolveBabelPath,
+      },
+    ],
+  ];
+  plugins.push(...testPlugins);
+}
+
+module.exports = { plugins };

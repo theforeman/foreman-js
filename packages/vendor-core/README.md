@@ -13,7 +13,7 @@
 ### [packages.json](package.json)
 Contains all the relevat npm dependencies.
 
-### [lib/vendorModules.js](lib/vendorModules.js)
+### [lib/modules.js](lib/modules.js)
 Contains a list of exported packages, this list will be used by `@theforeman/vendor` and `@theforeman/vendor-dev`.
 
 ### [scss/vendor-core.scss](scss/vendor-core.scss)
