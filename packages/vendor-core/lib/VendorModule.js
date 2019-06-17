@@ -11,19 +11,21 @@ const createModuleExport = (key, path) =>
 
 class VendorModule {
   constructor(module) {
+    const hasCustomPath =
+      typeof module === 'object' && typeof module.path === 'string';
     const getName = () => (typeof module === 'object' ? module.name : module);
     const getKey = name => createWindowKeyByModuleName(name);
     const getPath = name =>
-      typeof module === 'object' && typeof module.path === 'string'
-        ? module.path
-        : createPathByModuleName(name);
+      hasCustomPath ? module.path : createPathByModuleName(name);
 
-    let window = typeof module === 'object' ? module.window : [];
+    let window =
+      typeof module === 'object' && module.window ? module.window : [];
 
     if (typeof window === 'string') {
       window = [window];
     }
 
+    this.hasCustomPath = hasCustomPath;
     this.name = getName();
     this.key = getKey(this.name);
     this.path = getPath(this.name);

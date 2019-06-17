@@ -15,6 +15,6 @@ require('jquery-flot/jquery.flot.time');
 require('multiselect');
 require('select2');
 require('datatables.net-bs');
-require('gridster/dist/jquery.gridster');
+require('dsmorse-gridster/dist/jquery.dsmorse-gridster');
 
 module.exports = jquery;

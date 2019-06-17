@@ -64,7 +64,6 @@ module.exports = [
   {
     name: 'jquery',
     path: '@theforeman/vendor-core/lib/customModules/jquery.js',
-    window: ['$', 'jquery', 'jQuery'],
   },
   {
     name: 'jstz',
@@ -86,10 +85,7 @@ module.exports = [
   'number_helpers',
   'lodash',
   'axios',
-  // 'diff',
   'file-saver',
-  // 'ipaddr.js',
-  // 'jstz',
   'unidiff',
   'urijs',
   '@novnc/novnc/core/rfb',
