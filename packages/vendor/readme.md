@@ -30,6 +30,10 @@ module.exports = {
 };
 ```
 
+> **Notice:** When using the plugin with `NODE_ENV=development` it will use the development versions of the provided 3rd-parties.
+>
+> Usefull when using webpack-dev-server
+
 ### Stylesheets
 
 `@theforeman/vendor` based on patternfly-react. It build the patternfly-react partials into the `./dist/foreman-vendor.bundle.css` and provides their variables and mixins sets to reuse.
@@ -45,11 +49,43 @@ See [@theforeman/vendor-dev](/packages/vendor-dev) for development installation.
 
 ## Building
 
-This project use `webpack` to produce bundled `javascript` and `css` files together with a `manifest.json`.
+This project use `webpack` to produce `development` and `production` versions of bundled `javascript` and `css` files together with a `manifest.json`.
 To build them into the `./dist` folder, run:
 
 ```sh
+# build production and development
 npm run build
+# build production
+npm run build:prod
+# build development
+npm run build:dev
+```
+
+Running `npm run build` will produce a `./dist` folder with the following files:
+```sh
+packages/vendor/dist
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css.map
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css.map.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js.map
+├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js.map.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css.map
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css.map.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js.map
+├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js.map.gz
+├── manifest.development.json
+├── manifest.development.json.gz
+├── manifest.production.json
+└── manifest.production.json.gz
+
+0 directories, 20 files
 ```
 
 ### Build Analyzer
