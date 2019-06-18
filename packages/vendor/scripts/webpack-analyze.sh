@@ -4,7 +4,7 @@ NODE_ENV=production
 PROJECT_PATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 PROJECT_PATH="${PROJECT_PATH}/.."
 PATH="$PROJECT_PATH/node_modules/.bin:$PATH"
-WEBPACK="webpack --config $PROJECT_PATH/webpack.config.js"
+WEBPACK="node --max_old_space_size=8192 ./node_modules/.bin/webpack --mode=production --config $PROJECT_PATH/webpack.config.js"
 REPORT_DIR="$PROJECT_PATH/dist-analyze"
 REPORT="${REPORT_DIR}/report.html"
 
