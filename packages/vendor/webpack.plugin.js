@@ -1,10 +1,10 @@
 /* eslint-disable class-methods-use-this */
-const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const Manifest = require('./lib/Manifest');
 const createWebpackExternals = require('./lib/createWebpackExternals');
-// eslint-disable-next-line import/no-unresolved
-const vendorManifest = require('./dist/manifest.json');
+
+const manifest = new Manifest(process.env.NODE_ENV);
 
 /**
  * Build for webpack@3
@@ -15,13 +15,7 @@ class WebpackExportForemanVendorPlugin {
    * copy vendor-dist files to the consumer output path
    */
   applyCopyFiles(compiler) {
-    new CopyWebpackPlugin([
-      {
-        from: path.join(__dirname, 'dist/*'),
-        flatten: true,
-        ignore: ['manifest.json'],
-      },
-    ]).apply(compiler);
+    new CopyWebpackPlugin(manifest.files).apply(compiler);
   }
 
   /**
@@ -54,7 +48,7 @@ class WebpackExportForemanVendorPlugin {
     manifestPlugin.opts.transform = (data, opts) => {
       data.assetsByChunkName = Object.assign(
         {},
-        vendorManifest,
+        manifest.data,
         data.assetsByChunkName
       );
 

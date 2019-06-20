@@ -8,11 +8,13 @@ const { version } = require('./package.json');
 const createVendorEntry = require('./lib/createVendorEntry');
 const WebpackExportForemanVendorPlugin = require('./lib/WebpackExportForemanVendorPlugin');
 
-const filename = `[name].bundle-v${version}-[hash]`;
+const [, webpackMode = 'production'] = process.argv
+  .find(arg => arg.startsWith('--mode='))
+  .split('=');
+
+const filename = `[name].bundle-v${version}-${webpackMode}-[hash]`;
 
 const config = {
-  mode: 'production',
-
   entry: {
     'foreman-vendor': createVendorEntry(),
   },
@@ -57,7 +59,7 @@ const config = {
 
   plugins: [
     new StatsWriterPlugin({
-      filename: 'manifest.json',
+      filename: `manifest.${webpackMode}.json`,
       fields: null,
       transform(data, opts) {
         return JSON.stringify(data.assetsByChunkName);
