@@ -9,9 +9,6 @@
     "lerna": "lerna",
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap",
-    "link": "npm run link:out && npm run link:in",
-    "link:in": "lerna link",
-    "link:out": "lerna exec npm link",
     "build": "node --max_old_space_size=8192 ./node_modules/.bin/lerna run build",
     "test": "lerna run test",
     "lint": "lerna run lint"
