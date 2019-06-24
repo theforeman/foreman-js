@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor-core",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -35,8 +35,8 @@
     "datatables.net": "~1.10.12",
     "datatables.net-bs": "~1.10.12",
     "diff": "~3.0.0",
-    "file-saver": "^2.0.1",
     "dsmorse-gridster": "^0.8.0",
+    "file-saver": "^2.0.1",
     "history": "^4.7.2",
     "ipaddr.js": "~1.2.0",
     "isomorphic-fetch": "^2.2.1",
