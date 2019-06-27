@@ -43,6 +43,8 @@ class WebpackExportForemanVendorPlugin {
       plugin => plugin.constructor.name === 'StatsWriterPlugin'
     );
 
+    if (!manifestPlugin) return;
+
     const { transform } = manifestPlugin.opts;
 
     manifestPlugin.opts.transform = (data, opts) => {
