@@ -14,9 +14,11 @@
  */
 const resolveBabelPath = require('./lib/resolveBabelPath');
 
+const { NODE_ENV } = process.env;
+
 const plugins = [];
 
-if (process.env.NODE_ENV === 'test') {
+if (NODE_ENV === 'test' || NODE_ENV === 'storybook') {
   const testPlugins = [
     [
       require.resolve('babel-plugin-module-resolver'),
