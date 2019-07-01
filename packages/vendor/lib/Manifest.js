@@ -16,9 +16,11 @@ class Manifest {
   }
 
   get files() {
-    return []
-      .concat(...Object.values(this.data))
-      .map(file => path.join(__dirname, '../dist', file));
+    const fileNames = [].concat(
+      ...Object.keys(this.data).map(key => this.data[key])
+    );
+
+    return fileNames.map(file => path.join(__dirname, '../dist', file));
   }
 
   constructor(mode = 'production') {
