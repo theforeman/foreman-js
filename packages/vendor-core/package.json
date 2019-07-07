@@ -74,10 +74,5 @@
     "unidiff": "^1.0.0",
     "urijs": "^1.18.10",
     "uuid": "^3.3.2"
-  },
-  "devDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-plugin-patternfly-react": "^0.2.2",
-    "prettier": "^1.15.3"
   }
 }

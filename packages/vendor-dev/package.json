@@ -27,10 +27,5 @@
     "@theforeman/vendor-core": "^0.1.0-alpha.8",
     "babel-plugin-module-resolver": "^3.2.0",
     "eslint-import-resolver-alias": "^1.1.2"
-  },
-  "devDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-plugin-patternfly-react": "^0.2.2",
-    "prettier": "^1.15.3"
   }
 }

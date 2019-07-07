@@ -14,6 +14,9 @@
     "lint": "lerna run lint"
   },
   "devDependencies": {
-    "lerna": "^3.14.1"
+    "lerna": "^3.14.1",
+    "eslint": "^5.10.0",
+    "eslint-plugin-patternfly-react": "^0.2.2",
+    "prettier": "^1.15.3"
   }
 }
