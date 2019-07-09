@@ -4,9 +4,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { StatsWriterPlugin } = require('webpack-stats-plugin');
 const { modules } = require('@theforeman/vendor-core');
 
-const { version } = require('./package.json');
-const createVendorEntry = require('./lib/createVendorEntry');
-const WebpackExportForemanVendorPlugin = require('./lib/WebpackExportForemanVendorPlugin');
+const { version } = require('../package.json');
+const createVendorEntry = require('./createVendorEntry');
+const WebpackExportForemanVendorPlugin = require('./WebpackExportForemanVendorPlugin');
+
+const projectRoot = path.resolve(__dirname, '../');
 
 const [, webpackMode = 'production'] = process.argv
   .find(arg => arg.startsWith('--mode='))
@@ -22,7 +24,7 @@ const config = {
   devtool: 'source-maps',
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(projectRoot, 'dist'),
     filename: `${filename}.js`,
   },
 
@@ -36,9 +38,9 @@ const config = {
 
   resolve: {
     modules: [
-      path.resolve(__dirname, './node_modules/'),
+      path.resolve(projectRoot, './node_modules/'),
       path.resolve(
-        __dirname,
+        projectRoot,
         './node_modules/@theforeman/vendor-core/node_modules/'
       ),
     ],

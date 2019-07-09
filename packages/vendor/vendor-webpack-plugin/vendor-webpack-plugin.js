@@ -1,21 +1,23 @@
 /* eslint-disable class-methods-use-this */
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-
-const Manifest = require('./lib/Manifest');
-const createWebpackExternals = require('./lib/createWebpackExternals');
-
-const manifest = new Manifest(process.env.NODE_ENV);
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import Manifest from './Manifest';
+import createWebpackExternals from './createWebpackExternals';
 
 /**
  * Build for webpack@3
  * Webpack plugin to apply @theforeman/vendor into webpack
  */
-class WebpackExportForemanVendorPlugin {
+export class WebpackForemanVendorPlugin {
+  constructor(options = {}) {
+    const { mode = 'production' } = options;
+
+    this.manifest = new Manifest(mode);
+  }
   /**
    * copy vendor-dist files to the consumer output path
    */
   applyCopyFiles(compiler) {
-    new CopyWebpackPlugin(manifest.files).apply(compiler);
+    new CopyWebpackPlugin(this.manifest.files).apply(compiler);
   }
 
   /**
@@ -50,7 +52,7 @@ class WebpackExportForemanVendorPlugin {
     manifestPlugin.opts.transform = (data, opts) => {
       data.assetsByChunkName = Object.assign(
         {},
-        manifest.data,
+        this.manifest.data,
         data.assetsByChunkName
       );
 
@@ -64,5 +66,3 @@ class WebpackExportForemanVendorPlugin {
     this.applyManifest(compiler);
   }
 }
-
-module.exports = WebpackExportForemanVendorPlugin;

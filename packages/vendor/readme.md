@@ -17,22 +17,24 @@ npm install --save @theforeman/vendor
 Add the `ForemanVendorPlugin` to your webpack plugins:
 ```js
 // webpack.config.js
-const ForemanVendorPlugin = require('@theforeman/vendor/webpack.plugin');
+const ForemanVendorPlugin = require('@theforeman/vendor');
 
 module.exports = {
   entry: { ... },
   output: { ... },
   module: { ... },
   plugins: [
-    new ForemanVendorPlugin(),
+    new ForemanVendorPlugin({ mode: 'production' }),
     ...
   ],
 };
 ```
 
-> **Notice:** When using the plugin with `NODE_ENV=development` it will use the development versions of the provided 3rd-parties.
->
-> Usefull when using webpack-dev-server
+### ForemanVendorPlugin options
+
+attribute | default value | description
+----------|---------------|---------------------------------------------
+`mode`    | `production`  | Can be set to `development` or `production` so the plugin will use the correct version of the provided 3rd-parties.
 
 ### Stylesheets
 
@@ -49,43 +51,48 @@ See [@theforeman/vendor-dev](/packages/vendor-dev) for development installation.
 
 ## Building
 
-This project use `webpack` to produce `development` and `production` versions of bundled `javascript` and `css` files together with a `manifest.json`.
+This project use `webpack` to produce `development` and `production` versions of bundled `javascript` and `css` files together with a `manifest.json` and a `webpack-plugin` to use by the consumer.
 To build them into the `./dist` folder, run:
 
 ```sh
-# build production and development
+# build bundled production, development and the plugin
 npm run build
-# build production
-npm run build:prod
-# build development
-npm run build:dev
+# build bundled production and development
+npm run build:bundle
+# build bundled  production
+npm run build:bundle:prod
+# build bundled  development
+npm run build:bundle:dev
+# build the webpack-plugin
+npm run build:plugin
 ```
 
 Running `npm run build` will produce a `./dist` folder with the following files:
 ```sh
 packages/vendor/dist
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css.map
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.css.map.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js.map
-├── foreman-vendor.bundle-v0.1.0-alpha.4-development-e226acdcab8caadcc978.js.map.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css.map
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.css.map.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js.map
-├── foreman-vendor.bundle-v0.1.0-alpha.4-production-d4e23bdf5115757910bc.js.map.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css.map
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css.map.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js.map
+├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js.map.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css.map
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css.map.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js.gz
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js.map
+├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js.map.gz
 ├── manifest.development.json
 ├── manifest.development.json.gz
 ├── manifest.production.json
-└── manifest.production.json.gz
+├── manifest.production.json.gz
+└── vendor-webpack-plugin.js
 
-0 directories, 20 files
+0 directories, 21 files
 ```
 
 ### Build Analyzer

@@ -1,12 +1,14 @@
 /* eslint-disable global-require, import/no-dynamic-require */
-const path = require('path');
+import path from 'path';
+
+const distFolder = path.resolve(__dirname, './');
 
 const manifestFiles = {
-  production: path.join(__dirname, '../dist/manifest.production.json'),
-  development: path.join(__dirname, '../dist/manifest.development.json'),
+  production: path.resolve(distFolder, './manifest.production.json'),
+  development: path.resolve(distFolder, './manifest.development.json'),
 };
 
-class Manifest {
+export default class Manifest {
   get data() {
     if (!this._data) {
       this._loadManifest();
@@ -20,7 +22,7 @@ class Manifest {
       ...Object.keys(this.data).map(key => this.data[key])
     );
 
-    return fileNames.map(file => path.join(__dirname, '../dist', file));
+    return fileNames.map(file => path.resolve(__dirname, '../dist', file));
   }
 
   constructor(mode = 'production') {
@@ -31,11 +33,12 @@ class Manifest {
     const filename = manifestFiles[this.mode];
 
     try {
-      this._data = require(filename);
+      // use the original nodejs `require` method
+      // so we can require the `manifest.json` daynamically
+      // eslint-disable-next-line no-undef
+      this._data = __non_webpack_require__(filename);
     } catch (error) {
       throw new Error(`Unable to load manifest file: ${filename}`);
     }
   }
 }
-
-module.exports = Manifest;
