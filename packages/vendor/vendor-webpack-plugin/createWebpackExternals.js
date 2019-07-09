@@ -1,4 +1,4 @@
-const { modules } = require('@theforeman/vendor-core');
+import { modules } from '@theforeman/vendor-core';
 
 const createWebpackExternals = () => {
   const externals = {};
@@ -10,4 +10,4 @@ const createWebpackExternals = () => {
   return externals;
 };
 
-module.exports = createWebpackExternals;
+export default createWebpackExternals;
