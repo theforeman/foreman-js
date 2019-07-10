@@ -66,6 +66,10 @@ module.exports = [
     path: '@theforeman/vendor-core/lib/customModules/jquery.js',
   },
   {
+    name: 'lodash',
+    path: '@theforeman/vendor-core/lib/customModules/lodash.js',
+  },
+  {
     name: 'jstz',
     window: 'jstz',
   },
@@ -83,7 +87,6 @@ module.exports = [
    */
   'history',
   'number_helpers',
-  'lodash',
   'axios',
   'file-saver',
   'unidiff',
