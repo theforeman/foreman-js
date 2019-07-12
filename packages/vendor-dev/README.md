@@ -18,8 +18,17 @@ npm install --save-dev @theforeman/vendor-dev
 ```
 {
   "presets": [
-    "@theforeman/vendor-dev/babel.preset.js"
-  ]
+    "env",
+    "react"
+  ],
+  "env": {
+    "test": {
+      "presets": ["@theforeman/vendor-dev/babel.preset.js"]
+    },
+    "storybook": {
+      "presets": ["@theforeman/vendor-dev/babel.preset.js"]
+    }
+  }
 }
 
 ```
