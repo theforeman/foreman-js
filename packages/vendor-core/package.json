@@ -34,7 +34,7 @@
     "classnames": "^2.2.5",
     "datatables.net": "~1.10.12",
     "datatables.net-bs": "~1.10.12",
-    "diff": "~3.0.0",
+    "diff": "^4.0.1",
     "dsmorse-gridster": "^0.8.0",
     "file-saver": "^2.0.1",
     "history": "^4.7.2",
