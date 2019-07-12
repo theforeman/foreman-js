@@ -7,19 +7,24 @@
   ```
   {
     "presets": [
-      "@theforeman/vendor-dev/babel.preset.js"
-    ]
+      "env",
+      "react"
+    ],
+    "env": {
+      "test": {
+        "presets": ["@theforeman/vendor-dev/babel.preset.js"]
+      },
+      "storybook": {
+        "presets": ["@theforeman/vendor-dev/babel.preset.js"]
+      }
+    }
   }
   ```
- */
+*/
 const resolveBabelPath = require('./lib/resolveBabelPath');
 
-const { NODE_ENV } = process.env;
-
-const plugins = [];
-
-if (NODE_ENV === 'test' || NODE_ENV === 'storybook') {
-  const testPlugins = [
+module.exports = {
+  plugins: [
     [
       require.resolve('babel-plugin-module-resolver'),
       {
@@ -27,8 +32,5 @@ if (NODE_ENV === 'test' || NODE_ENV === 'storybook') {
         resolvePath: resolveBabelPath,
       },
     ],
-  ];
-  plugins.push(...testPlugins);
-}
-
-module.exports = { plugins };
+  ],
+};
