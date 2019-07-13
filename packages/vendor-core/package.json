@@ -45,7 +45,7 @@
     "jquery-ujs": "~1.2.0",
     "jquery.cookie": "~1.4.1",
     "jstz": "~1.0.7",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.14",
     "multiselect": "~0.9.12",
     "number_helpers": "^0.1.1",
     "patternfly": "^3.58.0",
