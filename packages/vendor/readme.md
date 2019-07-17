@@ -55,7 +55,7 @@ This project use `webpack` to produce `development` and `production` versions of
 To build them into the `./dist` folder, run:
 
 ```sh
-# build bundled production, development and the plugin
+# build bundled production, development, webpack-plugin and scss
 npm run build
 # build bundled production and development
 npm run build:bundle
@@ -65,27 +65,29 @@ npm run build:bundle:prod
 npm run build:bundle:dev
 # build the webpack-plugin
 npm run build:plugin
+# build the scss files
+npm run build:scss
 ```
 
-Running `npm run build` will produce a `./dist` folder with the following files:
+Running `npm run build` will produce `./dist` and `./scss` folders with the following files:
 ```sh
 packages/vendor/dist
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css.map
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.css.map.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js.map
-├── foreman-vendor.bundle-v0.1.0-alpha.8-development-587abbe4e313f3f4c41a.js.map.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css.map
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.css.map.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js.gz
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js.map
-├── foreman-vendor.bundle-v0.1.0-alpha.8-production-4db12fa5bd3ee7e6daf1.js.map.gz
+├── foreman-vendor.bundle-[version]-development-[hash].css
+├── foreman-vendor.bundle-[version]-development-[hash].css.gz
+├── foreman-vendor.bundle-[version]-development-[hash].css.map
+├── foreman-vendor.bundle-[version]-development-[hash].css.map.gz
+├── foreman-vendor.bundle-[version]-development-[hash].js
+├── foreman-vendor.bundle-[version]-development-[hash].js.gz
+├── foreman-vendor.bundle-[version]-development-[hash].js.map
+├── foreman-vendor.bundle-[version]-development-[hash].js.map.gz
+├── foreman-vendor.bundle-[version]-production-[hash].css
+├── foreman-vendor.bundle-[version]-production-[hash].css.gz
+├── foreman-vendor.bundle-[version]-production-[hash].css.map
+├── foreman-vendor.bundle-[version]-production-[hash].css.map.gz
+├── foreman-vendor.bundle-[version]-production-[hash].js
+├── foreman-vendor.bundle-[version]-production-[hash].js.gz
+├── foreman-vendor.bundle-[version]-production-[hash].js.map
+├── foreman-vendor.bundle-[version]-production-[hash].js.map.gz
 ├── manifest.development.json
 ├── manifest.development.json.gz
 ├── manifest.production.json
@@ -93,6 +95,12 @@ packages/vendor/dist
 └── vendor-webpack-plugin.js
 
 0 directories, 21 files
+
+packages/vendor/scss
+├── mixins.scss
+└── variables.scss
+
+0 directories, 2 files
 ```
 
 ### Build Analyzer
