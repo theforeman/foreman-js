@@ -1,5 +1,9 @@
 /**
-  Third Party / Dependency imports here
+  Third Party variables imports here
 */
+$font-path: '~patternfly/dist/fonts/';
+$img-path: '~patternfly/dist/img/';
+$icon-font-path: '~patternfly/dist/fonts/';
+
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
 @import '~patternfly/dist/sass/patternfly/variables';
