@@ -17,21 +17,19 @@
   "sideEffects": true,
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "npm run build:bundle:dev && npm run build:bundle:prod && npm run build:plugin",
+    "build": "npm run build:bundle:dev && npm run build:bundle:prod && npm run build:plugin && npm run build:scss",
     "build:bundle:base": "node --max_old_space_size=8192 ./node_modules/.bin/webpack --config bundle/webpack.config.js",
     "build:bundle:dev": "npm run build:bundle:base -- --mode=development",
     "build:bundle:prod": "npm run build:bundle:base -- --mode=production",
-    "build:scss": "./scripts/build-scss.sh",
     "build:plugin": "webpack --config vendor-webpack-plugin/webpack.config.js",
+    "build:scss": "./scripts/build-scss.sh",
     "analyze": "./scripts/webpack-analyze.sh",
     "lint": "eslint ."
   },
   "main": "dist/vendor-webpack-plugin.js",
   "files": [
     "dist",
-    "lib",
-    "scss",
-    "webpack.plugin.js"
+    "scss"
   ],
   "devDependencies": {
     "@babel/core": "^7.5.0",
