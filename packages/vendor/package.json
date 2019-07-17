@@ -21,6 +21,7 @@
     "build:bundle:base": "node --max_old_space_size=8192 ./node_modules/.bin/webpack --config bundle/webpack.config.js",
     "build:bundle:dev": "npm run build:bundle:base -- --mode=development",
     "build:bundle:prod": "npm run build:bundle:base -- --mode=production",
+    "build:scss": "./scripts/build-scss.sh",
     "build:plugin": "webpack --config vendor-webpack-plugin/webpack.config.js",
     "analyze": "./scripts/webpack-analyze.sh",
     "lint": "eslint ."
@@ -45,6 +46,7 @@
     "node-sass": "^4.11.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
+    "scss-bundle": "^2.5.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-bundle-analyzer": "^3.1.0",
