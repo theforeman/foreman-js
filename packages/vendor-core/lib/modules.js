@@ -92,4 +92,6 @@ module.exports = [
   'urijs',
   '@novnc/novnc/core/rfb',
   '@spice-project/spice-html5',
+  '@webcomponents/webcomponentsjs/webcomponents-bundle',
+  '@webcomponents/webcomponentsjs/custom-elements-es5-adapter',
 ].map(module => new VendorModule(module));

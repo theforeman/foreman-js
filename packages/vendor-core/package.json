@@ -27,6 +27,7 @@
   "dependencies": {
     "@novnc/novnc": "^1.0.0",
     "@spice-project/spice-html5": "^0.2.1",
+    "@webcomponents/webcomponentsjs": "^2.2.10",
     "axios": "^0.19.0",
     "babel-polyfill": "^6.26.0",
     "bootstrap-sass": "^3.3.7",
