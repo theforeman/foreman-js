@@ -20,6 +20,7 @@ module.exports = [
   'react-onclickoutside',
   'react-password-strength',
   'react-router-dom',
+  'react-router-bootstrap',
   'patternfly-react',
   'patternfly-react-extensions',
   'react-redux',
