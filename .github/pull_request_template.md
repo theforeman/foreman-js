@@ -1,5 +1,16 @@
 <!--- Provide a general summary of your changes in the Title above -->
 
+## Updated Packages
+
+<!--- What packages does your code change? -->
+
+<!-- Put an `x` in all the boxes that apply: -->
+
+* [ ] root
+* [ ] @theforeman/vendor
+* [ ] @theforeman/vendor-dev
+* [ ] @theforeman/vendor-core
+
 ## PR Type
 
 <!--- What types of changes does your code introduce? -->
@@ -23,16 +34,6 @@
 
 <!--- If it fixes an open issue, please link to the issue here. -->
 
-## How Has This Been Tested?
-
-<!--- Please describe in detail how you tested your changes. -->
-
-<!--- Include details of your testing environment, and the tests you ran to -->
-
-<!--- see how your change affects other areas of the code, etc. -->
-
-## Screenshots (if appropriate):
-
 ## Does this PR introduce a breaking change?
 
 <!-- If this PR contains a breaking change, -->
@@ -42,12 +43,10 @@
 * [ ] Yes
 * [ ] No
 
-## Checklist:
+## Does this PR fixes open issues?
 
-<!--- Put an `x` in all the boxes that apply. -->
+<!-- If this PR contain fixes to open issues in github or in foreman please link them here -->
 
-<!--- If you‘re unsure about any of these, don‘t hesitate to ask. We‘re here to help! -->
+## Do you use this PR in another repository?
 
-* [ ] My change requires a change to the documentation.
-* [ ] I have updated the documentation accordingly.
-* [ ] I have read the [`contributing.md`](https://github.com/theforeman/foreman-js/blob/master/contributing.md).
+<!-- If You have a usage example in another repository commit/pr where you are using this PR please link it here  -->
