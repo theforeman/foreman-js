@@ -34,7 +34,10 @@
 
 <!--- reproduce this bug. Include code or screenshot if relevant -->
 
-1. 2. 3. 4.
+1. step 1
+2. step 2
+3. step 3
+4. step 4
 
 ## Environment
 
