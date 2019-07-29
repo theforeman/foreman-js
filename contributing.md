@@ -34,26 +34,43 @@ npm test
 Run linter to validate the project code:
 
 ```sh
-lerna run lint
+npm run lint
 ```
 
-## Committing and Pushing changes
+Run linter to validate your commit message:
 
-Create a branch and start hacking:
+```sh
+npm run lint:commit
+```
+
+## Creating Pull Requests
+
+1. Create a branch:
 
 ```sh
 git checkout -b my-branch
 ```
 
-Commit and push your changes:
+2. Happy Hacking 🎉: Start hacking and creating code changes.
 
+3. Commit your changes:
+
+`foreman-js` uses [commitizen](https://github.com/commitizen/cz-cli) to create commit messages so it can automatically create semantic releases.
 
 ```sh
 git add .
+npm run commit
+# answer the questions
+```
 
-git commit
+4. Push your changes:
 
+```sh
 git push origin my-branch
 ```
 
-Open this project on [GitHub](https://github.com/theforeman/foreman-js), then click “Compare & pull request”.
+5. Open [this project on GitHub](https://github.com/theforeman/foreman-js), then click “Compare & pull request”.
+
+## Help needed
+
+Please watch the repo and respond to questions/bug reports/feature requests, Thanks!
