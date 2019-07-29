@@ -55,7 +55,7 @@ This project use `webpack` to produce `development` and `production` versions of
 To build them into the `./dist` folder, run:
 
 ```sh
-# build bundled production, development, webpack-plugin and scss
+# build bundled production, development, webpack-plugin, scss and docs
 npm run build
 # build bundled production and development
 npm run build:bundle
@@ -67,9 +67,15 @@ npm run build:bundle:dev
 npm run build:plugin
 # build the scss files
 npm run build:scss
+# build docs
+npm run build:docs
+# build docs analyze html report
+npm run build:docs:analyze
+# build docs about scss
+npm run build:docs:scss
 ```
 
-Running `npm run build` will produce `./dist` and `./scss` folders with the following files:
+Running `npm run build` will produce `./dist`, `./scss` and `./docs` folders with the following files:
 ```sh
 packages/vendor/dist
 ├── foreman-vendor.bundle-[version]-development-[hash].css
@@ -96,19 +102,20 @@ packages/vendor/dist
 
 0 directories, 21 files
 
+packages/vendor/docs
+├── scss
+│   ├── mixins.scss
+│   └── variables.scss
+├── stats.development.html
+└── stats.production.html
+
+1 directory, 4 files
+
 packages/vendor/scss
 ├── mixins.scss
 └── variables.scss
 
 0 directories, 2 files
-```
-
-### Build Analyzer
-
-To create an analyze building report into `./dist-analyze` run:
-
-```sh
-npm run analyze
 ```
 
 ## Code Linting

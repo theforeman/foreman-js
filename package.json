@@ -9,11 +9,12 @@
     "lerna": "lerna",
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap",
-    "build": "node --max_old_space_size=8192 ./node_modules/.bin/lerna run build",
-    "test": "lerna run test",
-    "lint": "lerna run lint",
+    "build": "node --max_old_space_size=8192 ./node_modules/.bin/lerna run --stream build",
+    "test": "lerna run --stream test",
+    "lint": "lerna run --stream lint",
     "lint:commit": "commitlint -e",
     "lint:commit-travis": "commitlint-travis",
+    "deploy:docs": "lerna run --stream deploy:docs",
     "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "devDependencies": {

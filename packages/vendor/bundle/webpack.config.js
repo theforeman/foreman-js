@@ -75,6 +75,13 @@ const config = {
     }),
     new WebpackExportForemanVendorPlugin({ modules }),
     new CompressionWebpackPlugin(),
+    new StatsWriterPlugin({
+      filename: `stats.${webpackMode}.json`,
+      fields: null,
+      stats: {
+        all: true,
+      },
+    }),
   ],
 };
 
