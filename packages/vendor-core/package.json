@@ -58,6 +58,8 @@
     "react-ace": "^6.3.2",
     "react-debounce-input": "^3.2.0",
     "react-diff-view": "^1.8.1",
+    "react-dnd": "^9.3.2",
+    "react-dnd-html5-backend": "^9.3.2",
     "react-dom": "^16.8.1",
     "react-ellipsis-with-tooltip": "^1.0.8",
     "react-loading-skeleton": "^1.1.2",
