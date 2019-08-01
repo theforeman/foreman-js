@@ -21,6 +21,7 @@ module.exports = [
   'react-password-strength',
   'react-router-dom',
   'react-router-bootstrap',
+  'react-loading-skeleton',
   'patternfly-react',
   'patternfly-react-extensions',
   'react-redux',
