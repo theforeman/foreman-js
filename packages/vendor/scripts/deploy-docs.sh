@@ -14,12 +14,12 @@ SURGE_TOKEN=${SURGE_TOKEN}
 DEPLOY_PATH="./docs"
 DEPLOY_SUBDOMAIN="${REPO_OWNER}-vendor-docs"
 
-if [ -n "${PR_NUM}" ] # If build is a PR
+if [ -n "${PR_NUM}" ] && [ "${PR_NUM}" != "false" ] # If build is a PR
 then
   DEPLOY_SUBDOMAIN="${DEPLOY_SUBDOMAIN}-pr-${PR_NUM}"
   ALREADY_DEPLOYED=`surge list | grep ${DEPLOY_SUBDOMAIN}`
 else
-  if [ "$BRANCH" != "master" ]
+  if [ "${BRANCH}" != "master" ]
   then
     DEPLOY_SUBDOMAIN="${DEPLOY_SUBDOMAIN}-${BRANCH}"
   fi
@@ -37,7 +37,7 @@ DEPLOY_DOMAIN="https://${DEPLOY_SUBDOMAIN}.surge.sh"
 echo "Deploying docs (${DEPLOY_PATH}) to: ${DEPLOY_DOMAIN}"
 surge --project $DEPLOY_PATH --domain $DEPLOY_DOMAIN;
 
-if [ -n "${PR_NUM}" ] && [ -z "${ALREADY_DEPLOYED}" ] # Leave a Github comment
+if [ "${PR_NUM}" != "false" ] && [ -z "${ALREADY_DEPLOYED}" ] # Leave a Github comment
 then
   # Use Issues api instead of PR api because
   # PR api requires comments be made on specific files of specific commits
