@@ -10,6 +10,7 @@ module.exports = [
    * React related
    */
   'babel-polyfill',
+  'formik',
   'react',
   'react-ace',
   'react-dom',
@@ -26,8 +27,6 @@ module.exports = [
   'patternfly-react-extensions',
   'react-redux',
   'redux',
-  'redux-form',
-  'redux-form-validators',
   'redux-logger',
   'redux-thunk',
   'reselect',
@@ -90,6 +89,7 @@ module.exports = [
   'file-saver',
   'unidiff',
   'urijs',
+  'yup',
   '@novnc/novnc/core/rfb',
   '@spice-project/spice-html5',
 ].map(module => new VendorModule(module));
