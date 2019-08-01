@@ -14,6 +14,8 @@ module.exports = [
   'react',
   'react-ace',
   'react-dom',
+  'react-dnd',
+  'react-dnd-html5-backend',
   'react-debounce-input',
   'react-diff-view',
   'react-ellipsis-with-tooltip',
