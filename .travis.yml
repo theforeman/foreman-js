@@ -28,6 +28,10 @@ jobs:
       env:
         GITHUB_NAME: "Avi Sharvit"
         GITHUB_EMAIL: sharvita@gmail.com
+      before_install:
+        - get fetch
+        - git checkout master
+        - git rebase origin/master
       before_script:
         - git config --global user.email "${GITHUB_EMAIL}"
         - git config --global user.name "${GITHUB_NAME}"
