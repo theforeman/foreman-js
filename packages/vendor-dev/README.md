@@ -43,3 +43,8 @@ npm install --save-dev @theforeman/vendor-dev
   ]
 }
 ```
+
+
+## Contributing
+
+Please checkout the [`contributing.md`](../../contributing.md), the [`roadmap.md`](../../roadmap.md) and the open issues.

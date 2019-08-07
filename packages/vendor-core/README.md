@@ -18,3 +18,8 @@ Contains a list of exported packages, this list will be used by `@theforeman/ven
 
 ### [scss/vendor-core.scss](scss/vendor-core.scss)
 `scss` file with relevant 3rd party scss files so `@theforeman/vendor` and `@theforeman/vendor-dev` can build a dist `css` file.
+
+
+## Contributing
+
+Please checkout the [`contributing.md`](../../contributing.md), the [`roadmap.md`](../../roadmap.md) and the open issues.
