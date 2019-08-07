@@ -29,12 +29,13 @@ jobs:
         GITHUB_NAME: "Avi Sharvit"
         GITHUB_EMAIL: sharvita@gmail.com
       before_install:
+        - git config --global user.email "${GITHUB_EMAIL}"
+        - git config --global user.name "${GITHUB_NAME}"
+        - git remote set-url origin https://${GH_TOKEN}@github.com/theforeman/foreman-js.git
         - git fetch
         - git checkout master
         - git rebase origin/master
       before_script:
-        - git config --global user.email "${GITHUB_EMAIL}"
-        - git config --global user.name "${GITHUB_NAME}"
         - npm run lerna -- version --conventional-commits --create-release github --yes
       script: npm run build
       deploy:
