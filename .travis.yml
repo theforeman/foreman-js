@@ -35,10 +35,8 @@ jobs:
       before_script:
         - git config --global user.email "${GITHUB_EMAIL}"
         - git config --global user.name "${GITHUB_NAME}"
-        - npm run lerna -- version --conventional-commits --amend --create-release github --yes
+        - npm run lerna -- version --conventional-commits --create-release github --yes
       script: npm run build
-      before_deploy:
-        - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
       deploy:
         provider: script
         skip_cleanup: true
