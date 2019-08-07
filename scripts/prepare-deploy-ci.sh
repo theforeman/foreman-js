@@ -3,7 +3,8 @@
 set -e
 
 # configure npm user
-npm config set registry "https://registry.npmjs.org/:_authToken=${NPM_TOKEN}"
+cp .npmrc-publish .npmrc
+npm config set registry "//registry.npmjs.org/:_authToken=\\${NPM_TOKEN}"
 
 # congigure github user
 git config --global user.email "${GH_EMAIL}"
