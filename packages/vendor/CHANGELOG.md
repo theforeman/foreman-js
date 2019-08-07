@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/theforeman/foreman-js/compare/v1.0.0...v1.1.0) (2019-08-07)
+
+
+### Features
+
+* **root:** automate npm deploy with travis ([5b06f0f](https://github.com/theforeman/foreman-js/commit/5b06f0f))
+
+
+
+
+
 # 1.0.0 (2019-08-07)
 
 
