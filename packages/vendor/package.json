@@ -31,6 +31,7 @@
     "build:docs:analyze:dev": "webpack-bundle-analyzer --mode static -r docs/stats.development.html dist/stats.development.json",
     "build:docs:analyze:prod": "webpack-bundle-analyzer --mode static -r docs/stats.production.html dist/stats.production.json",
     "deploy:docs": "./scripts/deploy-docs.sh",
+    "postpublish": "npm run deploy:docs",
     "lint": "eslint ."
   },
   "main": "dist/vendor-webpack-plugin.js",

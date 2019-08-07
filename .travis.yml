@@ -22,12 +22,20 @@ jobs:
         - npm run lint
         - npm run test
         - npm run build
-    - stage: deploy-docs
-      if: branch = master AND type = push
+    - stage: publish
+      if: branch = master AND type = push AND fork = false
       node_js: 12
-      before_install: npm install -g surge
+      env:
+        GITHUB_NAME: "Avi Sharvit"
+        GITHUB_EMAIL: sharvita@gmail.com
+      before_script:
+        - git config --global user.email "${GITHUB_EMAIL}"
+        - git config --global user.name "${GITHUB_NAME}"
+        - npm run lerna -- version --conventional-commits --amend --create-release github --yes
       script: npm run build
+      before_deploy:
+        - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
       deploy:
         provider: script
         skip_cleanup: true
-        script: npm run deploy:docs
+        script: npm run lerna -- publish from-git --yes
