@@ -9,10 +9,22 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 This project is a monorepo using lerna to host more then one package.
-Those projects maintained by theforeman.org
+Those projects maintained by https://theforeman.org
+
+## Why this repository exists?
+
+The work on this repository started based on a discution on `theforeman` community forum about refactoging the javascript stack of `theforeman`.
+See: https://community.theforeman.org/t/redesigning-the-javascript-stack/13470
+
+Watch the deep dive explaining the redesign:
+https://youtu.be/uO-YTjl-si0
 
 ## Packages
 
 - [@theforeman/vendor](packages/vendor)
 - [@theforeman/vendor-dev](packages/vendor-dev)
 - [@theforeman/vendor-core](packages/vendor-core)
+
+## Contributing
+
+Please checkout the [`contributing.md`](./contributing.md), the [`roadmap.md`](./roadmap.md) and the open issues.

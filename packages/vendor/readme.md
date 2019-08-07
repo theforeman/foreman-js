@@ -131,3 +131,7 @@ This project uses `eslint` with `patternfly-react:recommended` rules, to lint yo
 ```sh
 npm run lint
 ```
+
+## Contributing
+
+Please checkout the [`contributing.md`](../../contributing.md), the [`roadmap.md`](../../roadmap.md) and the open issues.
