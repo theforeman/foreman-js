@@ -45,8 +45,8 @@ const scopes = ['root', 'vendor', 'vendor-dev', 'vendor-core'];
 
 module.exports = {
   types: types.map(type => ({
-    value: type.split(':')[0],
-    name: type.trim(),
+    value: type.split(':')[0].trim(),
+    name: type,
   })),
 
   scopes: scopes.map(scope => ({
