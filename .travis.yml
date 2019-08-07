@@ -25,9 +25,6 @@ jobs:
     - stage: publish
       if: branch = master AND type = push AND fork = false
       node_js: 12
-      env:
-        GITHUB_NAME: "Avi Sharvit"
-        GITHUB_EMAIL: sharvita@gmail.com
       before_install: ./scripts/prepare-deploy-ci.sh
       before_script: npm run publish:git-version
       script: npm run build
