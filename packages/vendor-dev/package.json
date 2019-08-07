@@ -20,6 +20,7 @@
   },
   "files": [
     "lib",
+    "scss",
     "babel.preset.js",
     "eslint.extends.js"
   ],
