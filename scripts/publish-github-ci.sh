@@ -7,5 +7,5 @@ set -e
 npm run lerna -- version \
   --conventional-commits \
   --create-release github \
-  --message "chore(root): publish %v" \
+  --message 'chore(root): publish %v' \
   --yes
