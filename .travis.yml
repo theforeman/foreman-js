@@ -20,6 +20,7 @@ jobs:
       if: branch = master AND type = push AND fork = false
       node_js: 12
       script: ./scripts/prepare-publish-ci.sh
+      before_deploy: ./scripts/prepare-publish-github-ci.sh
       deploy:
         provider: script
         skip_cleanup: true
@@ -27,8 +28,8 @@ jobs:
     - stage: publish to npm
       if: tag =~ ^v AND type = push AND fork = false
       node_js: 12
-      before_install: ./scripts/prepare-publish-ci.sh
       script: npm run build
+      before_deploy: ./scripts/prepare-publish-npm-ci.sh
       deploy:
         on:
           tags: true
