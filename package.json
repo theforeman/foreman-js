@@ -14,9 +14,7 @@
     "lint": "lerna run --stream lint",
     "lint:commit": "commitlint -e",
     "lint:commit-travis": "commitlint-travis",
-    "commit": "./node_modules/cz-customizable/standalone.js",
-    "publish:git-version": "npm run lerna -- version --conventional-commits --create-release github --message \"chore(root): publish %v\" --yes",
-    "publish:npm": "npm run lerna -- publish from-git --yes"
+    "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",

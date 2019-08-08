@@ -5,30 +5,33 @@ jobs:
   include:
     - stage: test
       node_js: 6
-      script:
-        - npm run test
-        - npm run build
+      script: npm run test
     - node_js: 8
-      script:
-        - npm run test
-        - npm run build
+      script: npm run test
     - node_js: 10
-      script:
-        - npm run test
-        - npm run build
+      script: npm run test
     - node_js: 12
       script:
         - npm run lint:commit-travis
         - npm run lint
         - npm run test
         - npm run build
-    - stage: publish
+    - stage: publish to github
       if: branch = master AND type = push AND fork = false
       node_js: 12
-      before_install: ./scripts/prepare-deploy-ci.sh
-      before_script: npm run publish:git-version
-      script: npm run build
+      script: ./scripts/prepare-publish-ci.sh
       deploy:
         provider: script
         skip_cleanup: true
-        script: npm run publish:npm
+        script: ./scripts/publish-github-ci.sh
+    - stage: publish to npm
+      if: tag =~ ^v AND type = push AND fork = false
+      node_js: 12
+      before_install: ./scripts/prepare-publish-ci.sh
+      script: npm run build
+      deploy:
+        on:
+          tags: true
+        provider: script
+        skip_cleanup: true
+        script: ./scripts/publish-npm-ci.sh

@@ -1,7 +1,11 @@
 #!/bin/bash
+# Prepare the ci enviorment for publishing
+# Set npm ang github logins
 
 set -e
 
+
+# required env variables
 NPM_TOKEN=${NPM_TOKEN}
 GH_EMAIL=${GH_EMAIL}
 GH_NAME=${GH_NAME}
