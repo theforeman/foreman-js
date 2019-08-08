@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/theforeman/foreman-js/compare/v1.1.8...v1.2.0) (2019-08-08)
+
+
+### Features
+
+* **root:** test npm deploy ([dd8b3e4](https://github.com/theforeman/foreman-js/commit/dd8b3e4))
+
+
+
+
+
 ## [1.1.8](https://github.com/theforeman/foreman-js/compare/v1.1.7...v1.1.8) (2019-08-08)
 
 

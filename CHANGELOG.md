@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/theforeman/foreman-js/compare/v1.1.8...v1.2.0) (2019-08-08)
+
+
+### Bug Fixes
+
+* **root:** fix npm deploy ([e9d6c62](https://github.com/theforeman/foreman-js/commit/e9d6c62))
+* **root:** fix npm deploy ([feaf308](https://github.com/theforeman/foreman-js/commit/feaf308))
+* **root:** fix npm deploy ([b798e82](https://github.com/theforeman/foreman-js/commit/b798e82))
+
+
+### Features
+
+* **root:** finalize auto publish to npm ([f355b8d](https://github.com/theforeman/foreman-js/commit/f355b8d))
+* **root:** test npm deploy ([dd8b3e4](https://github.com/theforeman/foreman-js/commit/dd8b3e4))
+
+
+
+
+
 ## [1.1.8](https://github.com/theforeman/foreman-js/compare/v1.1.7...v1.1.8) (2019-08-08)
 
 
