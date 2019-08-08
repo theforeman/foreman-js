@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
