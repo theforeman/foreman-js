@@ -2,18 +2,13 @@
 
 set -e
 
-# NPM_EMAIL=${NPM_EMAIL}
-# NPM_USER=${NPM_USERNAME}
-# NPM_PASS=${NPM_TOKEN}
+NPM_TOKEN=${NPM_TOKEN}
 GH_EMAIL=${GH_EMAIL}
 GH_NAME=${GH_NAME}
 GH_TOKEN=${GH_TOKEN}
 
 # configure npm user
 echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-
-# npm install --global npm-cli-login
-# npm-cli-login -u $NPM_USERNAME -p $NPM_PASS
 
 # congigure github user
 git config --global user.email "${GH_EMAIL}"

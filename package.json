@@ -27,6 +27,7 @@
     "eslint": "^6.1.0",
     "eslint-plugin-patternfly-react": "^0.3.0",
     "lerna": "^3.14.1",
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "surge": "^0.21.3"
   }
 }
