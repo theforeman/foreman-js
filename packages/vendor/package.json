@@ -11,10 +11,10 @@
   "engines": {
     "node": ">=6"
   },
-  "sideEffects": true,
   "publishConfig": {
     "access": "public"
   },
+  "sideEffects": true,
   "scripts": {
     "prebuild": "rimraf dist docs",
     "postbuild": "rimraf dist/stats.development.json dist/stats.production.json",
