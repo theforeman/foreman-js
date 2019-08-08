@@ -19,7 +19,6 @@ jobs:
     - stage: publish to github
       if: branch = master AND type = push AND fork = false
       node_js: 12
-      script: ./scripts/prepare-publish-ci.sh
       before_deploy: ./scripts/prepare-publish-github-ci.sh
       deploy:
         provider: script
