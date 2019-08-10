@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/theforeman/foreman-js/compare/v1.2.2...v1.2.3) (2019-08-10)
+
+**Note:** Version bump only for package foreman-js
+
+
+
+
+
 ## [1.2.2](https://github.com/theforeman/foreman-js/compare/v1.2.1...v1.2.2) (2019-08-09)
 
 
