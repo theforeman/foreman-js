@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/theforeman/foreman-js/compare/v1.2.3...v1.3.0) (2019-08-11)
+
+
+### Features
+
+* **vendor-core:** bump patternfly-react ([05615b7](https://github.com/theforeman/foreman-js/commit/05615b7))
+
+
+
+
+
 ## [1.2.3](https://github.com/theforeman/foreman-js/compare/v1.2.2...v1.2.3) (2019-08-10)
 
 **Note:** Version bump only for package foreman-js
