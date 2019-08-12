@@ -35,3 +35,13 @@ jobs:
         provider: script
         skip_cleanup: true
         script: ./scripts/publish-npm-ci.sh
+    - stage: publish fork to npm
+      if: branch != master AND type = push AND tag IS blank
+      node_js: 12
+      before_deploy: ./scripts/prepare-publish-npm-ci.sh
+      deploy:
+        on:
+          all_branches: true
+        provider: script
+        skip_cleanup: true
+        script: ./scripts/publish-fork-npm-ci.sh
