@@ -71,6 +71,28 @@ git push origin my-branch
 
 5. Open [this project on GitHub](https://github.com/theforeman/foreman-js), then click “Compare & pull request”.
 
+## Use travis as a forker to automatically deploy your PRs/branches to npm
+
+The setup will allow forkers to automatically deploy their WIP branches to npm.
+Useful when you have a WIP PR in foreman or in a foreman plugin.
+
+To enable travis for your forked repository, run:
+```sh
+npm run travis:enable-fork
+# answer the questions
+```
+
+The setup script will ask you to provide tokens for `npm` and `github`.
+- [Creating `npm` authentication token](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
+- [Creating `github` authentication token](https://docs.npmjs.com/creating-and-viewing-authentication-tokens)
+  Your `github` authentication token should contain the following scopes:
+  - `repo:status`
+  - `public_repo`
+  - `admin:repo_hook`
+  - `user:email`
+
+> Here I will add an example for what to look in the travis log
+
 ## Help needed
 
 Please checkout the [`roadmap.md`](./roadmap.md) and the open issues.
