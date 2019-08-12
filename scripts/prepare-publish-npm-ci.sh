@@ -7,6 +7,7 @@ set -e
 
 # required env variables
 NPM_TOKEN=${NPM_TOKEN}
+HOME=${HOME}
 
 # configure npm user
-echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
