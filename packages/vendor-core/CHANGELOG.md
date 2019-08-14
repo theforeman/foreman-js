@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/theforeman/foreman-js/compare/v1.3.1...v1.4.0) (2019-08-14)
+
+
+### Features
+
+* **vendor-core:** add webcomponents polyfills ([b4510e2](https://github.com/theforeman/foreman-js/commit/b4510e2))
+
+
+
+
+
 ## [1.3.1](https://github.com/theforeman/foreman-js/compare/v1.3.0...v1.3.1) (2019-08-12)
 
 **Note:** Version bump only for package @theforeman/vendor-core
