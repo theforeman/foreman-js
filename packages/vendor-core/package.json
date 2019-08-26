@@ -25,7 +25,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@novnc/novnc": "^1.0.0",
+    "@novnc/novnc": "novnc/noVNC#25b3d49d322b0a7c9ee1e071d93042d70f5176b7 ",
     "@patternfly/patternfly": "^2.68.3",
     "@patternfly/react-core": "^3.140.11",
     "@patternfly/react-table": "^2.28.10",
