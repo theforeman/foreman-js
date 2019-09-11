@@ -24,6 +24,7 @@ module.exports = [
   'react-loading-skeleton',
   'patternfly-react',
   'patternfly-react-extensions',
+  '@patternfly/react-icons',
   'react-redux',
   'redux',
   'redux-form',

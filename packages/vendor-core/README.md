@@ -11,7 +11,7 @@
 ## Main Files
 
 ### [packages.json](package.json)
-Contains all the relevat npm dependencies.
+Contains all the relevant npm dependencies.
 
 ### [lib/modules.js](lib/modules.js)
 Contains a list of exported packages, this list will be used by `@theforeman/vendor` and `@theforeman/vendor-dev`.
