@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor-core",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -38,6 +38,7 @@
     "diff": "^4.0.1",
     "dsmorse-gridster": "^0.8.0",
     "file-saver": "^2.0.1",
+    "formik": "^1.5.8",
     "history": "^4.7.2",
     "ipaddr.js": "~1.2.0",
     "isomorphic-fetch": "^2.2.1",
@@ -50,13 +51,15 @@
     "multiselect": "~0.9.12",
     "number_helpers": "^0.1.1",
     "patternfly": "^3.58.0",
-    "patternfly-react": "^2.36.8",
+    "patternfly-react": "^2.38.1",
     "patternfly-react-extensions": "^2.18.8",
     "prop-types": "^15.6.0",
     "react": "^16.8.1",
     "react-ace": "^6.3.2",
     "react-debounce-input": "^3.2.0",
     "react-diff-view": "^1.8.1",
+    "react-dnd": "^9.3.2",
+    "react-dnd-html5-backend": "^9.3.2",
     "react-dom": "^16.8.1",
     "react-ellipsis-with-tooltip": "^1.0.8",
     "react-loading-skeleton": "^1.1.2",
@@ -76,6 +79,7 @@
     "select2": "~3.5.2-browserify",
     "unidiff": "^1.0.0",
     "urijs": "^1.18.10",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "yup": "^0.27.0"
   }
 }

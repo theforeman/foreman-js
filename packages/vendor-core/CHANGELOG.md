@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/theforeman/foreman-js/compare/v1.5.0...v1.6.0) (2019-09-16)
+
+
+### Features
+
+* **vendor-core:** add D&D react library ([15a0894](https://github.com/theforeman/foreman-js/commit/15a0894))
+
+
+
+
+
+# [1.5.0](https://github.com/theforeman/foreman-js/compare/v1.4.1...v1.5.0) (2019-09-15)
+
+
+### Features
+
+* **vendor-core:** add formik and yup packages ([e3b31fa](https://github.com/theforeman/foreman-js/commit/e3b31fa))
+
+
+
+
+
+## [1.4.1](https://github.com/theforeman/foreman-js/compare/v1.4.0...v1.4.1) (2019-09-15)
+
+**Note:** Version bump only for package @theforeman/vendor-core
+
+
+
+
+
 # [1.4.0](https://github.com/theforeman/foreman-js/compare/v1.3.1...v1.4.0) (2019-08-14)
 
 

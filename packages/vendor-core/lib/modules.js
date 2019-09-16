@@ -10,9 +10,12 @@ module.exports = [
    * React related
    */
   'babel-polyfill',
+  'formik',
   'react',
   'react-ace',
   'react-dom',
+  'react-dnd',
+  'react-dnd-html5-backend',
   'react-debounce-input',
   'react-diff-view',
   'react-ellipsis-with-tooltip',
@@ -90,6 +93,7 @@ module.exports = [
   'file-saver',
   'unidiff',
   'urijs',
+  'yup',
   '@novnc/novnc/core/rfb',
   '@spice-project/spice-html5',
   '@webcomponents/webcomponentsjs/webcomponents-bundle',
