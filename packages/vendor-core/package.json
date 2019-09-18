@@ -51,7 +51,7 @@
     "multiselect": "~0.9.12",
     "number_helpers": "^0.1.1",
     "patternfly": "^3.58.0",
-    "patternfly-react": "^2.36.8",
+    "patternfly-react": "^2.38.2",
     "patternfly-react-extensions": "^2.18.8",
     "prop-types": "^15.6.0",
     "react": "^16.8.1",
