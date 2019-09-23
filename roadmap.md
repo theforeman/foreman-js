@@ -32,6 +32,10 @@ See [`contributing.md`](./contributing.md)
 
 ### Want to do
 
+- Add `react-loadable`
+- Add support for async loadabe modules
+  - See the PR in foreman: https://github.com/theforeman/foreman/pull/6719
+- Add the `I18n` related modules from foreman as async modules
 - Update `babel-polyfill`
 - Drop `datatables.net`
 - Drop `jquery`
