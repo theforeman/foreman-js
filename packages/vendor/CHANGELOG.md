@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/theforeman/foreman-js/compare/v1.7.0...v2.0.0) (2019-10-02)
+
+
+### Features
+
+* **vendor-core:** update redux to enable hooks ([b3db69d](https://github.com/theforeman/foreman-js/commit/b3db69d)), closes [#27393](https://github.com/theforeman/foreman-js/issues/27393)
+
+
+### BREAKING CHANGES
+
+* **vendor-core:** update redux to v.4
+
+
+
+
+
 # [1.7.0](https://github.com/theforeman/foreman-js/compare/v1.6.0...v1.7.0) (2019-09-22)
 
 **Note:** Version bump only for package @theforeman/vendor
