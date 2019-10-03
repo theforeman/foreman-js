@@ -27,6 +27,7 @@ if [ $CHANGED -eq 0 ]; then
   VERSION=`node -pe "require('$PWD/package.json').version;"`
   git tag -f "v${VERSION}"
   git push --follow-tags
+  git push --tags
 else
   echo "Skipping github publish"
 fi
