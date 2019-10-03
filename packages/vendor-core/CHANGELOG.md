@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/theforeman/foreman-js/compare/v2.0.1...v2.9.0) (2019-10-03)
+
+
+### Features
+
+* **vendor-core:** update react to version >= 16.9.0 ([c1d469b](https://github.com/theforeman/foreman-js/commit/c1d469b))
+
+
+
+
+
 # [2.8.0](https://github.com/theforeman/foreman-js/compare/v2.0.1...v2.8.0) (2019-10-03)
 
 
