@@ -10,11 +10,23 @@ set -e
 if [ $CHANGED -eq 0 ]; then
   echo "Changed detected, releasing a new version for all packages"
 
+  # update the version
   npm run lerna -- version \
     --conventional-commits \
     --create-release github \
     --force-publish \
+    --no-push \
     --yes
+
+  # update the lock files
+  npm install
+  git add **/package-lock.json
+
+  # commit and push changes
+  git commit --amend --no-edit
+  VERSION=`node -pe "require('$PWD/package.json').version;"`
+  git tag -f "v${VERSION}"
+  git push --follow-tags
 else
   echo "Skipping github publish"
 fi
