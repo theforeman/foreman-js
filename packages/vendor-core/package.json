@@ -54,7 +54,7 @@
     "patternfly-react": "^2.38.2",
     "patternfly-react-extensions": "^2.18.8",
     "prop-types": "^15.6.0",
-    "react": "^16.8.3",
+    "react": "^16.9.0",
     "react-ace": "^6.3.2",
     "react-debounce-input": "^3.2.0",
     "react-diff-view": "^1.8.1",
