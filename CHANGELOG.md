@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/theforeman/foreman-js/compare/v2.0.1...v2.15.0) (2019-10-04)
+
+
+### Bug Fixes
+
+* **root:** fix the autodeploy git tag ([d0f9d6e](https://github.com/theforeman/foreman-js/commit/d0f9d6e))
+* **root:** fix the autodeploy infi loop ([20cce39](https://github.com/theforeman/foreman-js/commit/20cce39))
+* **root:** update lock files on publish ([1d1011b](https://github.com/theforeman/foreman-js/commit/1d1011b))
+
+
+### Features
+
+* **vendor-core:** update react to version >= 16.9.0 ([c1d469b](https://github.com/theforeman/foreman-js/commit/c1d469b))
+
+
+
+
+
 ## [2.14.4](https://github.com/theforeman/foreman-js/compare/v0.1.0...v2.14.4) (2019-10-03)
 
 **Note:** Version bump only for package foreman-js
