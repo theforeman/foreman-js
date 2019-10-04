@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $CI_PUBLISH_GITHUB ]
+then
+  echo "updating lock files before github publish"
+
+  npm run bootstrap -- --package-lock-only --ignore-scripts
+  git add **/package-lock.json
+fi

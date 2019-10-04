@@ -5,6 +5,7 @@
   "license": "MIT",
   "repository": "https://github.com/theforeman/foreman-js",
   "scripts": {
+    "preinstall": "./scripts/install-git-hooks.sh",
     "postinstall": "npm run bootstrap",
     "lerna": "lerna",
     "clean": "lerna clean",
