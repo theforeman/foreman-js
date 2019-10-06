@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.7](https://github.com/theforeman/foreman-js/compare/v2.15.6...v2.15.7) (2019-10-06)
+
+
+### Bug Fixes
+
+* **root:** attempt to fix the lock files update in the CI ([17053cf](https://github.com/theforeman/foreman-js/commit/17053cf))
+
+
+
+
+
 ## [2.15.6](https://github.com/theforeman/foreman-js/compare/v2.15.5...v2.15.6) (2019-10-06)
 
 
