@@ -8,11 +8,11 @@
     "url": "https://github.com/theforeman/foreman-js",
     "directory": "packages/vendor"
   },
-  "engines": {
-    "node": ">=6"
-  },
   "publishConfig": {
     "access": "public"
+  },
+  "engines": {
+    "node": ">=6"
   },
   "sideEffects": true,
   "scripts": {
