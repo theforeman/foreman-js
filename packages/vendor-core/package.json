@@ -14,16 +14,16 @@
   "engines": {
     "node": ">=6"
   },
-  "sideEffects": true,
-  "scripts": {
-    "lint": "eslint ."
-  },
   "main": "index.js",
   "files": [
     "index.js",
     "lib",
     "scss"
   ],
+  "sideEffects": true,
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@novnc/novnc": "^1.0.0",
     "@spice-project/spice-html5": "^0.2.1",
