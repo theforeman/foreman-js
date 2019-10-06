@@ -16,6 +16,7 @@ if [ $CHANGED -eq 0 ]; then
     --conventional-commits \
     --create-release github \
     --force-publish \
+    --commit-hooks \
     --yes
 else
   echo "Skipping github publish"
