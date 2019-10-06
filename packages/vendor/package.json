@@ -15,6 +15,12 @@
     "node": ">=6"
   },
   "sideEffects": true,
+  "main": "dist/vendor-webpack-plugin.js",
+  "files": [
+    "dist",
+    "docs",
+    "scss"
+  ],
   "scripts": {
     "prebuild": "rimraf dist docs",
     "postbuild": "rimraf dist/stats.development.json dist/stats.production.json",
@@ -34,12 +40,6 @@
     "postpublish": "npm run deploy:docs",
     "lint": "eslint ."
   },
-  "main": "dist/vendor-webpack-plugin.js",
-  "files": [
-    "dist",
-    "docs",
-    "scss"
-  ],
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
