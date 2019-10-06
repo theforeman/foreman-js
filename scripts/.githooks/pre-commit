@@ -2,17 +2,10 @@
 
 set -e
 
-CI_PUBLISH_GITHUB=true
-
-echo "CI_PUBLISH_GITHUB=${CI_PUBLISH_GITHUB}"
-
-if [ $CI_PUBLISH_GITHUB ]
-then
-  echo "pre-commit: CI_PUBLISH_GITHUB env variable detected, updating lock files before github publish"
+if [ $CI ]; then
+  echo "pre-commit: CI detected, updating lock files before commit"
 
   npm run clean -- --yes
   npm run bootstrap -- --no-ci --package-lock-only --ignore-scripts
   git add packages/*/package-lock.json
-else
-  echo "pre-commit: No CI_PUBLISH_GITHUB env variable detected, Skipping lock files update."
 fi
