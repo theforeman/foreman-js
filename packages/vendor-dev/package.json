@@ -15,15 +15,15 @@
     "node": ">=6"
   },
   "sideEffects": true,
-  "scripts": {
-    "lint": "eslint ."
-  },
   "files": [
     "lib",
     "scss",
     "babel.preset.js",
     "eslint.extends.js"
   ],
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@theforeman/vendor-core": "^2.15.5",
     "babel-plugin-module-resolver": "^3.2.0",
