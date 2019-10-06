@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.1](https://github.com/theforeman/foreman-js/compare/v2.15.0...v2.15.1) (2019-10-06)
+
+
+### Bug Fixes
+
+* **root:** use no-ci option to update lock files ([01592f9](https://github.com/theforeman/foreman-js/commit/01592f9))
+
+
+### Features
+
+* **root:** adds git hooks and update lock files before version commit ([85fad87](https://github.com/theforeman/foreman-js/commit/85fad87))
+
+
+
+
+
 # [2.15.0](https://github.com/theforeman/foreman-js/compare/v2.0.1...v2.15.0) (2019-10-04)
 
 
