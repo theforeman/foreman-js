@@ -23,7 +23,7 @@
 */
 const resolveBabelPath = require('./lib/resolveBabelPath');
 
-module.exports = {
+module.exports = () => ({
   plugins: [
     [
       require.resolve('babel-plugin-module-resolver'),
@@ -33,4 +33,4 @@ module.exports = {
       },
     ],
   ],
-};
+});

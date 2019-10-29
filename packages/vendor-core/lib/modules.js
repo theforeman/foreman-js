@@ -9,7 +9,8 @@ module.exports = [
   /**
    * React related
    */
-  'babel-polyfill',
+  'core-js/shim',
+  'regenerator-runtime/runtime',
   'formik',
   'react',
   'react-ace',
