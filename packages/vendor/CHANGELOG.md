@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/theforeman/foreman-js/compare/v2.15.7...v3.0.0) (2019-10-31)
+
+**Note:** Version bump only for package @theforeman/vendor
+
+
+
+
+
 ## [2.15.7](https://github.com/theforeman/foreman-js/compare/v2.15.6...v2.15.7) (2019-10-06)
 
 **Note:** Version bump only for package @theforeman/vendor

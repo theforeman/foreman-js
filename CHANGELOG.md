@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/theforeman/foreman-js/compare/v2.15.7...v3.0.0) (2019-10-31)
+
+
+### Bug Fixes
+
+* **root:** create github releases when versioning ([d4f7ee4](https://github.com/theforeman/foreman-js/commit/d4f7ee4))
+
+
+### Features
+
+* **root:** switching deprecated babel/polyfill ([08a6812](https://github.com/theforeman/foreman-js/commit/08a6812))
+
+
+### BREAKING CHANGES
+
+* **root:** Removed deprecated babe/polyfill and added 'core-js/shim', 'regenerator-runtime/runtime' packages
+
+
+
+
+
 ## [2.15.7](https://github.com/theforeman/foreman-js/compare/v2.15.6...v2.15.7) (2019-10-06)
 
 

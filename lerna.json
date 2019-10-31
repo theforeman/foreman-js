@@ -1,5 +1,5 @@
 {
-  "version": "2.15.7",
+  "version": "3.0.0",
   "npmClient": "npm",
   "packages": [
     "packages/*"
