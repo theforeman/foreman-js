@@ -34,4 +34,6 @@ jobs:
           tags: true
         provider: script
         skip_cleanup: true
-        script: ./scripts/publish-npm-ci.sh
+        script:
+          - ./scripts/publish-npm-ci.sh
+          - ./scripts/post-publish-comment-github.sh
