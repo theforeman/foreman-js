@@ -41,7 +41,7 @@ confirmCommit:
 `Are you sure you want to proceed with the commit above?`,
 };
 
-const scopes = ['root', 'vendor', 'vendor-dev', 'vendor-core'];
+const scopes = ['root', 'env', 'vendor', 'vendor-dev', 'vendor-core'];
 
 module.exports = {
   types: types.map(type => ({
