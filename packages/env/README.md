@@ -23,7 +23,7 @@ npm install --save-dev @theforeman/env
 1. Add `@theforeman/env/babel` to your `.babelrc`:
 ```
 {
-  "presets": ["@theforeman/env/babel"],
+  "presets": ["@theforeman/env/babel"]
 }
 ```
 
@@ -37,7 +37,7 @@ const module = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       options: {
-        'presets': [
+        presets: [
           require.resolve('@theforeman/env/babel'),
         ],
       }

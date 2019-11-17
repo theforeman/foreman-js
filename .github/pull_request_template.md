@@ -8,6 +8,7 @@
 -->
 
 * [ ] root
+* [ ] @theforeman/env
 * [ ] @theforeman/vendor
 * [ ] @theforeman/vendor-dev
 * [ ] @theforeman/vendor-core
