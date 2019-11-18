@@ -11,7 +11,6 @@ See [`contributing.md`](./contributing.md)
 
 ### Packages want to add
 
-- `@theforeman/env` - Provides the basic environment core and plugins needs.
 - `@theforeman/builder` - Build production and development assents for `theforeman` and it's plugins.
 
 ### Want to do
@@ -23,6 +22,20 @@ See [`contributing.md`](./contributing.md)
 ### Might do
 
 - Install greenkeeper
+
+### Won‘t do
+
+---
+
+## `@theforeman/env`
+
+### Want to do
+
+- Add `jest` environment
+- Add `storybook` environment
+- Add `eslint` environment
+
+### Might do
 
 ### Won‘t do
 
