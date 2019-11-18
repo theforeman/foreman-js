@@ -29,11 +29,10 @@ jobs:
       node_js: 12
       script: npm run build
       before_deploy: ./scripts/prepare-publish-npm-ci.sh
+      after_deploy: ./scripts/post-publish-comment-github.sh
       deploy:
         on:
           tags: true
         provider: script
         skip_cleanup: true
-        script:
-          - ./scripts/publish-npm-ci.sh
-          - ./scripts/post-publish-comment-github.sh
+        script: ./scripts/publish-npm-ci.sh
