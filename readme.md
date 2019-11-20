@@ -22,6 +22,7 @@ https://youtu.be/uO-YTjl-si0
 ## Packages
 
 - [@theforeman/babel](packages/babel) - Adds theforeman babel configuration to your project.
+- [@theforeman/builder](packages/builder) - Build production and development bundle files for foreman core and plugins.
 - [@theforeman/env](packages/env) - Development environment for foreman core and plugins.
 - [@theforeman/vendor](packages/vendor) - Foreman supported 3rd-party node_modules bundled to be used in webpack.
 - [@theforeman/vendor-dev](packages/vendor-dev) - Foreman supported 3rd-party node_modules ready to be used in development.
