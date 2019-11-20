@@ -1,0 +1,31 @@
+{
+  "name": "@theforeman/builder",
+  "version": "3.1.1",
+  "description": "Build production and development bundle files for foreman core and plugins.",
+  "author": "Avi Sharvit <sharvita@gmail.com>",
+  "homepage": "https://github.com/theforeman/foreman-js#readme",
+  "bugs": {
+    "url": "https://github.com/theforeman/foreman-js/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theforeman/foreman-js.git",
+    "directory": "packages/builder"
+  },
+  "bin": {
+    "tfm-builder-install": "bin/tfm-builder-install.js",
+    "tfm-build": "bin/tfm-build.js",
+    "tfm-dev-server": "bin/tfm-dev-server.js",
+    "tfm-builder-analyze": "bin/tfm-builder-analyze.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "test": "echo \"@theforeman/builder does not contain any tests at the moment.\""
+  }
+}

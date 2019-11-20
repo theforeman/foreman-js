@@ -9,6 +9,7 @@
 
 * [ ] root
 * [ ] @theforeman/babel
+* [ ] @theforeman/builder
 * [ ] @theforeman/env
 * [ ] @theforeman/vendor
 * [ ] @theforeman/vendor-dev
