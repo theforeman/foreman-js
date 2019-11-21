@@ -1,0 +1,39 @@
+{
+  "name": "@theforeman/babel",
+  "version": "3.1.1",
+  "description": "Adds theforeman babel configuration to your project",
+  "author": "Avi Sharvit <sharvita@gmail.com>",
+  "homepage": "https://github.com/theforeman/foreman-js#readme",
+  "bugs": {
+    "url": "https://github.com/theforeman/foreman-js/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theforeman/foreman-js.git",
+    "directory": "packages/babel"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"@theforeman/babel does not contain any tests at the moment.\""
+  },
+  "dependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/preset-env": "^7.7.0",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/register": "^7.7.0",
+    "@theforeman/vendor-dev": "^3.1.1",
+    "babel-plugin-dynamic-import-node": "^2.0.0"
+  }
+}

@@ -1,5 +1,5 @@
 /*
-  @theforeman/env/babel - Adds theforeman babel configuration to your project
+  @theforeman/babel - Adds theforeman babel configuration to your project
 */
 module.exports = () => ({
   presets: [
