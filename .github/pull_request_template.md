@@ -8,6 +8,7 @@
 -->
 
 * [ ] root
+* [ ] @theforeman/babel
 * [ ] @theforeman/env
 * [ ] @theforeman/vendor
 * [ ] @theforeman/vendor-dev

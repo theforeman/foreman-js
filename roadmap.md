@@ -27,6 +27,16 @@ See [`contributing.md`](./contributing.md)
 
 ---
 
+## `@theforeman/babel`
+
+### Want to do
+
+### Might do
+
+### Won‘t do
+
+---
+
 ## `@theforeman/env`
 
 ### Want to do
