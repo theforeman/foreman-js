@@ -16,29 +16,11 @@
 npm install --save-dev @theforeman/babel
 ```
 
-2. Create a `.babelrc` file and use `@theforeman/babel` as a preset.
-
-```
-{
-  "presets": ["@theforeman/babel"]
-}
-```
-
-3. If you are using webpack, add `@theforeman/babel`
-   to the `babel-loader` in your webpack config.
+2. Create a `.babelrc.js` file at your project root folder and use `@theforeman/babel` as a preset.
 
 ```js
-const module = {
-  rules: [
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      options: {
-        presets: ['@theforeman/babel'],
-      }
-    },
-  ],
+module.exports = {
+  presets: [require.resolve('@theforeman/babel')],
 };
 ```
 
