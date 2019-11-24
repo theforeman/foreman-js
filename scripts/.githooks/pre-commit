@@ -5,7 +5,7 @@ set -e
 TRAVIS_BRANCH="${TRAVIS_BRANCH:-not-master}"
 TRAVIS_REPO_SLUG="${TRAVIS_REPO_SLUG:-not-theforeman}"
 
-if [ $CI ] && [ -z $TRAVIS_PULL_REQUEST ] && [ $TRAVIS_BRANCH == 'master' ] && [ $TRAVIS_REPO_SLUG == 'theforeman/foreman-js' ]; then
+if [ $CI ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ $TRAVIS_BRANCH == 'master' ] && [ $TRAVIS_REPO_SLUG == 'theforeman/foreman-js' ]; then
   echo "pre-commit: CI detected, updating lock files before commit"
 
   npm run clean -- --yes
