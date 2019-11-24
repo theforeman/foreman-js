@@ -10,9 +10,11 @@ import createWebpackExternals from './createWebpackExternals';
  */
 export default class WebpackForemanVendorPlugin {
   constructor(options = {}) {
-    const { mode = 'production' } = options;
+    const { mode = 'production', copy = true } = options;
 
-    this.manifest = new Manifest(mode);
+    if (copy) {
+      this.manifest = new Manifest(mode);
+    }
   }
   /**
    * copy vendor-dist files to the consumer output path
@@ -67,8 +69,11 @@ export default class WebpackForemanVendorPlugin {
   }
 
   apply(compiler) {
-    this.applyCopyFiles(compiler);
     this.applyExternals(compiler);
-    this.applyManifest(compiler);
+
+    if (this.manifest) {
+      this.applyCopyFiles(compiler);
+      this.applyManifest(compiler);
+    }
   }
 }
