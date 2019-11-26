@@ -10,6 +10,7 @@
 
 ## What you get with this project
 
+- `@theforeman/env/babel` - Adds theforeman babel dev configuration to your project.
 - WIP: `@theforeman/env/lint` - Adds theforeman linting tools to you project.
 - WIP: `@theforeman/env/test` - Adds theforeman testing tools to you project.
 - WIP: `@theforeman/env/storybook` - Adds theforeman storybook tools to you project.
@@ -18,6 +19,26 @@
 
 ```sh
 npm install --save-dev @theforeman/env
+```
+
+### Install `@theforeman/env/babel`
+
+1. To work with `babel` first you need to install `@theforeman/builder` since it contain the production `babel` configurations.
+
+```bash
+npm install --save-dev `@theforeman/builder`
+```
+
+2. Create a `.babelrc.js` file in your project root with the following content.
+
+```js
+module.exports = {
+  presets: [
+    require.resolve('@theforeman/builder/babel'),
+    require.resolve('@theforeman/env/babel'),
+  ],
+};
+
 ```
 
 ## Contributing
