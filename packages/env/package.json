@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/env",
-  "version": "3.2.2",
+  "version": "3.3.0",
   "description": "Development environment for foreman core and plugins",
   "author": "Avi Sharvit <sharvita@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -20,7 +20,7 @@
     "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
   },
   "dependencies": {
-    "@theforeman/vendor-dev": "^3.2.2",
+    "@theforeman/vendor-dev": "^3.3.0",
     "babel-plugin-dynamic-import-node": "^2.0.0"
   },
   "peerDependencies": {
