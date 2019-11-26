@@ -27,7 +27,7 @@ See [`contributing.md`](./contributing.md)
 
 ---
 
-## `@theforeman/babel`
+## `@theforeman/builder`
 
 ### Want to do
 

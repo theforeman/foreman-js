@@ -12,6 +12,7 @@
 
 ## What you get with this project
 
+- `@theforeman/builder/babel` - Adds theforeman babel production configuration to your project
 - `tfm-builder-install` - Install the `@theforeman/builder` to your project.
 - `tfm-build` - Run it to build foreman or a foreman plugin.
 - `tfm-builder-analyze` - Run it to analyze your build content.

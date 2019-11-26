@@ -18,5 +18,12 @@
   },
   "scripts": {
     "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
+  },
+  "dependencies": {
+    "@theforeman/vendor-dev": "^3.2.2",
+    "babel-plugin-dynamic-import-node": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@theforeman/builder": "^3.2.2"
   }
 }
