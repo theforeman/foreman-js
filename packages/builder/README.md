@@ -33,7 +33,18 @@ tfm-builder-install
 
 ### Option 2 - Install manually
 
-Create a `config/tfm-builder.config.js` file with the following content:
+1. Create a `.babelrc.js` file in your project root with the following content.
+
+```js
+module.exports = {
+  presets: ['@theforeman/builder/babel'],
+};
+
+```
+
+> `@theforeman/builder/babel` will automatically load `@theforeman/env/babel` for none production environments.
+
+2. Create a `config/tfm-builder.config.js` file with the following content:
 
 ```js
 module.exports = {
@@ -54,7 +65,7 @@ module.exports = {
 
 ```
 
-Add build scripts to your `package.json`
+3. Add build scripts to your `package.json`
 ```json
 {
   "scripts": {

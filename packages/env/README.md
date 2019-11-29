@@ -33,13 +33,12 @@ npm install --save-dev `@theforeman/builder`
 
 ```js
 module.exports = {
-  presets: [
-    require.resolve('@theforeman/builder/babel'),
-    require.resolve('@theforeman/env/babel'),
-  ],
+  presets: ['@theforeman/builder/babel'],
 };
 
 ```
+
+> `@theforeman/builder/babel` will automatically load `@theforeman/env/babel` for none production environments.
 
 ## Contributing
 
