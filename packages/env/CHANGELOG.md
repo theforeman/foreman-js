@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/theforeman/foreman-js/compare/v3.3.0...v3.3.1) (2019-12-01)
+
+
+### Bug Fixes
+
+* **builder:** move deps to peer ([07a10dd](https://github.com/theforeman/foreman-js/commit/07a10dd))
+
+
+
+
+
 # [3.3.0](https://github.com/theforeman/foreman-js/compare/v3.2.2...v3.3.0) (2019-11-26)
 
 
