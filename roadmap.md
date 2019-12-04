@@ -37,6 +37,17 @@ See [`contributing.md`](./contributing.md)
 
 ---
 
+## `@theforeman/eslint-plugin-foreman`
+
+### Want to do
+
+### Might do
+- Remove eslint dependency from core
+
+### Won‘t do
+
+---
+
 ## `@theforeman/env`
 
 ### Want to do

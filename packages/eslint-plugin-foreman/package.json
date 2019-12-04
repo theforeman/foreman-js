@@ -1,0 +1,36 @@
+{
+    "name": "@theforeman/eslint-plugin-foreman",
+    "version": "3.4.0",
+    "description": "Eslint plugin for the foreman",
+    "author": "Amir Fefer <amirfefer@gmail.com>",
+    "homepage": "https://github.com/theforeman/foreman-js#readme",
+    "bugs": {
+      "url": "https://github.com/theforeman/foreman-js/issues"
+    },
+    "license": "MIT",
+    "publishConfig": {
+      "access": "public"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/theforeman/foreman-js.git",
+      "directory": "packages/eslint-plugin-foreman"
+    },
+    "scripts": {
+      "test": "echo \"@theforeman/eslint-plugin-foreman does not contain any tests at the moment.\""
+    },
+    "bin": {
+      "tfm-lint": "./bin/tfm-linter.js"
+    },
+    "dependencies": {
+      "@theforeman/vendor-dev": "^3.4.0",
+      "babel-eslint": "^9.0.0",
+      "chalk": "^3.0.0",
+      "eslint-plugin-jquery": "^1.5.1",
+      "eslint-plugin-patternfly-react": "0.2.0",
+      "eslint-plugin-promise": "^4.2.1"
+    },
+    "peerDependencies": {
+      "eslint": "^6.7.0"
+    }
+  }

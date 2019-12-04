@@ -10,6 +10,7 @@
 * [ ] root
 * [ ] @theforeman/builder
 * [ ] @theforeman/env
+* [ ] @theforeman/eslint-plugin-foreman
 * [ ] @theforeman/vendor
 * [ ] @theforeman/vendor-dev
 * [ ] @theforeman/vendor-core
