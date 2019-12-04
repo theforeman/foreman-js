@@ -31,7 +31,8 @@ Thank you for your contribution, your foreman-js bot :robot:
 EOF
 }
 
-GIT_LOG=`git log --format="%H" $(git describe --tags --abbrev=0)..HEAD~1`
+# Get all commits from the previous tag to current
+GIT_LOG=`git log --format="%H" $(git describe --abbrev=0 --tags $(git rev-list --tags --skip=1  --max-count=1))..HEAD~1`
 
 for COMMIT_HASH in $(echo $GIT_LOG); do
   # Search for github pr's comments url that contains the current $COMMIT_HASH
