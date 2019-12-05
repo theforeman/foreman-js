@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 const chalk = require('chalk');
-const rules = require('../');
+const rules = require('./recommended');
 const { CLIEngine } = require('eslint');
 const path = require('path');
 
