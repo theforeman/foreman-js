@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.1](https://github.com/theforeman/foreman-js/compare/v3.5.0...v3.5.1) (2019-12-05)
+
+
+### Bug Fixes
+
+* **vendor-core:** pin patternfly-react after react-bootstrap update ([38cb968](https://github.com/theforeman/foreman-js/commit/38cb968))
+
+
+
+
+
 # [3.5.0](https://github.com/theforeman/foreman-js/compare/v3.4.0...v3.5.0) (2019-12-05)
 
 
