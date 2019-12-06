@@ -15,6 +15,7 @@ module.exports = [
   'react',
   'react-ace',
   'react-dom',
+  'react-intl',
   'react-dnd',
   'react-dnd-html5-backend',
   'react-debounce-input',
@@ -73,6 +74,10 @@ module.exports = [
     path: '@theforeman/vendor-core/lib/customModules/jquery.js',
   },
   {
+    name: 'vendor-intl',
+    path: '@theforeman/vendor-core/lib/customModules/vendorIntl.js',
+  },
+  {
     name: 'jstz',
     window: 'jstz',
   },
@@ -88,6 +93,7 @@ module.exports = [
   /**
    * Other packages
    */
+  'jed',
   'history',
   'number_helpers',
   'lodash',
