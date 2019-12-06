@@ -18,11 +18,7 @@ export default class Manifest {
   }
 
   get files() {
-    const fileNames = [].concat(
-      ...Object.keys(this.data).map(key => this.data[key])
-    );
-
-    return fileNames.map(file => path.resolve(__dirname, '../dist', file));
+    return [].concat(...Object.keys(this.data).map(key => this.data[key]));
   }
 
   constructor(mode = 'production') {
