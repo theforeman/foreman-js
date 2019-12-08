@@ -39,6 +39,7 @@ module.exports = [
   'classnames',
   'seamless-immutable',
   'isomorphic-fetch',
+  'connected-react-router',
 
   /**
    * Brace related
