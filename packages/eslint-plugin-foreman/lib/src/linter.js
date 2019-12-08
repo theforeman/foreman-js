@@ -6,24 +6,34 @@ const { CLIEngine } = require('eslint');
 const path = require('path');
 
 module.exports = class ForemanLinter {
-  constructor(files) {
+  constructor(files, shouldFix) {
+    console.log(shouldFix);
     this.cwd = process.cwd();
     this.files = files;
+    this.shouldFix = shouldFix;
     this.cli = new CLIEngine({
+      fix: shouldFix,
       useEslintrc: false,
       baseConfig: rules,
       resolvePluginsRelativeTo: path.resolve(__dirname),
     });
   }
   formatting(report) {
+    const { cli, shouldFix } = this;
+
     if (report.errorCount > 0) {
-      const formatter = this.cli.getFormatter();
+      const formatter = cli.getFormatter();
 
       console.log(
         chalk.bold.redBright(`> eslint has found ${report.errorCount} error(s)`)
       );
       console.log(formatter(report.results));
+
       process.exit(1);
+    }
+    if (shouldFix) {
+      chalk.bold.greenBright('> Fixing... ');
+      CLIEngine.outputFixes(report);
     }
     console.log(
       chalk.bold.greenBright('> eslint finished without any errors!')
@@ -34,6 +44,7 @@ module.exports = class ForemanLinter {
     const { files, cli, cwd } = this;
     const filesList = files.map(file => `${cwd}/${file}`);
 
-    this.formatting(cli.executeOnFiles(filesList));
+    const report = cli.executeOnFiles(filesList);
+    this.formatting(report);
   }
 };

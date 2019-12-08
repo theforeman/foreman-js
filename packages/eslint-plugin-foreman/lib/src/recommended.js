@@ -2,7 +2,7 @@ module.exports = {
   plugins: ['patternfly-react', 'promise', 'jquery'],
   extends: [
     'plugin:patternfly-react/recommended',
-    './node_modules/@theforeman/vendor-dev/eslint.extends.js',
+    require.resolve('@theforeman/vendor-dev/eslint.extends.js'),
     'plugin:jquery/deprecated',
   ],
   rules: {
