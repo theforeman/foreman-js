@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/theforeman/foreman-js/compare/v3.5.2...v3.6.0) (2019-12-08)
+
+
+### Features
+
+* **vendor-core:** add connected-react-router ([30b94db](https://github.com/theforeman/foreman-js/commit/30b94db))
+
+
+
+
+
 ## [3.5.2](https://github.com/theforeman/foreman-js/compare/v3.5.1...v3.5.2) (2019-12-05)
 
 
