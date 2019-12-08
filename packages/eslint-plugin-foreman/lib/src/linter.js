@@ -31,7 +31,9 @@ module.exports = class ForemanLinter {
   }
 
   execute() {
-    const filesList = this.files.map(file => `${this.cwd}/${file}`);
-    this.formatting(this.cli.executeOnFiles(filesList));
+    const { files, cli, cwd } = this;
+    const filesList = files.map(file => `${cwd}/${file}`);
+
+    this.formatting(cli.executeOnFiles(filesList));
   }
 };

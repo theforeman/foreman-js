@@ -1,4 +1,4 @@
-const recommended = require('./src/recommended');
+const recommended = require('./lib/src/recommended');
 
 module.exports = {
   configs: {
