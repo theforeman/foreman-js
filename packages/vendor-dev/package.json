@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor-dev",
-  "version": "3.6.1",
+  "version": "3.6.2",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -25,7 +25,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@theforeman/vendor-core": "^3.6.1",
+    "@theforeman/vendor-core": "^3.6.2",
     "babel-plugin-module-resolver": "^3.2.0",
     "eslint-import-resolver-alias": "^1.1.2"
   }

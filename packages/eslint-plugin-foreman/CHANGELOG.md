@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.2](https://github.com/theforeman/foreman-js/compare/v3.6.1...v3.6.2) (2019-12-08)
+
+
+### Bug Fixes
+
+* **eslint-plugin-foreman:** adding fix option to eslint ([cf4b57f](https://github.com/theforeman/foreman-js/commit/cf4b57f)), closes [#28393](https://github.com/theforeman/foreman-js/issues/28393)
+
+
+
+
+
 ## [3.6.1](https://github.com/theforeman/foreman-js/compare/v3.6.0...v3.6.1) (2019-12-08)
 
 
