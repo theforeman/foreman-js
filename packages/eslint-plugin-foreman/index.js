@@ -1,7 +1,9 @@
-const recommended = require('./lib/src/recommended');
+const core = require('./lib/src/core');
+const plugin = require('./lib/src/plugins');
 
 module.exports = {
   configs: {
-    recommended,
+    core,
+    plugins: { ...core, ...plugin },
   },
 };
