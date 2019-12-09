@@ -1,11 +1,13 @@
 module.exports = {
-  plugins: ['patternfly-react', 'promise', 'jquery'],
+  plugins: ['patternfly-react', 'promise', 'jquery', 'react-hooks'],
   extends: [
     'plugin:patternfly-react/recommended',
     require.resolve('@theforeman/vendor-dev/eslint.extends.js'),
     'plugin:jquery/deprecated',
   ],
   rules: {
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'max-lines': [
       'error',
       {

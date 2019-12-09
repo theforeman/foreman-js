@@ -7,7 +7,6 @@ const path = require('path');
 
 module.exports = class ForemanLinter {
   constructor(files, shouldFix) {
-    console.log(shouldFix);
     this.cwd = process.cwd();
     this.files = files;
     this.shouldFix = shouldFix;
