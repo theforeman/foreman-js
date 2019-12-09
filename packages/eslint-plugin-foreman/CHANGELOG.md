@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.3](https://github.com/theforeman/foreman-js/compare/v3.6.2...v3.6.3) (2019-12-09)
+
+
+### Bug Fixes
+
+* **eslint-plugin-foreman:** adding react-hooks rules ([10b4067](https://github.com/theforeman/foreman-js/commit/10b4067))
+
+
+
+
+
 ## [3.6.2](https://github.com/theforeman/foreman-js/compare/v3.6.1...v3.6.2) (2019-12-08)
 
 
