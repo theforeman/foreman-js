@@ -1,22 +1,28 @@
 /* eslint-disable no-console */
 
 const chalk = require('chalk');
-const rules = require('./recommended');
+const coreConfig = require('./core');
+const pluginConfig = require('./plugins');
 const { CLIEngine } = require('eslint');
 const path = require('path');
 
+const mergedConfig = {
+  ...coreConfig,
+  rules: { ...coreConfig.rules, ...pluginConfig.rules },
+};
 module.exports = class ForemanLinter {
-  constructor(files, shouldFix) {
+  constructor(files, shouldFix, plugin) {
     this.cwd = process.cwd();
     this.files = files;
     this.shouldFix = shouldFix;
     this.cli = new CLIEngine({
       fix: shouldFix,
       useEslintrc: false,
-      baseConfig: rules,
+      baseConfig: plugin ? { ...mergedConfig } : coreConfig,
       resolvePluginsRelativeTo: path.resolve(__dirname),
     });
   }
+
   formatting(report) {
     const { cli, shouldFix } = this;
 

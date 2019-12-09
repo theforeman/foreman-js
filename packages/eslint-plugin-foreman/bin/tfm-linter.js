@@ -14,13 +14,14 @@ program
     'Lint specific files and direcotries',
     spaceSeparatedList
   )
-  .option('--fix, --fix', 'Auto fix');
+  .option('--fix, --fix', 'Auto fix')
+  .option('--plugin, --plugin', 'Running plugins rules as well');
 
 program.parse(process.argv);
 
 let files = ['/webpack', '/script'];
 
-const { direcotory, fix } = program;
+const { direcotory, fix, plugin } = program;
 if (direcotory) files = direcotory;
-const linter = new ForemanLinter(files, fix);
+const linter = new ForemanLinter(files, fix, plugin);
 linter.execute();
