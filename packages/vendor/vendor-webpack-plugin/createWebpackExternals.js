@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { modules } from '@theforeman/vendor-core';
 
 const createWebpackExternals = () => {

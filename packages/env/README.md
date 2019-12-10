@@ -11,8 +11,7 @@
 ## What you get with this project
 
 - `@theforeman/env/babel` - Adds theforeman babel dev configuration to your project.
-- WIP: `@theforeman/env/lint` - Adds theforeman linting tools to you project.
-- WIP: `@theforeman/env/test` - Adds theforeman testing tools to you project.
+- `@theforeman/env/test` -  Adds theforeman testing tools to you project.
 - WIP: `@theforeman/env/storybook` - Adds theforeman storybook tools to you project.
 
 ## Installation
@@ -38,7 +37,18 @@ module.exports = {
 
 ```
 
+
 > `@theforeman/builder/babel` will automatically load `@theforeman/env/babel` for none production environments.
+
+### install `@theforeman/env/test`
+
+1. Add this to the `test` in `packge.json`:
+```json
+{
+  "test": "tfm-test"
+}
+```
+2. create a `test_helper.js` under `/webpack` for extending global mocks if needed
 
 ## Contributing
 
