@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.4](https://github.com/theforeman/foreman-js/compare/v3.6.3...v3.6.4) (2019-12-11)
+
+
+### Bug Fixes
+
+* **eslint-plugin-foreman:** adding plugins rules ([67c8bf4](https://github.com/theforeman/foreman-js/commit/67c8bf4))
+
+
+
+
+
 ## [3.6.3](https://github.com/theforeman/foreman-js/compare/v3.6.2...v3.6.3) (2019-12-09)
 
 
