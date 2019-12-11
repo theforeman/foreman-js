@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/theforeman/foreman-js/compare/v3.6.4...v3.7.0) (2019-12-11)
+
+
+### Bug Fixes
+
+* **eslint-plugin-foreman:** fix plugin config ([a1858cc](https://github.com/theforeman/foreman-js/commit/a1858cc))
+* **root:** fix autodeploy - revert package-lock.json ([8b7ca2d](https://github.com/theforeman/foreman-js/commit/8b7ca2d))
+
+
+### Features
+
+* **env:** adding jest ([acf2f30](https://github.com/theforeman/foreman-js/commit/acf2f30))
+
+
+
+
+
 ## [3.6.4](https://github.com/theforeman/foreman-js/compare/v3.6.3...v3.6.4) (2019-12-11)
 
 
