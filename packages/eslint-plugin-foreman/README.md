@@ -13,12 +13,38 @@
 npm install --save-dev @theforeman/eslint-plugin-foreman
 ```
 
+### Modify package.json
+
+```json
+"lint": "tfm-lint"
+```
+
+In plugins it is important to add `--plugin` flag:
+
+```json
+"lint": "tfm-lint --plugin -d /webpack"
+```
+
 ### Create an eslintrc file
+
+#### Foreman core 
 
 ```js
 {
-  "plugins": ["foreman"],
-  "extends": ["plugin:foreman"]
+  "plugins": ["@theforeman/foreman"],
+  "extends": ["plugin:@theforeman/foreman/core"]
+}
+```
+
+#### Plugins
+
+```js
+{
+  "plugins": ["@theforeman/foreman"],
+  "extends": [
+    "plugin:@theforeman/foreman/core",
+    "plugin:@theforeman/foreman/plugins"
+  ]
 }
 ```
 
@@ -28,12 +54,11 @@ Run `tfm-lint` in order to get a linting report on files under `/webpack` and `/
 
 #### Lint other folders or files
 
-Add `-f` flag with a list of files or folders:
+Add `-d` flag with a list of files or folders:
 
 ```sh
-tfm-lint -f /example_folder /other_folder some-file.js
+tfm-lint -d /example_folder /other_folder some-file.js
 ```
-
 
 ## Contributing
 
