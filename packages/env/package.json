@@ -19,9 +19,6 @@
   "scripts": {
     "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
   },
-  "bin": {
-    "tfm-test": "./bin/tfm-test.js"
-  },
   "dependencies": {
     "babel-jest": "^24.9.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
