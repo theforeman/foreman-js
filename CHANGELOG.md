@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.1](https://github.com/theforeman/foreman-js/compare/v3.7.0...v3.7.1) (2019-12-12)
+
+
+### Bug Fixes
+
+* **env:** executable permission to tfm-test ([742263d](https://github.com/theforeman/foreman-js/commit/742263d))
+
+
+
+
+
 # [3.7.0](https://github.com/theforeman/foreman-js/compare/v3.6.4...v3.7.0) (2019-12-11)
 
 
