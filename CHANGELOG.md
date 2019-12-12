@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/theforeman/foreman-js/compare/v3.7.2...v3.8.0) (2019-12-12)
+
+
+### Features
+
+* **vendor-core:** bump react-router-bootstrap ([7c2ee6d](https://github.com/theforeman/foreman-js/commit/7c2ee6d)), closes [#28423](https://github.com/theforeman/foreman-js/issues/28423)
+
+
+
+
+
 ## [3.7.2](https://github.com/theforeman/foreman-js/compare/v3.7.1...v3.7.2) (2019-12-12)
 
 
