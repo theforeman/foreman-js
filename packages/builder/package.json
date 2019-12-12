@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/builder",
-  "version": "3.7.1",
+  "version": "3.7.2",
   "description": "Build production and development bundle files for foreman core and plugins.",
   "author": "Avi Sharvit <sharvita@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",

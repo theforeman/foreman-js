@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.2](https://github.com/theforeman/foreman-js/compare/v3.7.1...v3.7.2) (2019-12-12)
+
+
+### Bug Fixes
+
+* **env:** remove tfm-test from package bin ([d2e8c56](https://github.com/theforeman/foreman-js/commit/d2e8c56)), closes [#GH-93](https://github.com/theforeman/foreman-js/issues/GH-93)
+
+
+
+
+
 ## [3.7.1](https://github.com/theforeman/foreman-js/compare/v3.7.0...v3.7.1) (2019-12-12)
 
 **Note:** Version bump only for package @theforeman/env
