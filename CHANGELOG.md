@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.1](https://github.com/theforeman/foreman-js/compare/v3.8.0...v3.8.1) (2019-12-15)
+
+
+### Bug Fixes
+
+* **env:** fix bin path for tfm-test ([88f1ae5](https://github.com/theforeman/foreman-js/commit/88f1ae5))
+
+
+
+
+
 # [3.8.0](https://github.com/theforeman/foreman-js/compare/v3.7.2...v3.8.0) (2019-12-12)
 
 
