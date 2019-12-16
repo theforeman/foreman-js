@@ -1,7 +1,7 @@
 const childProcess = require('child_process');
 
 module.exports = {
-  runScript: (scriptPath, callback, ...args) => {
+  runScript: (scriptPath, callback, args) => {
     let invoked = false;
 
     const process = childProcess.fork(scriptPath, args);

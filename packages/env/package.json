@@ -36,7 +36,7 @@
     "regenerator-runtime": "^0.13.3"
   },
   "peerDependencies": {
-    "@theforeman/builder": "^3.2.2",
-    "@theforeman/vendor-dev": "^3.3.0"
+    "@theforeman/builder": "^3.8.2",
+    "@theforeman/vendor-dev": "^3.8.2"
   }
 }
