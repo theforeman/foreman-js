@@ -4,7 +4,11 @@ const { resolvePath } = require('babel-plugin-module-resolver');
 const resolveBabelPath = (sourcePath, currentFile, opts) => {
   const vendorModule = modules.find(m => m.name === sourcePath);
 
-  if (vendorModule && vendorModule.hasCustomPath) {
+  const requestedByVendorCore =
+    currentFile.includes('foreman-js/packages/vendor-core') ||
+    currentFile.includes('@theforeman/vendor-core');
+
+  if (vendorModule && vendorModule.hasCustomPath && !requestedByVendorCore) {
     return vendorModule.path;
   }
 

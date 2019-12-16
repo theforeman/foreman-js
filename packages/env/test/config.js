@@ -17,6 +17,7 @@ module.exports = {
     '!webpack/**/*stories.js',
   ],
   coverageReporters: ['lcov'],
+  coverageDirectory: cwd,
   unmockedModulePathPatterns: ['react', 'node_modules/'],
   moduleNameMapper: {
     '^.+\\.(png|gif|css|scss)$': 'identity-obj-proxy',
@@ -25,6 +26,9 @@ module.exports = {
     __testing__: true,
     URL_PREFIX: '',
   },
+  transformIgnorePatterns: [
+    `/${cwd}/node_modules/(?!@theforeman/vendor-core/lib/)`,
+  ],
   transform: {
     '^.+\\.js$': '<rootDir>/test/jestPreprocess.js',
   },
