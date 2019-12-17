@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.9.0](https://github.com/theforeman/foreman-js/compare/v3.8.2...v3.9.0) (2019-12-17)
+
+
+### Features
+
+* **vendor-core:** update patternfly-react to v2.39.10 ([d8a33d1](https://github.com/theforeman/foreman-js/commit/d8a33d1)), closes [#28391](https://github.com/theforeman/foreman-js/issues/28391)
+
+
+
+
+
 ## [3.8.2](https://github.com/theforeman/foreman-js/compare/v3.8.1...v3.8.2) (2019-12-17)
 
 
