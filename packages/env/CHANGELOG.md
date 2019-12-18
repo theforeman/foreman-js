@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.2](https://github.com/theforeman/foreman-js/compare/v3.9.1...v3.9.2) (2019-12-18)
+
+
+### Bug Fixes
+
+* **env:** fix babel importing ([f6e2a61](https://github.com/theforeman/foreman-js/commit/f6e2a61))
+
+
+
+
+
 ## [3.9.1](https://github.com/theforeman/foreman-js/compare/v3.9.0...v3.9.1) (2019-12-18)
 
 
