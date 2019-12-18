@@ -34,7 +34,10 @@ module.exports = {
   },
   transformIgnorePatterns: ['/node_modules/(?!@theforeman/vendor-core/lib/)'],
   transform: {
-    '^.+\\.js$': '<rootDir>/test/jestPreprocess.js',
+    '^.+\\.js$': [
+      'babel-jest',
+      { cwd: path.resolve(__dirname), filename: 'babel.config.js' },
+    ],
   },
   moduleDirectories: [
     '<rootDir>/node_modules',
