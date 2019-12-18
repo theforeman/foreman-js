@@ -1,3 +1,5 @@
+const babel = require('@theforeman/builder/babel');
+
 module.exports = {
-  presets: [require.resolve('@theforeman/builder/babel')],
+  presets: [babel],
 };
