@@ -12,4 +12,4 @@ const errorHandling = error => {
   if (error) throw error;
 };
 
-runScript(`${envRoot}/node_modules/jest/bin/jest.js`, errorHandling, args);
+runScript(`${envRoot}/node_modules/.bin/jest`, errorHandling, args);
