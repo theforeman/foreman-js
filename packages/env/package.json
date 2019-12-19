@@ -23,6 +23,7 @@
     "tfm-test": "./bin/tfm-test.js"
   },
   "dependencies": {
+    "@babel/core": "^7.7.0",
     "@theforeman/builder": "^3.9.3",
     "@theforeman/vendor": "^3.9.3",
     "@theforeman/vendor-dev": "^3.9.3",
