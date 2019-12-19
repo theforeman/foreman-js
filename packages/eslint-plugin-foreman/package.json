@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/eslint-plugin-foreman",
-  "version": "3.9.2",
+  "version": "3.9.3",
   "description": "Eslint plugin for the foreman",
   "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -24,7 +24,7 @@
     "tfm-lint": "./bin/tfm-linter.js"
   },
   "dependencies": {
-    "@theforeman/vendor-dev": "^3.9.2",
+    "@theforeman/vendor-dev": "^3.9.3",
     "babel-eslint": "^9.0.0",
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
