@@ -32,7 +32,10 @@ module.exports = {
     __testing__: true,
     URL_PREFIX: '',
   },
-  transformIgnorePatterns: ['/node_modules/(?!@theforeman/vendor-core/lib/)'],
+  transformIgnorePatterns: [
+    '/node_modules/(?!@theforeman/vendor-core/lib/)',
+    '/node_modules/(?!@theforeman/env/test/)',
+  ],
   transform: {
     '^.+\\.js$': [
       'babel-jest',
