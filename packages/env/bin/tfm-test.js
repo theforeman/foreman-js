@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 
 const path = require('path');
-const { runScript } = require('../helpers');
+const { runScript } = require('../test/helpers');
 
 const envRoot = path.resolve(__dirname, '../');
 const configArg = ['--config', `${envRoot}/test/config.js`];
