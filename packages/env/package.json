@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/env",
-  "version": "3.9.4-env-test.0",
+  "version": "3.9.4-env-test.1",
   "description": "Development environment for foreman core and plugins",
   "author": "Avi Sharvit <sharvita@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "@babel/core": "^7.7.0",
-    "@theforeman/builder": "^3.9.4-env-test.0",
-    "@theforeman/vendor": "^3.9.4-env-test.0",
-    "@theforeman/vendor-dev": "^3.9.4-env-test.0",
+    "@theforeman/builder": "^3.9.4-env-test.1",
+    "@theforeman/vendor": "^3.9.4-env-test.1",
+    "@theforeman/vendor-dev": "^3.9.4-env-test.1",
     "babel-jest": "^24.9.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
     "dom-helpers": "^5.1.3",
