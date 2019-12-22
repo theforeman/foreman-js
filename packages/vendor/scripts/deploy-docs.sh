@@ -14,6 +14,8 @@ SURGE_TOKEN=${SURGE_TOKEN}
 DEPLOY_PATH="./docs"
 DEPLOY_SUBDOMAIN="${REPO_OWNER}-vendor-docs"
 
+if [[ -z "${SKIP_DOCS}" ]]; then exit 0; fi
+
 if [ -n "${PR_NUM}" ] && [ "${PR_NUM}" != "false" ] # If build is a PR
 then
   DEPLOY_SUBDOMAIN="${DEPLOY_SUBDOMAIN}-pr-${PR_NUM}"
