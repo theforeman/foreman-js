@@ -1,5 +1,5 @@
 {
-  "version": "3.9.4-env-test.6",
+  "version": "3.9.4-env-test.7",
   "npmClient": "npm",
   "packages": [
     "packages/*"
