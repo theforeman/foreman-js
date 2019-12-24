@@ -46,6 +46,7 @@ module.exports = {
     '<rootDir>/node_modules',
     `${cwd}/node_modules/@theforeman/vendor-core/node_modules`,
     `${cwd}/node_modules`,
+    `${cwd}/node_modules/react-virtualized/node_modules`,
   ],
   setupFiles: [
     'raf/polyfill',
