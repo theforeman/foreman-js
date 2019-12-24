@@ -33,7 +33,7 @@ module.exports = {
     URL_PREFIX: '',
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!@theforeman/vendor-core/lib|@theforeman/env/test)/',
+    '/node_modules/(?!(@theforeman/vendor-core/lib|@theforeman/env/test)/)',
   ],
 
   transform: {
