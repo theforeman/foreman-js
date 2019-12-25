@@ -4,9 +4,9 @@ const cwd = process.cwd();
 
 module.exports = {
   rootDir: path.resolve(__dirname, '../'),
-  roots: [`${cwd}/webpack/`, `${cwd}/script/`],
-  automock: true,
+  roots: [`${cwd}/webpack/`],
   verbose: true,
+  automock: true,
   testMatch: ['**/*.test.js'],
   testURL: 'http://localhost/',
   collectCoverage: true,
@@ -17,7 +17,7 @@ module.exports = {
     '!webpack/**/*stories.js',
   ],
   coverageReporters: ['lcov'],
-  coverageDirectory: cwd,
+  coverageDirectory: `${cwd}/coverage`,
   unmockedModulePathPatterns: ['react', 'node_modules/'],
   moduleNameMapper: {
     '^.+\\.(png|gif|css|scss)$': 'identity-obj-proxy',
