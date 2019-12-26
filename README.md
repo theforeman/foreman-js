@@ -34,7 +34,7 @@ In your CSS code, the `@import` statements _do_ need to be explicit; see [this p
 ## Other packages
 
 - [@theforeman/builder](packages/builder) - Provides scripts (`npm run build`) to build production and development bundle files for Foreman core and plugins.
-- [@theforeman/env](packages/env) - Development environment for Foreman core and plugins.  Includes test configuration, Storybook, etc. Same idea as `vendor`, except it's for dependencies used only in development.
+- [@theforeman/test](packages/test) - Adds theforeman testing tools to you project, including jest, enzyme and other utils.
 - [@theforeman/eslint-plugin-foreman](packages/eslint-plugin-foreman) - Shared `eslint` configuration.  Opinionated styling for Foreman core and plugins.
 
 ## Contributing
