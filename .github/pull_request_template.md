@@ -11,6 +11,7 @@
 * [ ] @theforeman/builder
 * [ ] @theforeman/env
 * [ ] @theforeman/eslint-plugin-foreman
+* [ ] @theforeman/stories
 * [ ] @theforeman/vendor
 * [ ] @theforeman/vendor-dev
 * [ ] @theforeman/vendor-core

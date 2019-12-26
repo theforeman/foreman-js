@@ -12,7 +12,6 @@
 
 - `@theforeman/env/babel` - Adds theforeman babel dev configuration to your project.
 - `@theforeman/env/test` -  Adds theforeman testing tools to you project.
-- WIP: `@theforeman/env/storybook` - Adds theforeman storybook tools to you project.
 
 ## Installation
 

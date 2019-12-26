@@ -41,7 +41,7 @@ confirmCommit:
 `Are you sure you want to proceed with the commit above?`,
 };
 
-const scopes = ['root', 'builder', 'env', 'eslint-plugin-foreman', 'vendor', 'vendor-dev', 'vendor-core'];
+const scopes = ['root', 'builder', 'env', 'eslint-plugin-foreman', 'stories', 'vendor', 'vendor-dev', 'vendor-core'];
 
 module.exports = {
   types: types.map(type => ({

@@ -8,7 +8,7 @@
     "preinstall": "./scripts/install-git-hooks.sh",
     "postinstall": "npm run bootstrap",
     "lerna": "lerna",
-    "clean": "lerna clean",
+    "clean": "lerna clean --yes",
     "bootstrap": "lerna bootstrap",
     "build": "node --max_old_space_size=8192 ./node_modules/.bin/lerna run --stream build",
     "test": "lerna run --stream test",
