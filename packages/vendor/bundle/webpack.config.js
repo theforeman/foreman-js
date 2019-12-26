@@ -1,6 +1,3 @@
-require('core-js/stable');
-require('regenerator-runtime/runtime');
-
 const path = require('path');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
