@@ -3,7 +3,7 @@ const path = require('path');
 const projectRoot = path.resolve(__dirname, '../');
 
 const config = {
-  entry: path.resolve(__dirname, './vendor-webpack-plugin'),
+  entry: path.resolve(__dirname, './index'),
 
   mode: 'production',
   target: 'node',

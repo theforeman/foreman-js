@@ -7,7 +7,7 @@ import createWebpackExternals from './createWebpackExternals';
  * Build for webpack@3
  * Webpack plugin to apply @theforeman/vendor into webpack
  */
-export class WebpackForemanVendorPlugin {
+export default class WebpackForemanVendorPlugin {
   constructor(options = {}) {
     const { mode = 'production' } = options;
 

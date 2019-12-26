@@ -26,7 +26,7 @@ export default class Manifest {
   }
 
   constructor(mode = 'production') {
-    this.mode = mode;
+    this.mode = mode.toLowerCase();
   }
 
   _loadManifest() {
