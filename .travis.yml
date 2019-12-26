@@ -12,10 +12,10 @@ jobs:
       script: npm run test
     - node_js: 12
       script:
+        - npm run build
         - npm run lint:commit-travis
         - npm run lint
         - npm run test
-        - npm run build
     - stage: publish to github
       if: branch = master AND type = push AND fork = false
       node_js: 12

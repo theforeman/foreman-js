@@ -7,8 +7,5 @@ module.exports = () => ({
       presets: [require.main.require('@theforeman/vendor-dev/babel.preset.js')],
       plugins: [require.resolve('babel-plugin-dynamic-import-node')],
     },
-    storybook: {
-      presets: [require.main.require('@theforeman/vendor-dev/babel.preset.js')],
-    },
   },
 });
