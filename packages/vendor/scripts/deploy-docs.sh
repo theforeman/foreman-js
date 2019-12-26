@@ -1,6 +1,10 @@
 #! /bin/bash
 # the docs folder need to be build before this script can run
 # use npm run build:docs
+if [ -n "${SKIP_DOCS}" ] && [ "${SKIP_DOCS}" == "true" ]
+then 
+  exit 0
+fi  
 
 REPO_SLUG_ARRAY=(${TRAVIS_REPO_SLUG//\// })
 REPO_OWNER=${REPO_SLUG_ARRAY[0]}
@@ -13,6 +17,7 @@ SURGE_TOKEN=${SURGE_TOKEN}
 
 DEPLOY_PATH="./docs"
 DEPLOY_SUBDOMAIN="${REPO_OWNER}-vendor-docs"
+
 
 if [ -n "${PR_NUM}" ] && [ "${PR_NUM}" != "false" ] # If build is a PR
 then
