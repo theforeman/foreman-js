@@ -1,7 +1,7 @@
 #! /bin/bash
 # the docs folder need to be build before this script can run
 # use npm run build:docs
-if [ -n "${SKIP_DOCS}" ] && [ "${SKIP_DOCS}" == "true" ]
+if [[ -z ${CI} ]] || ([ -n ${CI} ] && [ $CI == 'false' ])
 then 
   exit 0
 fi  
@@ -17,7 +17,6 @@ SURGE_TOKEN=${SURGE_TOKEN}
 
 DEPLOY_PATH="./docs"
 DEPLOY_SUBDOMAIN="${REPO_OWNER}-vendor-docs"
-
 
 if [ -n "${PR_NUM}" ] && [ "${PR_NUM}" != "false" ] # If build is a PR
 then

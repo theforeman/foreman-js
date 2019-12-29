@@ -1,9 +1,16 @@
 const path = require('path');
 
 const cwd = process.cwd();
+const rootDir = path.resolve(__dirname, '../');
+const fs = require('fs');
+
+const localTestHelper = `${cwd}/webpack/test_setup.js`;
+
+const localTestHelperExists = fs.existsSync(localTestHelper);
+const localTestHelpers = localTestHelperExists ? [localTestHelper] : [];
 
 module.exports = {
-  rootDir: path.resolve(__dirname, '../'),
+  rootDir: cwd,
   roots: [`${cwd}/webpack/`],
   verbose: true,
   automock: true,
@@ -16,6 +23,7 @@ module.exports = {
     '!webpack/stories/**',
     '!webpack/**/*stories.js',
   ],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   coverageReporters: ['lcov'],
   coverageDirectory: `${cwd}/coverage`,
   unmockedModulePathPatterns: ['react', 'node_modules/'],
@@ -43,7 +51,7 @@ module.exports = {
     ],
   },
   moduleDirectories: [
-    '<rootDir>/node_modules',
+    `${rootDir}/node_modules`,
     `${cwd}/node_modules/@theforeman/vendor-core/node_modules`,
     `${cwd}/node_modules`,
     `${cwd}/node_modules/react-virtualized/node_modules`,
@@ -52,7 +60,7 @@ module.exports = {
   setupFiles: [
     'raf/polyfill',
     'jest-prop-type-error',
-    './src/test_setup.js',
-    `${cwd}/webpack/test_setup.js`,
+    `${rootDir}/src/test_setup.js`,
+    ...localTestHelpers,
   ],
 };
