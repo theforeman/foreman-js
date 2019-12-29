@@ -130,7 +130,26 @@ export const asDynamicVariables = () => {
 
 [@storybook/addon-centered](https://github.com/storybookjs/storybook/tree/master/addons/centered) can be used to center components inside the preview in Storybook.
 
-This addon will automatically centerize all your stories.
+This addon will automatically centerize all your stories. To disable it, add a parameter to your story.
+```js
+// disable centered for all the stories in a given file
+export default {
+  title: 'MyComponent|MyComponent/MyComponent',
+  component: MyComponent,
+  parameters: {
+    centered: { disable: true },
+  },
+};
+
+// disable centered for a given story
+export const Basic = () => <MyComponent />;
+
+Basic.story = {
+  parameters: {
+    centered: { disable: true },
+  },
+};
+```
 
 ### @storybook/addon-storysource
 
