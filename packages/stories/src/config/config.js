@@ -1,11 +1,9 @@
-import { configure, addDecorator } from '@storybook/react';
-import centered from '@storybook/addon-centered/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { configure } from '@storybook/react';
 
-addDecorator(withKnobs);
-addDecorator(centered);
+import './decorators';
+import './parameters';
 
 configure(
-  require.context(`${process.env.CWD}/webpack`, true, /\.stories\.js$/),
+  require.context(`${process.env.CWD}/webpack`, true, /\.stories\.(js|mdx)$/),
   module
 );

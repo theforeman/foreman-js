@@ -1,4 +1,6 @@
 const path = require('path');
+const createMdxCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
+
 const {
   cwdWebpack,
   cwdModulesPath,
@@ -23,9 +25,26 @@ module.exports = ({ config }) => {
       loader: require.resolve('babel-loader'),
       options: {
         presets: [require.resolve('@theforeman/builder/babel')],
+        plugins: [require.resolve('babel-plugin-react-docgen')],
       },
     },
   ];
+
+  // Stories MDX loader
+  config.module.rules.push({
+    test: /\.(stories|story)\.mdx$/,
+    use: [
+      {
+        loader: require.resolve('babel-loader'),
+      },
+      {
+        loader: require.resolve('@mdx-js/loader'),
+        options: {
+          compilers: [createMdxCompiler({})],
+        },
+      },
+    ],
+  });
 
   // Stories source code loader
   config.module.rules.push({
