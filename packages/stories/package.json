@@ -30,8 +30,10 @@
   },
   "dependencies": {
     "@babel/core": "^7.7.0",
+    "@mdx-js/loader": "^1.5.3",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-centered": "^5.2.8",
+    "@storybook/addon-docs": "^5.2.8",
     "@storybook/addon-knobs": "^5.2.8",
     "@storybook/addon-storysource": "^5.2.8",
     "@storybook/addon-viewport": "^5.2.8",
@@ -40,8 +42,10 @@
     "@theforeman/builder": "^3.10.1",
     "@theforeman/vendor": "^3.10.1",
     "babel-loader": "^8.0.6",
+    "babel-plugin-react-docgen": "^3.2.0",
     "commander": "^4.0.1",
     "node-sass": "^4.5.0",
+    "react-is": "^16.12.0",
     "sass-loader": "^6.0.7",
     "webpack": "^4.41.4"
   }

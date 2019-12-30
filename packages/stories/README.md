@@ -15,41 +15,136 @@ It uses [storybook](https://storybook.js.org/), and some tailor-made configurati
 
 ## Writing a story
 
-To create a story for a given component, `MyComponent`, first, create a story with the file name `MyComponent.stories.js` next to `MyComponent.js`.
-The `tfm-stories` will search for files with the `.stories.js` extension.
+There are 3 types of stories formats:
+1. Component Story Format (CSF) - https://github.com/storybookjs/storybook/blob/next/addons/docs/docs/mdx.md
+2. Storybook Docs MDX - https://github.com/storybookjs/storybook/blob/next/addons/docs/docs/mdx.md
+3. StoriesOf API (will be deprecated) - https://storybook.js.org/docs/formats/storiesof-api/
 
-```
-•
-└── webpack
-    └── components
-        └── MyComponent
-            ├── MyComponent.js
-            └── MyComponent.stories.js
-```
-
+Assuming having a `Toggle` component lives in `webpack/components/Toggle/Toggle.js`:
 ```js
-// MyComponent.js
 import React from 'react';
 
-const MyComponent = ({ opened, setOpened }) => (
+const Toggle = ({ opened, setOpened }) => (
   <button onClick={() => setOpened(!opened)}>
     {opened ? 'OPEN' : 'CLOSE'}
   </button>
 );
 
-export default MyComponent;
+export default Toggle;
+```
 
-// MyComponent.stories.js
+To create a story for a given component, `Toggle`, first, create a story with the file name `Toggle.stories.(js|mdx)` next to `Toggle.js`.
+The `tfm-stories` will search for files with the `.stories.(js|mdx)` extension.
+
+```
+•
+└── webpack
+    └── components
+        └── Toggle
+            ├── Toggle.js
+            └── Toggle.stories.js
+```
+
+
+### Component Story Format (CSF)
+
+Storybook’s Component Story Format (CSF) is the recommended way to write stories since Storybook 5.2. Read the announcement to learn more about how it came to be.
+
+In CSF, stories and component metadata are defined as ES Modules. Every component story file consists of a required default export and one or more named exports.
+
+```js
 import React from 'react';
 import { action, boolean } from '@theforeman/stories';
-import MyComponent from './MyComponent';
+import Toggle from './Toggle';
 
 export default {
-  title: 'MyComponent|MyComponent/MyComponent',
-  component: MyComponent,
+  title: 'Components|Widgets/Toggle',
+  component: Toggle,
 };
 
-export const Basic = () => <MyComponent setOpened={action('setOpened')} opened={boolean('opened')} />;
+export const withState = () => {
+  const [opened, setOpened] = useState(false);
+
+  return <Toggle opened={opened} setOpened={setOpened} />;
+};
+
+export const withKnobs = () => (
+  <Toggle setOpened={action('setOpened')} opened={boolean('opened')} />
+);
+
+export const opened = () => (
+  <Toggle opened={true} />
+);
+
+export const closed = () => (
+  <Toggle opened={false} />
+);
+```
+
+Using this format will automatically generate a `doc-page` with the following features:
+
+1. The **first story** will be configured as the **primary** story.
+
+2. A Description slot is computed from the Component's docgen comments in the component's source.
+   For example, here's the source for Badge:
+   ```js
+   /**
+    * Use `Badge` to highlight key info with a predefined status.
+    */
+   export const Badge = ({ status, children }) => { ... }
+   ```
+
+3. A `prop-types` table is computed from the component's docgen prop-types.
+   For example, here's the source for Badge prop-types:
+   ```js
+   Badge.propTypes = {
+     /** Set the status of the badge */
+     status: PropTypes.oneOf(['success', 'error', 'info']),
+     /** Set the content of the badge */
+     children: PropTypes.node,
+   };
+   ```
+
+### Storybook Docs MDX
+
+```mdx
+import React from 'react';
+import { Meta, Story, Preview, Props, action } from '@theforeman/stories';
+
+import Toggle from './Toggle';
+
+<Meta
+  title="Components|Widgets/Toggle"
+  component={Toggle}
+/>
+
+# Toggle
+
+Use `Toggle` to highlight key info with a predefined status.
+
+<Props of={Toggle} />
+
+<Preview>
+  <Story name="With Knobs">
+    <Toggle setOpened={action('setOpened')} opened={boolean('opened')} />
+  </Story>
+</Preview>
+
+With `opened={true}`
+
+<Preview>
+  <Story name="opened">
+    <Toggle opened={true} />
+  </Story>
+</Preview>
+
+With `opened={false}`
+
+<Preview>
+  <Story name="closed">
+    <Toggle opened={false} />
+  </Story>
+</Preview>
 
 ```
 
@@ -86,6 +181,21 @@ Options:
 ```
 
 ## Available storybook addons
+
+### @storybook/addon-docs
+
+Storybook Docs transforms your Storybook stories into world-class component documentation.
+
+**DocsPage.** Out of the box, all your stories get a `DocsPage`. `DocsPage` is a zero-config aggregation of your component stories, text descriptions, docgen comments, props tables, and code examples into clean, readable pages.
+
+**MDX.** If you want more control, `MDX` allows you to write long-form markdown documentation and stories in one file. You can also use it to write pure documentation pages and embed them inside your Storybook alongside your stories.
+
+All the components from `@storybook/addon-docs` are available by using `@theforeman/stories`:
+```js
+import { Meta, Story, Preview, Props } from '@theforeman/stories';
+```
+
+See: https://github.com/storybookjs/storybook/tree/next/addons/docs
 
 ### @storybook/addon-actions
 
