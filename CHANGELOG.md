@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.12.0](https://github.com/theforeman/foreman-js/compare/v3.11.1...v3.12.0) (2019-12-31)
+
+
+### Features
+
+* **stories:** support sorting stories ([2dc7a6d](https://github.com/theforeman/foreman-js/commit/2dc7a6d))
+
+
+
+
+
 ## [3.11.1](https://github.com/theforeman/foreman-js/compare/v3.11.0...v3.11.1) (2019-12-31)
 
 
