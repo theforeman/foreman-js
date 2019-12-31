@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.11.1](https://github.com/theforeman/foreman-js/compare/v3.11.0...v3.11.1) (2019-12-31)
+
+
+### Bug Fixes
+
+* **stories:** use mdx-loader on all mdx files ([50ae16c](https://github.com/theforeman/foreman-js/commit/50ae16c))
+
+
+
+
+
 # [3.11.0](https://github.com/theforeman/foreman-js/compare/v3.10.1...v3.11.0) (2019-12-31)
 
 
