@@ -107,8 +107,12 @@ Using this format will automatically generate a `doc-page` with the following fe
 
 ### Storybook Docs MDX
 
+MDX is a syntax for writing long-form documentation and stories side-by-side in the same file. In contrast to DocsPage, which provides smart documentation out of the box, MDX gives you full control over your component documentation.
+
+Read more about writing mdx stories:
+https://github.com/storybookjs/storybook/blob/master/addons/docs/docs/mdx.md
+
 ```mdx
-import React from 'react';
 import { Meta, Story, Preview, Props, action } from '@theforeman/stories';
 
 import Toggle from './Toggle';
@@ -178,6 +182,39 @@ Options:
   -w, --watch                  Enable watch mode
   -q, --quiet                  Suppress verbose build output
   -h, --help                   output usage information
+```
+
+## Sorting stories
+
+Stories will be sorted based on:
+1. The `storyWeight` number parameter where smaller values appear first.
+   By default, all the stories have a `storyWeight` set to `1000`.
+2. Alphabetically A-Z
+
+To change the `storyWeight` for a given `story`, set it in the story parameter.
+
+**CSF**
+```js
+export default {
+  title: 'Components/SomeComponent',
+  component: SomeComponent,
+  parameters: {
+    storyWeight: 100,
+  },
+};
+```
+
+**MDX**
+```mdx
+import { Meta } from '@theforeman/stories';
+
+<Meta
+  title="Components/SomeComponent"
+  component={SomeComponent}
+  parameters={{
+    storyWeight: 100,
+  }}
+/>
 ```
 
 ## Available storybook addons
