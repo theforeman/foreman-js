@@ -32,7 +32,8 @@ module.exports = ({ config }) => {
 
   // Stories MDX loader
   config.module.rules.push({
-    test: /\.(stories|story)\.mdx$/,
+    test: /\.mdx$/,
+    exclude: /node_modules/,
     use: [
       {
         loader: require.resolve('babel-loader'),
