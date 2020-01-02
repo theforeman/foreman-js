@@ -1,6 +1,10 @@
 #! /bin/bash
 # the docs folder need to be build before this script can run
 # use npm run build:docs
+if [[ -z ${CI} ]] || ([ -n ${CI} ] && [ $CI == 'false' ])
+then 
+  exit 0
+fi  
 
 REPO_SLUG_ARRAY=(${TRAVIS_REPO_SLUG//\// })
 REPO_OWNER=${REPO_SLUG_ARRAY[0]}

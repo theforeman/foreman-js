@@ -9,7 +9,7 @@
 
 * [ ] root
 * [ ] @theforeman/builder
-* [ ] @theforeman/env
+* [ ] @theforeman/test
 * [ ] @theforeman/eslint-plugin-foreman
 * [ ] @theforeman/stories
 * [ ] @theforeman/vendor

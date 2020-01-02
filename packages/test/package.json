@@ -1,8 +1,8 @@
 {
-  "name": "@theforeman/env",
+  "name": "@theforeman/test",
   "version": "3.12.0",
-  "description": "Development environment for foreman core and plugins",
-  "author": "Avi Sharvit <sharvita@gmail.com>",
+  "description": "Test utils for theforeman",
+  "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
   "bugs": {
     "url": "https://github.com/theforeman/foreman-js/issues"
@@ -14,26 +14,29 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theforeman/foreman-js.git",
-    "directory": "packages/env"
+    "directory": "packages/test"
   },
   "scripts": {
     "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
   },
   "bin": {
-    "tfm-test": "./bin/tfm-test.js"
+    "tfm-test": "./bin/tfm-test.js",
+    "tfm-publish-coverage": "./bin/tfm-publish-coverage.js"
   },
   "dependencies": {
     "@theforeman/builder": "^3.12.0",
-    "@theforeman/vendor": "^3.12.0",
     "@theforeman/vendor-dev": "^3.12.0",
     "babel-jest": "^24.9.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
-    "dom-helpers": "^5.1.3",
+    "commander": "^4.0.1",
+    "coveralls": "^3.0.9",
     "enzyme": "^3.4.0",
     "enzyme-adapter-react-16": "^1.4.0",
     "enzyme-to-json": "^3.2.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest-cli": "^24.9.0",
     "jest-prop-type-error": "^1.1.0",
-    "raf": "^3.4.0"
+    "raf": "^3.4.0",
+    "react-redux-test-utils": "^0.2.0"
   }
 }
