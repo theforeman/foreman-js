@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/theforeman/foreman-js/compare/v3.12.0...v4.0.0) (2020-01-02)
+
+
+### Features
+
+* **test:** create @theforeman/test ([c3cebc2](https://github.com/theforeman/foreman-js/commit/c3cebc2))
+
+
+### BREAKING CHANGES
+
+* **test:** Dropping @theforeman/env
+
+
+
+
+
 # [3.12.0](https://github.com/theforeman/foreman-js/compare/v3.11.1...v3.12.0) (2019-12-31)
 
 
