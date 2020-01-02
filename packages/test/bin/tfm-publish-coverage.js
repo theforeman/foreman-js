@@ -4,10 +4,10 @@
 const cwd = process.cwd();
 const { exec } = require('child_process');
 
-const coverallsPath = require.resolve('coveralls');
+const coverallsPath = './node_modules/.bin/coveralls';
 const lcovPath = `${cwd}/coverage/lcov.info`;
 
-exec(`cat ./${lcovPath} | ./${coverallsPath}`, (error, stdout, stderr) => {
+exec(`cat ${lcovPath} | ${coverallsPath}`, (error, stdout, stderr) => {
   if (error) {
     console.log(error);
     process.exit(1);
