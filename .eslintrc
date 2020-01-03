@@ -2,6 +2,7 @@
   "plugins": ["patternfly-react"],
   "extends": ["plugin:patternfly-react/recommended"],
   "rules": {
+    "no-console": 0,
     "prettier/prettier": [
       "error",
       {

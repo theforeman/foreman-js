@@ -27,7 +27,8 @@
     "babel"
   ],
   "scripts": {
-    "test": "echo \"@theforeman/builder does not contain any tests at the moment.\""
+    "test": "echo \"@theforeman/builder does not contain any tests at the moment.\"",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@babel/core": "^7.7.0",
