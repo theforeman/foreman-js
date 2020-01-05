@@ -17,7 +17,8 @@
     "directory": "packages/test"
   },
   "scripts": {
-    "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
+    "test": "echo \"@theforeman/env does not contain any tests at the moment.\"",
+    "lint": "eslint ."
   },
   "bin": {
     "tfm-test": "./bin/tfm-test.js",
