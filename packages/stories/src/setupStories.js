@@ -1,1 +1,1 @@
-import './setupStories.scss';
+import './styles.scss';
