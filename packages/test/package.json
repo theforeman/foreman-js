@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/test",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Test utils for theforeman",
   "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -24,14 +24,14 @@
     "tfm-publish-coverage": "./bin/tfm-publish-coverage.js"
   },
   "dependencies": {
-    "@theforeman/builder": "^4.0.3",
-    "@theforeman/vendor-dev": "^4.0.3",
+    "@theforeman/builder": "^4.0.4",
+    "@theforeman/vendor-dev": "^4.0.4",
     "axios-mock-adapter": "^1.1.7",
     "babel-jest": "^24.9.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
+    "cheerio": "0.22.0",
     "commander": "^4.0.1",
     "coveralls": "^3.0.9",
-    "cheerio": "0.22.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.3",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/theforeman/foreman-js/compare/v4.0.3...v4.0.4) (2020-01-08)
+
+
+### Bug Fixes
+
+* **test:** force enzyme to use cheerio@0.22.0 ([5c46a0d](https://github.com/theforeman/foreman-js/commit/5c46a0d))
+
+
+
+
+
 ## [4.0.3](https://github.com/theforeman/foreman-js/compare/v4.0.2...v4.0.3) (2020-01-08)
 
 
