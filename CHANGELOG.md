@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.5](https://github.com/theforeman/foreman-js/compare/v4.0.4...v4.0.5) (2020-01-13)
+
+
+### Bug Fixes
+
+* **stories:** fix stories code color ([8f09d9d](https://github.com/theforeman/foreman-js/commit/8f09d9d))
+
+
+
+
+
 ## [4.0.4](https://github.com/theforeman/foreman-js/compare/v4.0.3...v4.0.4) (2020-01-08)
 
 
