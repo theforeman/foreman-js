@@ -26,6 +26,10 @@ module.exports = class ForemanLinter {
   formatting(report) {
     const { cli, shouldFix } = this;
 
+    if (shouldFix) {
+      chalk.bold.greenBright('> Fixing... ');
+      CLIEngine.outputFixes(report);
+    }
     if (report.errorCount > 0) {
       const formatter = cli.getFormatter();
 
@@ -35,10 +39,6 @@ module.exports = class ForemanLinter {
       console.log(formatter(report.results));
 
       process.exit(1);
-    }
-    if (shouldFix) {
-      chalk.bold.greenBright('> Fixing... ');
-      CLIEngine.outputFixes(report);
     }
     console.log(
       chalk.bold.greenBright('> eslint finished without any errors!')
