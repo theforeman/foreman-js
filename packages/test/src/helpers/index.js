@@ -6,12 +6,17 @@ module.exports = {
     return path.resolve(require.resolve('jest-cli'), '../../../.bin/', 'jest');
   },
 
-  remainingArgs: cli =>
-    cli.rawArgs
+  remainingArgs: cli => {
+    const execArgs = ['bin/node', '.bin/tfm-test'];
+
+    const isExecArg = (item, execArgs) =>
+      execArgs.reduce((memo, execArgs) => memo || item.endsWith(execArgs), false);
+
+    return cli.rawArgs
       // Only retain elements starting from the first --option
       .reduce(
         (acc, item) =>
-          acc.length || item.startsWith('-') ? [...acc, item] : acc,
+          acc.length || item.startsWith('-') || !isExecArg(item, execArgs) ? [...acc, item] : acc,
         []
       )
       // Filter out arguments already parsed by commander.js
@@ -45,7 +50,8 @@ module.exports = {
         }
 
         return true;
-      }),
+      });
+  },
 
   runScript: (scriptPath, callback, args) => {
     let invoked = false;
