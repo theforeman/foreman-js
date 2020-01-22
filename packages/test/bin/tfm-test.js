@@ -4,7 +4,7 @@ const commander = require('commander');
 const { version } = require('../package.json');
 const path = require('path');
 
-const { runScript, remainingArgs } = require('../src/helpers');
+const { getJestBin, runScript, remainingArgs } = require('../src/helpers');
 
 const testRoot = path.resolve(__dirname, '../');
 const program = new commander.Command();
@@ -32,4 +32,4 @@ const errorHandling = error => {
   if (error) throw error;
 };
 
-runScript(`${process.cwd()}/node_modules/.bin/jest`, errorHandling, jestArgs);
+runScript(getJestBin(), errorHandling, jestArgs);
