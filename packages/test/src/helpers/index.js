@@ -1,6 +1,11 @@
+const path = require('path');
 const childProcess = require('child_process');
 
 module.exports = {
+  getJestBin() {
+    return path.resolve(require.resolve('jest-cli'), '../../../.bin/', 'jest');
+  },
+
   remainingArgs: cli =>
     cli.rawArgs
       // Only retain elements starting from the first --option
