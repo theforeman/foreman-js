@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.7](https://github.com/theforeman/foreman-js/compare/v4.0.6...v4.0.7) (2020-01-27)
+
+
+### Bug Fixes
+
+* **builder:** update babel-env to transform modules to commonjs ([88d7554](https://github.com/theforeman/foreman-js/commit/88d7554)), closes [#28857](https://github.com/theforeman/foreman-js/issues/28857)
+
+
+
+
+
 ## [4.0.6](https://github.com/theforeman/foreman-js/compare/v4.0.5...v4.0.6) (2020-01-20)
 
 **Note:** Version bump only for package @theforeman/builder

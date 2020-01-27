@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.7](https://github.com/theforeman/foreman-js/compare/v4.0.6...v4.0.7) (2020-01-27)
+
+**Note:** Version bump only for package @theforeman/vendor-core
+
+
+
+
+
 ## [4.0.6](https://github.com/theforeman/foreman-js/compare/v4.0.5...v4.0.6) (2020-01-20)
 
 **Note:** Version bump only for package @theforeman/vendor-core
