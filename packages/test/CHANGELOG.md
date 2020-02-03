@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.8](https://github.com/theforeman/foreman-js/compare/v4.0.7...v4.0.8) (2020-02-03)
+
+
+### Bug Fixes
+
+* **test:** run test when installing from source ([6a2316e](https://github.com/theforeman/foreman-js/commit/6a2316e)), closes [#GH-119](https://github.com/theforeman/foreman-js/issues/GH-119)
+
+
+
+
+
 ## [4.0.7](https://github.com/theforeman/foreman-js/compare/v4.0.6...v4.0.7) (2020-01-27)
 
 **Note:** Version bump only for package @theforeman/test
