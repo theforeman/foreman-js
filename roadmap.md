@@ -73,7 +73,6 @@ See [`contributing.md`](./contributing.md)
 - Drop `datatables.net`
 - Drop `jquery`
 - Drop `select2`
-- Drop `redux-form`
 
 ### Might do
 
