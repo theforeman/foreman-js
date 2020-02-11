@@ -30,8 +30,6 @@ module.exports = [
   'patternfly-react-extensions',
   'react-redux',
   'redux',
-  'redux-form',
-  'redux-form-validators',
   'redux-logger',
   'redux-thunk',
   'reselect',
