@@ -1,4 +1,5 @@
 /* eslint-disable class-methods-use-this */
+import path from 'path';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import Manifest from './Manifest';
 import createWebpackExternals from './createWebpackExternals';
@@ -17,7 +18,12 @@ export default class WebpackForemanVendorPlugin {
    * copy vendor-dist files to the consumer output path
    */
   applyCopyFiles(compiler) {
-    new CopyWebpackPlugin(this.manifest.files).apply(compiler);
+    const fileToCopy = this.manifest.files.map(file => ({
+      from: path.resolve(__dirname, '../dist', file),
+      to: file,
+    }));
+
+    new CopyWebpackPlugin(fileToCopy).apply(compiler);
   }
 
   /**
@@ -52,7 +58,7 @@ export default class WebpackForemanVendorPlugin {
     manifestPlugin.opts.transform = (data, opts) => {
       data.assetsByChunkName = Object.assign(
         {},
-        this.manifest.data,
+        this.manifest.data.assetsByChunkName,
         data.assetsByChunkName
       );
 

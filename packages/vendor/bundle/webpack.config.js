@@ -9,6 +9,11 @@ const createVendorEntry = require('./createVendorEntry');
 const WebpackExportForemanVendorPlugin = require('./WebpackExportForemanVendorPlugin');
 
 const projectRoot = path.resolve(__dirname, '../');
+const nodeModulesPath = path.resolve(projectRoot, './node_modules/');
+const vendorCoreNodeModulesPath = path.resolve(
+  projectRoot,
+  './node_modules/@theforeman/vendor-core/node_modules/'
+);
 
 const [, webpackMode = 'production'] = process.argv
   .find(arg => arg.startsWith('--mode='))
@@ -26,6 +31,7 @@ const config = {
   output: {
     path: path.resolve(projectRoot, 'dist'),
     filename: `${filename}.js`,
+    publicPath: '/webpack/',
   },
 
   optimization: {
@@ -37,13 +43,7 @@ const config = {
   },
 
   resolve: {
-    modules: [
-      path.resolve(projectRoot, './node_modules/'),
-      path.resolve(
-        projectRoot,
-        './node_modules/@theforeman/vendor-core/node_modules/'
-      ),
-    ],
+    modules: [nodeModulesPath, vendorCoreNodeModulesPath],
   },
 
   module: {
@@ -53,8 +53,32 @@ const config = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
-        test: /(\.png|\.gif)$/,
-        use: 'url-loader',
+        test: /\.(svg|ttf|eot|woff|woff2)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+            fallback: 'file-loader',
+            outputPath: 'fonts',
+            esModule: false,
+            name: `${filename}.[ext]`,
+          },
+        },
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              fallback: 'file-loader',
+              outputPath: 'images',
+              esModule: false,
+              name: `${filename}.[ext]`,
+            },
+          },
+        ],
       },
     ],
   },
@@ -63,8 +87,11 @@ const config = {
     new StatsWriterPlugin({
       filename: `manifest.${webpackMode}.json`,
       fields: null,
-      transform(data, opts) {
-        return JSON.stringify(data.assetsByChunkName);
+      transform({ assetsByChunkName, assets }) {
+        return JSON.stringify({
+          assetsByChunkName,
+          assets: assets.map(asset => asset.name),
+        });
       },
     }),
     new MiniCssExtractPlugin({
