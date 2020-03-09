@@ -10,6 +10,11 @@
 @import '~select2/select2.css';
 @import "~dsmorse-gridster/dist/jquery.gridster";
 @import "~datatables.net-bs/css/dataTables.bootstrap.css";
+
+// patternfly v3
 @import '~patternfly-react/dist/sass/_patternfly-react.scss';
 @import '~patternfly-react-extensions/dist/sass/_select.scss';
 @import '~patternfly/dist/sass/patternfly/_loading-state';
+
+// patternfly v4
+@import '~@patternfly/patternfly/patternfly';

@@ -28,6 +28,7 @@ module.exports = [
   'react-loading-skeleton',
   'patternfly-react',
   'patternfly-react-extensions',
+  '@patternfly/react-core',
   'react-redux',
   'redux',
   'redux-logger',

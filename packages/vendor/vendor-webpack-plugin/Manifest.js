@@ -18,11 +18,12 @@ export default class Manifest {
   }
 
   get files() {
-    const fileNames = [].concat(
-      ...Object.keys(this.data).map(key => this.data[key])
+    return [].concat(
+      ...this.data.assets,
+      ...Object.keys(this.data.assetsByChunkName).map(
+        key => this.data.assetsByChunkName[key]
+      )
     );
-
-    return fileNames.map(file => path.resolve(__dirname, '../dist', file));
   }
 
   constructor(mode = 'production') {
