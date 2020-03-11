@@ -40,6 +40,7 @@ module.exports = [
   'seamless-immutable',
   'isomorphic-fetch',
   'connected-react-router',
+  'react-helmet',
 
   /**
    * Brace related
