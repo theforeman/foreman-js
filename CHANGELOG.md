@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/theforeman/foreman-js/compare/v4.0.9...v4.1.0) (2020-03-12)
+
+
+### Features
+
+* **vendor-core:** adding React Helmet ([31bc034](https://github.com/theforeman/foreman-js/commit/31bc034))
+
+
+
+
+
 ## [4.0.9](https://github.com/theforeman/foreman-js/compare/v4.0.8...v4.0.9) (2020-03-04)
 
 **Note:** Version bump only for package foreman-js
