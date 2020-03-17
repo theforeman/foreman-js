@@ -28,6 +28,7 @@
     "@novnc/novnc": "^1.0.0",
     "@patternfly/patternfly": "^2.68.3",
     "@patternfly/react-core": "^3.140.11",
+    "@patternfly/react-table": "^2.28.10",
     "@spice-project/spice-html5": "^0.2.1",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "axios": "^0.19.0",
