@@ -29,6 +29,7 @@ module.exports = [
   'patternfly-react',
   'patternfly-react-extensions',
   '@patternfly/react-core',
+  '@patternfly/react-table',
   'react-redux',
   'redux',
   'redux-logger',
