@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/theforeman/foreman-js/compare/v4.2.1...v4.3.0) (2020-03-23)
+
+
+### Features
+
+* **vendor-core:** adds patternfly react table ([be33b57](https://github.com/theforeman/foreman-js/commit/be33b57))
+
+
+
+
+
 ## [4.2.1](https://github.com/theforeman/foreman-js/compare/v4.2.0...v4.2.1) (2020-03-15)
 
 
