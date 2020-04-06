@@ -45,7 +45,7 @@ jest.mock("./assets/javascripts/foreman_tools", () => ({
 ## Usage
 
 This package gives an opiniated approach for test configurations and tools,
-including jest, enzyme and a test utils library. 
+including jest, enzyme, react-testing-library, and a test utils library. 
 
 These functions can be imported directly from `@theforeman/test`:
 `mount` and `shallow`- which are from `enzyme`
@@ -58,8 +58,13 @@ These functions can be imported directly from `@theforeman/test`:
 and also adding `coveralls` for coverage.
 
 [jest docs](https://jestjs.io/docs/en/getting-started)
+
 [enzyme docs](https://airbnb.io/enzyme/)
+
+[react-testing-library docs](https://testing-library.com/docs/react-testing-library/intro)
+
 [react-redux-test-utils](https://github.com/sharvit/react-redux-test-utils#documentations)
+
 
 ### Unit testing
 You can use `testComponentSnapshotsWithFixtures` for a unit testing without redux.
@@ -190,6 +195,13 @@ describe('UserProfile - Integration Test', () => {
 });
 ```
 
+### Functional Testing
+
+The package `react-testing-library` is included and is a way to test functionality in a React application from a user perspective rather than testing the implementation. To use this library, please see the [official documentation](https://testing-library.com/docs/react-testing-library/intro). It can be imported directly from `@testing-library/react`. 
+
+This approach is flexible and can be used to test smaller components as well as full pages made up of many components. For functional testing, it is recommended to test [components connected to redux](https://testing-library.com/docs/example-react-redux) and mock the http calls, allowing the component to function as it does in the production application. These tests also tend to be less brittle than other approaches and can be good at catching regressions when refactoring.
+
+For an example of how this is library is used within the Foreman ecosystem, please see [Katello's react-testing-library-wrapper](https://github.com/Katello/katello/blob/7b726086422f9a5c9bde1f4eb224a521b3e1d310/webpack/test-utils/react-testing-lib-wrapper.js)
 
 ## Contributing
 
