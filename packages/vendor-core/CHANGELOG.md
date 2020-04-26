@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](https://github.com/theforeman/foreman-js/compare/v4.4.0...v4.5.0) (2020-04-26)
+
+
+### Features
+
+* **vendor-core:** adds @patternfly/react-icons ([bfa5d8c](https://github.com/theforeman/foreman-js/commit/bfa5d8c))
+
+
+
+
+
 # [4.4.0](https://github.com/theforeman/foreman-js/compare/v4.3.0...v4.4.0) (2020-04-26)
 
 

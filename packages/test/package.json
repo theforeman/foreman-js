@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/test",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Test utils for theforeman",
   "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -24,8 +24,8 @@
     "tfm-publish-coverage": "./bin/tfm-publish-coverage.js"
   },
   "dependencies": {
-    "@theforeman/builder": "^4.4.0",
-    "@theforeman/vendor-dev": "^4.4.0",
+    "@theforeman/builder": "^4.5.0",
+    "@theforeman/vendor-dev": "^4.5.0",
     "axios-mock-adapter": "^1.1.7",
     "babel-jest": "^24.9.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
