@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/theforeman/foreman-js/compare/v4.3.0...v4.4.0) (2020-04-26)
+
+
+### Features
+
+* **vendor-core:** change in order to have kubevirt console ([0ac5f57](https://github.com/theforeman/foreman-js/commit/0ac5f57)), closes [#27320](https://github.com/theforeman/foreman-js/issues/27320)
+
+
+
+
+
 # [4.3.0](https://github.com/theforeman/foreman-js/compare/v4.2.1...v4.3.0) (2020-03-23)
 
 
