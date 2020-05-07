@@ -31,6 +31,7 @@ module.exports = [
   '@patternfly/react-core',
   '@patternfly/react-icons',
   '@patternfly/react-table',
+  '@patternfly/react-tokens',
   'react-redux',
   'redux',
   'redux-logger',
