@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.6.0](https://github.com/theforeman/foreman-js/compare/v4.5.0...v4.6.0) (2020-05-19)
+
+
+### Features
+
+* **vendor-core:** adding patternfly 4 react-tokens ([58f2101](https://github.com/theforeman/foreman-js/commit/58f2101)), closes [#29298](https://github.com/theforeman/foreman-js/issues/29298)
+
+
+
+
+
 # [4.5.0](https://github.com/theforeman/foreman-js/compare/v4.4.0...v4.5.0) (2020-04-26)
 
 
