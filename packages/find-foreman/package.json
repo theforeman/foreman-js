@@ -1,0 +1,27 @@
+{
+  "name": "@theforeman/find-foreman",
+  "version": "1.0.0",
+  "description": "For Foreman plugins to find the foreman directory relative to the plugin and return a full path. This can be useful in testing environments where you want to point testing tools at installed Foreman packages rather than duplicate them in the plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theforeman/foreman-js.git",
+    "directory": "packages/find-foreman"
+  },
+  "keywords": [
+    "Foreman"
+  ],
+  "author": "John Mitsch (jomitsch@redhat.com)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/theforeman/foreman-js/issues"
+  },
+  "homepage": "https://github.com/theforeman/foreman-js#readme"
+}

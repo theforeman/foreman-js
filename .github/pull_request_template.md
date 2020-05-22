@@ -15,6 +15,7 @@
 * [ ] @theforeman/vendor
 * [ ] @theforeman/vendor-dev
 * [ ] @theforeman/vendor-core
+* [ ] @theforeman/find-foreman
 
 ## PR Type
 
