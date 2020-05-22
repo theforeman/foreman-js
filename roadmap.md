@@ -110,3 +110,14 @@ See [`contributing.md`](./contributing.md)
 ### Might do
 
 ### Won‘t do
+
+---
+
+## `@theforeman/find-foreman`
+
+### Want to do
+- Use find-foreman in eslint plugin to automatically setup eslint for Foreman plugins.
+
+### Might do
+
+### Won‘t do
