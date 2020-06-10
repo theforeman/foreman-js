@@ -26,6 +26,7 @@ module.exports = [
   'react-router-dom',
   'react-router-bootstrap',
   'react-loading-skeleton',
+  'react-markdown',
   'patternfly-react',
   'patternfly-react-extensions',
   '@patternfly/react-core',
