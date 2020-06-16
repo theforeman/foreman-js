@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.7.1](https://github.com/theforeman/foreman-js/compare/v4.7.0...v4.7.1) (2020-06-16)
+
+
+### Bug Fixes
+
+* **builder:** pin @babel/preset-env to 7.9.5 ([1e2fe65](https://github.com/theforeman/foreman-js/commit/1e2fe65)), closes [#29605](https://github.com/theforeman/foreman-js/issues/29605)
+
+
+
+
+
 # [4.7.0](https://github.com/theforeman/foreman-js/compare/v4.6.0...v4.7.0) (2020-06-10)
 
 **Note:** Version bump only for package @theforeman/builder
