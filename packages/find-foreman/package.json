@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/find-foreman",
-  "version": "4.8.0",
+  "version": "4.9.0",
   "description": "For Foreman plugins to find the foreman directory relative to the plugin and return a full path. This can be useful in testing environments where you want to point testing tools at installed Foreman packages rather than duplicate them in the plugin.",
   "main": "index.js",
   "scripts": {

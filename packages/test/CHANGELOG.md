@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.9.0](https://github.com/theforeman/foreman-js/compare/v4.8.0...v4.9.0) (2020-06-30)
+
+
+### Features
+
+* **test:** added react-testing-library to test package ([f151ddd](https://github.com/theforeman/foreman-js/commit/f151ddd))
+
+
+
+
+
 # [4.8.0](https://github.com/theforeman/foreman-js/compare/v4.7.1...v4.8.0) (2020-06-16)
 
 **Note:** Version bump only for package @theforeman/test
