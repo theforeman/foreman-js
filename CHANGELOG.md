@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.10.0](https://github.com/theforeman/foreman-js/compare/v4.9.0...v4.10.0) (2020-06-30)
+
+
+### Features
+
+* **vendor-core:** bumps all pf4 packages to version 4 ([9aaee1c](https://github.com/theforeman/foreman-js/commit/9aaee1c))
+
+
+
+
+
 # [4.9.0](https://github.com/theforeman/foreman-js/compare/v4.8.0...v4.9.0) (2020-06-30)
 
 
