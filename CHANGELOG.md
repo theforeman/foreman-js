@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.10.2](https://github.com/theforeman/foreman-js/compare/v4.10.1...v4.10.2) (2020-07-01)
+
+
+### Bug Fixes
+
+* **test:** fix the module resolving ([94f975f](https://github.com/theforeman/foreman-js/commit/94f975f))
+
+
+
+
+
 ## [4.10.1](https://github.com/theforeman/foreman-js/compare/v4.10.0...v4.10.1) (2020-07-01)
 
 
