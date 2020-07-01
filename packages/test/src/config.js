@@ -50,13 +50,8 @@ module.exports = {
       { cwd: path.resolve(__dirname), filename: 'babel.config.js' },
     ],
   },
-  moduleDirectories: [
-    `${rootDir}/node_modules`,
-    `${cwd}/node_modules/@theforeman/vendor-core/node_modules`,
-    `${cwd}/node_modules`,
-    `${cwd}/node_modules/react-virtualized/node_modules`,
-    `${cwd}/node_modules/htmlparser2/node_modules`,
-  ],
+  resolver: require.resolve('./resolveNodeModule'),
+  moduleDirectories: [`${cwd}/node_modules`],
   setupFiles: [
     require.resolve('raf/polyfill'),
     require.resolve('jest-prop-type-error'),
