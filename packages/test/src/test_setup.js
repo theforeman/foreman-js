@@ -4,7 +4,6 @@ import 'regenerator-runtime/runtime';
 const { configure } = require('enzyme');
 const Adapter = require('enzyme-adapter-react-16');
 
-jest.unmock('@theforeman/test');
 configure({ adapter: new Adapter() });
 
 // https://github.com/facebook/jest/issues/6121
