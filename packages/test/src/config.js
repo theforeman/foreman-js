@@ -13,7 +13,7 @@ module.exports = {
   rootDir: cwd,
   roots: [`${cwd}/webpack/`],
   verbose: true,
-  automock: true,
+  automock: false,
   testMatch: ['**/*.test.js'],
   testURL: 'http://localhost/',
   collectCoverage: true,
@@ -26,7 +26,6 @@ module.exports = {
   snapshotSerializers: [require.resolve('enzyme-to-json/serializer')],
   coverageReporters: ['lcov'],
   coverageDirectory: `${cwd}/coverage`,
-  unmockedModulePathPatterns: ['react', 'node_modules/'],
   moduleNameMapper: {
     '^.+\\.(png|gif|css|scss)$': 'identity-obj-proxy',
     '^dnd-core$': 'dnd-core/dist/cjs',
@@ -51,7 +50,10 @@ module.exports = {
     ],
   },
   resolver: require.resolve('./resolveNodeModule'),
-  moduleDirectories: [`${cwd}/node_modules`],
+  moduleDirectories: [
+    `${cwd}/node_modules/@theforeman/vendor-core/node_modules`,
+    `${cwd}/node_modules`,
+  ],
   setupFiles: [
     require.resolve('raf/polyfill'),
     require.resolve('jest-prop-type-error'),
