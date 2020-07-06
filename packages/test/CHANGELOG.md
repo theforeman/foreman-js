@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.11.0](https://github.com/theforeman/foreman-js/compare/v4.10.2...v4.11.0) (2020-07-06)
+
+
+### Bug Fixes
+
+* **test:** resolve custom-vendor-modules ([c20ebe6](https://github.com/theforeman/foreman-js/commit/c20ebe6))
+
+
+
+
+
 ## [4.10.2](https://github.com/theforeman/foreman-js/compare/v4.10.1...v4.10.2) (2020-07-01)
 
 
