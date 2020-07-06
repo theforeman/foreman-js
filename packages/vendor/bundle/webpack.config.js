@@ -9,11 +9,6 @@ const createVendorEntry = require('./createVendorEntry');
 const WebpackExportForemanVendorPlugin = require('./WebpackExportForemanVendorPlugin');
 
 const projectRoot = path.resolve(__dirname, '../');
-const nodeModulesPath = path.resolve(projectRoot, './node_modules/');
-const vendorCoreNodeModulesPath = path.resolve(
-  projectRoot,
-  './node_modules/@theforeman/vendor-core/node_modules/'
-);
 
 const [, webpackMode = 'production'] = process.argv
   .find(arg => arg.startsWith('--mode='))
@@ -43,7 +38,7 @@ const config = {
   },
 
   resolve: {
-    modules: [nodeModulesPath, vendorCoreNodeModulesPath],
+    modules: ['node_modules'],
   },
 
   module: {
