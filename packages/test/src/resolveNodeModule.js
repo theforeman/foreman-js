@@ -29,14 +29,32 @@ const getModuleToResolve = ({ sourcePath, currentFileDirectory }) => {
  * to resolve every require statement
  */
 const resolveNodeModule = (sourcePath, currentFile) => {
-  const { basedir: currentFileDirectory } = currentFile;
+  const { basedir, rootDir } = currentFile;
+
+  const currentFileDirectory = rootDir
+    ? basedir.replace(
+        /.*\/foreman-js\/packages/,
+        `${rootDir}/node_modules/@theforeman`
+      )
+    : basedir;
 
   const moduleToResolve = getModuleToResolve({
     sourcePath,
     currentFileDirectory,
   });
 
-  return currentFile.defaultResolver(moduleToResolve, currentFile);
+  const results = process.version.startsWith('v10')
+    ? currentFile.defaultResolver(moduleToResolve, currentFile)
+    : require.resolve(moduleToResolve, {
+        paths: [currentFileDirectory],
+      });
+
+  return rootDir
+    ? results.replace(
+        /.*\/foreman-js\/packages/,
+        `${rootDir}/node_modules/@theforeman`
+      )
+    : results;
 };
 
 module.exports = resolveNodeModule;
