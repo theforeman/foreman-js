@@ -12,14 +12,24 @@
   }
   ```
  */
+const {
+  foremanLocation,
+  foremanRelativePath,
+} = require('@theforeman/find-foreman');
 const createVendorModulesAliases = require('./lib/createVendorModulesAliases');
+
+const foremanFull = foremanLocation();
+const foremanVendorRelative = './node_modules/@theforeman/vendor-core/';
+const foremanVendorDir = foremanRelativePath(foremanVendorRelative);
+const foremanTestRelative = './node_modules/@theforeman/test/';
+const foremanTestDir = foremanRelativePath(foremanTestRelative);
 
 module.exports = {
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        packageDir: ['./', './node_modules/@theforeman/vendor-core/'],
+        packageDir: ['./', foremanFull, foremanVendorDir, foremanTestDir],
       },
     ],
   },
