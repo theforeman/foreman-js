@@ -1,7 +1,6 @@
 const path = require('path');
 
 const cwd = process.cwd();
-const rootDir = path.resolve(__dirname, '../');
 const fs = require('fs');
 
 const localTestHelper = `${cwd}/webpack/test_setup.js`;
@@ -50,14 +49,10 @@ module.exports = {
     ],
   },
   resolver: require.resolve('./resolveNodeModule'),
-  moduleDirectories: [
-    `${cwd}/node_modules/@theforeman/vendor-core/node_modules`,
-    `${cwd}/node_modules`,
-  ],
   setupFiles: [
     require.resolve('raf/polyfill'),
     require.resolve('jest-prop-type-error'),
-    `${rootDir}/src/test_setup.js`,
+    require.resolve('./test_setup.js'),
     ...localTestHelpers,
   ],
 };
