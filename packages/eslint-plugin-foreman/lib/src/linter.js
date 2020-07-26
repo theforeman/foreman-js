@@ -4,7 +4,6 @@ const chalk = require('chalk');
 const coreConfig = require('./core');
 const pluginConfig = require('./plugins');
 const { CLIEngine } = require('eslint');
-const path = require('path');
 
 const mergedConfig = {
   ...coreConfig,
@@ -19,7 +18,7 @@ module.exports = class ForemanLinter {
       fix: shouldFix,
       useEslintrc: false,
       baseConfig: plugin ? { ...mergedConfig } : coreConfig,
-      resolvePluginsRelativeTo: path.resolve(__dirname),
+      resolvePluginsRelativeTo: this.cwd,
     });
   }
 

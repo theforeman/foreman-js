@@ -87,3 +87,6 @@ jobs:
       - name: Run ${{ matrix.repo }} tests
         run: npm test
         working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
+      - name: Run ${{ matrix.repo }} lint
+        run: npm run lint
+        working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
