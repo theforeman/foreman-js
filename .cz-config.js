@@ -56,7 +56,7 @@ module.exports = {
   messages,
 
   subjectLimit: 65,
-  allowCustomScopes: false,
+  allowCustomScopes: true,
   allowTicketNumber: false,
   allowBreakingChanges: ['feat', 'fix'],
   breakingPrefix: 'BREAKING CHANGE:',
