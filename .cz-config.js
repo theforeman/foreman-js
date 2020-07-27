@@ -41,7 +41,20 @@ confirmCommit:
 `Are you sure you want to proceed with the commit above?`,
 };
 
-const scopes = ['root', 'builder', 'eslint-plugin-foreman', 'stories', 'test', 'vendor', 'vendor-dev', 'vendor-core', 'find-foreman'];
+const scopes = [
+  'root',
+  'builder',
+  'eslint-plugin-foreman',
+  'stories',
+  'test',
+  'vendor',
+  'vendor-dev',
+  'vendor-core',
+  'find-foreman',
+  // deps and deps-dev are only allowed for dependbot PRs
+  'deps',
+  'deps-dev',
+];
 
 module.exports = {
   types: types.map(type => ({
@@ -56,7 +69,7 @@ module.exports = {
   messages,
 
   subjectLimit: 65,
-  allowCustomScopes: true,
+  allowCustomScopes: false,
   allowTicketNumber: false,
   allowBreakingChanges: ['feat', 'fix'],
   breakingPrefix: 'BREAKING CHANGE:',
