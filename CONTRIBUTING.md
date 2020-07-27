@@ -24,6 +24,20 @@ Install dependencies:
 npm install
 ```
 
+Build all `@theforeman` packages:
+
+```sh
+npm run build
+```
+
+Link all `@theforeman` packages to your project (`./node_modules/@theforeman`):
+
+```sh
+npm run link -- --location ../foreman
+# also works for plugins
+npm run link -- --location ../foreman-tasks
+```
+
 Run test suits to validate the project is working:
 Notice it will run the test command for each sub-package.
 

@@ -15,18 +15,21 @@
     "lint": "lerna run --stream lint",
     "lint:commit": "commitlint -e",
     "lint:commit-travis": "commitlint-travis",
+    "link": "./scripts/link-foreman-js.js",
     "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/travis-cli": "^8.3.5",
+    "commander": "^6.0.0",
     "commitlint-config-cz": "^0.12.1",
     "cz-customizable": "^6.2.1",
     "eslint": "^6.8.0",
     "eslint-plugin-patternfly-react": "^0.3.0",
     "lerna": "^3.22.1",
     "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
     "surge": "^0.21.6"
   }
 }

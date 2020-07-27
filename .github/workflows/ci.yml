@@ -67,8 +67,8 @@ jobs:
         run: npm install
         working-directory: ${{ github.workspace }}/projects/foreman
       - name: Link foreman to foreman-js
-        run: npm run foreman-js:link
-        working-directory: ${{ github.workspace }}/projects/foreman
+        run: npm run link -- --location '${{ github.workspace }}/projects/foreman'
+        working-directory: ${{ github.workspace }}/projects/foreman-js
       - name: Checkout ${{ matrix.repo }}
         if: ${{ matrix.repo != 'foreman' }}
         uses: actions/checkout@v2
@@ -82,8 +82,8 @@ jobs:
         working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
       - name: Link ${{ matrix.repo }} to foreman-js
         if: ${{ matrix.repo == 'foreman-tasks' }}
-        run: npm run foreman-js:link
-        working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
+        run: npm run link -- --location '${{ github.workspace }}/projects/${{ matrix.repo }}'
+        working-directory: ${{ github.workspace }}/projects/foreman-js
       - name: Run ${{ matrix.repo }} tests
         run: npm test
         working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
