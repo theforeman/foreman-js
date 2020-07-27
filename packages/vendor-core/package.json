@@ -83,7 +83,7 @@
     "regenerator-runtime": "^0.13.3",
     "reselect": "^3.0.1",
     "seamless-immutable": "^7.1.2",
-    "select2": "~3.5.2-browserify",
+    "select2": "~4.0.13",
     "unidiff": "^1.0.0",
     "urijs": "^1.18.10",
     "uuid": "^3.3.2",
