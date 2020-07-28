@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.12.0](https://github.com/theforeman/foreman-js/compare/v4.11.1...v4.12.0) (2020-07-28)
+
+
+### Features
+
+* **vendor-core:** adds @patternfly/react-styles ([c041d4c](https://github.com/theforeman/foreman-js/commit/c041d4c))
+
+
+
+
+
 ## [4.11.1](https://github.com/theforeman/foreman-js/compare/v4.11.0...v4.11.1) (2020-07-08)
 
 **Note:** Version bump only for package @theforeman/vendor-core

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.12.0](https://github.com/theforeman/foreman-js/compare/v4.11.1...v4.12.0) (2020-07-28)
+
+
+### Bug Fixes
+
+* **root:** add GH token to the build action ([c799927](https://github.com/theforeman/foreman-js/commit/c799927)), closes [#GH-143](https://github.com/theforeman/foreman-js/issues/GH-143)
+
+
+### Features
+
+* **root:** add GH actions to test against foreman & plugins ([197b258](https://github.com/theforeman/foreman-js/commit/197b258))
+* **vendor-core:** adds @patternfly/react-styles ([c041d4c](https://github.com/theforeman/foreman-js/commit/c041d4c))
+
+
+
+
+
 ## [4.11.1](https://github.com/theforeman/foreman-js/compare/v4.11.0...v4.11.1) (2020-07-08)
 
 
