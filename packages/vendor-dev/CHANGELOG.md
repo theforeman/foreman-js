@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.13.0](https://github.com/theforeman/foreman-js/compare/v4.12.0...v4.13.0) (2020-08-02)
+
+
+### Features
+
+* **vendor-dev:** use find-foreman for eslint extraneous dependencies ([ee4fe96](https://github.com/theforeman/foreman-js/commit/ee4fe96072f101f0a18cbc2a2214a5fe2781ef0f)), closes [/github.com/Katello/katello/blob/f9a239d4e42ab95dcf2561f372df00d0cb47c42b/webpack/.eslintrc.js#L36](https://github.com//github.com/Katello/katello/blob/f9a239d4e42ab95dcf2561f372df00d0cb47c42b/webpack/.eslintrc.js/issues/L36)
+
+
+
+
+
 # [4.12.0](https://github.com/theforeman/foreman-js/compare/v4.11.1...v4.12.0) (2020-07-28)
 
 **Note:** Version bump only for package @theforeman/vendor-dev
