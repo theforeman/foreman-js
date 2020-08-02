@@ -9,6 +9,6 @@ if [ $CI ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ $TRAVIS_BRANCH == 'mast
   echo "pre-commit: CI detected, updating lock files before commit"
 
   npm run clean -- --yes
-  npm run bootstrap -- --no-ci --package-lock-only --ignore-scripts
+  npm run bootstrap -- --no-ci --ignore-scripts -- --package-lock-only --no-audit
   git add packages/*/package-lock.json
 fi
