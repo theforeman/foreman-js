@@ -14,7 +14,7 @@ module.exports = ({ config }) => {
     : [tfmStoriesPath, cwdWebpack];
 
   // find the javascript rule
-  const jsRule = config.module.rules.find(rule =>
+  const jsRule = config.module.rules.find((rule) =>
     'some-file.js'.match(rule.test)
   );
   jsRule.exclude = /node_modules/;

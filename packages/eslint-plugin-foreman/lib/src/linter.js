@@ -46,7 +46,7 @@ module.exports = class ForemanLinter {
 
   execute() {
     const { files, cli, cwd } = this;
-    const filesList = files.map(file => `${cwd}/${file}`);
+    const filesList = files.map((file) => `${cwd}/${file}`);
 
     const report = cli.executeOnFiles(filesList);
     this.formatting(report);

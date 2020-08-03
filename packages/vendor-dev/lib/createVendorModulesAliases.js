@@ -1,7 +1,7 @@
 const { modules } = require('@theforeman/vendor-core');
 
 const createVendorModulesAliases = () =>
-  modules.map(module => ({
+  modules.map((module) => ({
     original: module.name,
     replacement: module.path,
   }));

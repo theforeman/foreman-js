@@ -18,7 +18,7 @@ export default class WebpackForemanVendorPlugin {
    * copy vendor-dist files to the consumer output path
    */
   applyCopyFiles(compiler) {
-    const fileToCopy = this.manifest.files.map(file => ({
+    const fileToCopy = this.manifest.files.map((file) => ({
       from: path.resolve(__dirname, '../dist', file),
       to: file,
     }));
@@ -48,7 +48,7 @@ export default class WebpackForemanVendorPlugin {
     const { plugins } = compiler.options;
 
     const manifestPlugin = plugins.find(
-      plugin => plugin.constructor.name === 'StatsWriterPlugin'
+      (plugin) => plugin.constructor.name === 'StatsWriterPlugin'
     );
 
     if (!manifestPlugin) return;

@@ -1,7 +1,9 @@
 const { default: InjectPlugin } = require('webpack-inject-plugin');
 
 function customLoader({ modules }) {
-  const results = modules.map(module => module.createModuleExport()).join(' ');
+  const results = modules
+    .map((module) => module.createModuleExport())
+    .join(' ');
 
   return () => results;
 }

@@ -21,7 +21,7 @@ export default class Manifest {
     return [].concat(
       ...this.data.assets,
       ...Object.keys(this.data.assetsByChunkName).map(
-        key => this.data.assetsByChunkName[key]
+        (key) => this.data.assetsByChunkName[key]
       )
     );
   }

@@ -17,7 +17,7 @@ const foremanLocation = (throwError = true) => {
     'in either a parent, sibling, or child directory relative to the plugin.';
   const currentDir = process.cwd();
 
-  const foremanRelativePath = relativePaths.find(relativePath => {
+  const foremanRelativePath = relativePaths.find((relativePath) => {
     const result = path.join(currentDir, relativePath);
     return fs.existsSync(result);
   });
@@ -34,7 +34,7 @@ const foremanLocation = (throwError = true) => {
 };
 
 // Get a subdirectory within Foreman
-const foremanRelativePath = innerPath => {
+const foremanRelativePath = (innerPath) => {
   const foremanPath = foremanLocation();
   const notFound = `Could not find ${innerPath} in ${foremanPath}`;
   const result = path.join(foremanPath, innerPath);

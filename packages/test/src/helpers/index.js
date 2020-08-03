@@ -6,10 +6,10 @@ module.exports = {
     return path.resolve(require.resolve('jest'), '../../../.bin/', 'jest');
   },
 
-  remainingArgs: cli => {
+  remainingArgs: (cli) => {
     const execArgs = ['bin/node', '.bin/tfm-test'];
 
-    const isExecArg = item =>
+    const isExecArg = (item) =>
       execArgs.reduce((memo, current) => memo || item.endsWith(current), false);
 
     return (
@@ -62,13 +62,13 @@ module.exports = {
 
     const process = childProcess.fork(scriptPath, args);
 
-    process.on('error', err => {
+    process.on('error', (err) => {
       if (invoked) return;
       invoked = true;
       callback(err);
     });
 
-    process.on('exit', code => {
+    process.on('exit', (code) => {
       if (invoked) return;
       invoked = true;
       const err = code === 0 ? null : new Error(`exit code ${code}`);
