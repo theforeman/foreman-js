@@ -2,7 +2,7 @@ const path = require('path');
 const { WebpackForemanVendorPlugin, Manifest } = require('@theforeman/vendor');
 
 const getFilenamesWithExt = (files, ext) =>
-  files.filter(f => f.endsWith(ext)).map(f => path.basename(f));
+  files.filter((f) => f.endsWith(ext)).map((f) => path.basename(f));
 
 module.exports = ({ config, mode }) => {
   const vendorManifest = new Manifest(mode);
@@ -11,7 +11,7 @@ module.exports = ({ config, mode }) => {
   const vendorCssFiles = getFilenamesWithExt(vendorManifest.files, '.css');
 
   const htmlWebpackPlugin = config.plugins.find(
-    p => p.constructor.name === 'HtmlWebpackPlugin'
+    (p) => p.constructor.name === 'HtmlWebpackPlugin'
   );
 
   const { templateParameters } = htmlWebpackPlugin.options;

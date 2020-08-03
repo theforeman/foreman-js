@@ -27,7 +27,7 @@ const userProjectLocation = path.resolve(foremanJsLocation, location);
 const userNodeModules = path.resolve(userProjectLocation, './node_modules');
 const userForemanJsDestination = path.resolve(userNodeModules, './@theforeman');
 
-const isSymlink = p => fs.lstatSync(p).isSymbolicLink();
+const isSymlink = (p) => fs.lstatSync(p).isSymbolicLink();
 
 const createSymlink = () => {
   console.log(

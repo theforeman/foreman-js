@@ -11,7 +11,7 @@ const WebpackExportForemanVendorPlugin = require('./WebpackExportForemanVendorPl
 const projectRoot = path.resolve(__dirname, '../');
 
 const [, webpackMode = 'production'] = process.argv
-  .find(arg => arg.startsWith('--mode='))
+  .find((arg) => arg.startsWith('--mode='))
   .split('=');
 
 const filename = `[name].bundle-v${version}-${webpackMode}-[hash]`;
@@ -85,7 +85,7 @@ const config = {
       transform({ assetsByChunkName, assets }) {
         return JSON.stringify({
           assetsByChunkName,
-          assets: assets.map(asset => asset.name),
+          assets: assets.map((asset) => asset.name),
         });
       },
     }),

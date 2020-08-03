@@ -1,6 +1,6 @@
 const { modules } = require('@theforeman/vendor-core');
 
-const isRequestedByVendorCore = currentFileDirectory =>
+const isRequestedByVendorCore = (currentFileDirectory) =>
   (currentFileDirectory.includes('foreman-js/packages/vendor-core') ||
     currentFileDirectory.includes('@theforeman/vendor-core')) &&
   !currentFileDirectory.includes(
@@ -8,8 +8,8 @@ const isRequestedByVendorCore = currentFileDirectory =>
   ) &&
   !currentFileDirectory.includes('@theforeman/vendor-core/node_modules');
 
-const findVendorModule = requestPath =>
-  modules.find(m => m.name === requestPath);
+const findVendorModule = (requestPath) =>
+  modules.find((m) => m.name === requestPath);
 
 const getModuleToResolve = ({ sourcePath, currentFileDirectory }) => {
   const requestPath = sourcePath === '.' ? './index' : sourcePath;

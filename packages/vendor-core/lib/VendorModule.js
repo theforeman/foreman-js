@@ -1,9 +1,9 @@
 const { snakeCase, toUpper } = require('lodash');
 
-const createWindowKeyByModuleName = name =>
+const createWindowKeyByModuleName = (name) =>
   `__FOREMAN_VENDOR__${toUpper(snakeCase(name))}__`;
 
-const createPathByModuleName = name =>
+const createPathByModuleName = (name) =>
   `@theforeman/vendor-core/node_modules/${name}`;
 
 const createModuleExport = (key, path) =>
@@ -14,8 +14,8 @@ class VendorModule {
     const hasCustomPath =
       typeof module === 'object' && typeof module.path === 'string';
     const getName = () => (typeof module === 'object' ? module.name : module);
-    const getKey = name => createWindowKeyByModuleName(name);
-    const getPath = name =>
+    const getKey = (name) => createWindowKeyByModuleName(name);
+    const getPath = (name) =>
       hasCustomPath ? module.path : createPathByModuleName(name);
 
     let window =
@@ -34,7 +34,9 @@ class VendorModule {
 
   createModuleExport() {
     // return createModuleExport(this.key, this.path);
-    return this.window.map(key => createModuleExport(key, this.path)).join(' ');
+    return this.window
+      .map((key) => createModuleExport(key, this.path))
+      .join(' ');
   }
 }
 

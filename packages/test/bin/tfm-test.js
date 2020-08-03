@@ -28,7 +28,7 @@ const overrideConfig = () => {
 const configArg = ['--config', overrideConfig()];
 const jestArgs = configArg.concat(remainingArgs(program));
 
-const errorHandling = error => {
+const errorHandling = (error) => {
   if (error) throw error;
 };
 
