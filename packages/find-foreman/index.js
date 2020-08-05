@@ -10,7 +10,7 @@ const isForemanLocation = (currentDir = process.cwd()) =>
   currentDir.endsWith('/foreman');
 
 // Get full path of Foreman from plugin
-const foremanLocation = () => {
+const foremanLocation = (throwError = true) => {
   const relativePaths = ['./foreman', '../foreman', '../../foreman'];
   const notFound =
     'Foreman directory cannot be found! This action requires Foreman to be present ' +
@@ -23,7 +23,10 @@ const foremanLocation = () => {
     if (fs.existsSync(result)) fullPath = result;
   });
 
-  if (!fullPath) throw new Error(notFound);
+  if (!fullPath && throwError) {
+    throw new Error(notFound);
+  }
+
   return fullPath;
 };
 
