@@ -1,0 +1,40 @@
+name: foreman-js ci
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+
+  test-with-foreman:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Checkout foreman-js
+        uses: actions/checkout@v2
+        with:
+          path: ./projects/foreman-js
+      - name: Checkout foreman
+        uses: actions/checkout@v2
+        with:
+          repository: theforeman/foreman
+          path: ./projects/foreman
+      - name: Install foreman-js npm dependencies
+        run: npm install
+        working-directory: ${{ github.workspace }}/projects/foreman-js
+      - name: Install foreman npm dependencies
+        run: npm install
+        working-directory: ${{ github.workspace }}/projects/foreman
+      - name: Link foreman-js to foreman
+        run: npm run link -- --location '${{ github.workspace }}/projects/foreman'
+        working-directory: ${{ github.workspace }}/projects/foreman-js
+      - name: Run ${{ matrix.repo }} tests
+        run: npm test
+        working-directory: ${{ github.workspace }}/projects/foreman
+      - name: Run ${{ matrix.repo }} lint
+        run: npm run lint
+        working-directory: ${{ github.workspace }}/projects/foreman

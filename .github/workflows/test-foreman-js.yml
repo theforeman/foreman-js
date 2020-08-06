@@ -1,0 +1,35 @@
+name: foreman-js ci
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  test-foreman-js:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    continue-on-error: true
+    steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Checkout foreman-js
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install foreman-js npm dependencies
+        run: npm install
+      - name: Build foreman-js
+        run: npm run build
+      - name: Run foreman-js commit linter
+        if: ${{ always() }}
+        uses: wagoid/commitlint-github-action@v1
+        with:
+          configFile: .commitlintrc.json
+      - name: Run foreman-js lint
+        if: ${{ always() }}
+        run: npm run lint
+      - name: Run foreman-js test
+        if: ${{ always() }}
+        run: npm run test
