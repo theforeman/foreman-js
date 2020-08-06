@@ -4,48 +4,21 @@ on:
     branches: [master]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    continue-on-error: true
-    steps:
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      - name: Checkout foreman-js
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Install foreman-js npm dependencies
-        run: npm install
-      - name: Build foreman-js
-        run: npm run build
-      - name: Run foreman-js commit linter
-        if: ${{ always() }}
-        uses: wagoid/commitlint-github-action@v1
-        with:
-          configFile: .commitlintrc.json
-      - name: Run foreman-js lint
-        if: ${{ always() }}
-        run: npm run lint
-      - name: Run foreman-js test
-        if: ${{ always() }}
-        run: npm run test
-
-  test:
+  test-with-plugins:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         include:
-          - repo: foreman
-            org: theforeman
           - repo: katello
             org: Katello
+            use-foreman: true
           - repo: foreman-tasks
             org: theforeman
+            use-foreman: true
+          - repo: foreman_rh_cloud
+            org: theforeman
+            use-foreman: true
     steps:
       - name: Use Node.js
         uses: actions/setup-node@v1
@@ -55,20 +28,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: ./projects/foreman-js
-      - name: Install foreman-js npm dependencies
-        run: npm install
-        working-directory: ${{ github.workspace }}/projects/foreman-js
       - name: Checkout foreman
+        if: ${{ matrix.use-foreman }}
         uses: actions/checkout@v2
         with:
           repository: theforeman/foreman
           path: ./projects/foreman
-      - name: Install foreman npm dependencies
-        run: npm install
-        working-directory: ${{ github.workspace }}/projects/foreman
-      - name: Link foreman to foreman-js
-        run: npm run link -- --location '${{ github.workspace }}/projects/foreman'
-        working-directory: ${{ github.workspace }}/projects/foreman-js
       - name: Checkout ${{ matrix.repo }}
         if: ${{ matrix.repo != 'foreman' }}
         uses: actions/checkout@v2
@@ -76,12 +41,22 @@ jobs:
           repository: ${{ matrix.org }}/${{ matrix.repo }}
           ref: ${{ matrix.ref }}
           path: ./projects/${{ matrix.repo }}
+      - name: Install foreman-js npm dependencies
+        run: npm install
+        working-directory: ${{ github.workspace }}/projects/foreman-js
+      - name: Install foreman npm dependencies
+        if: ${{ matrix.use-foreman }}
+        run: npm install
+        working-directory: ${{ github.workspace }}/projects/foreman
       - name: Install ${{ matrix.repo }} npm dependencies
         if: ${{ matrix.repo != 'foreman' }}
         run: npm install
         working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
-      - name: Link ${{ matrix.repo }} to foreman-js
-        if: ${{ matrix.repo == 'foreman-tasks' }}
+      - name: Link foreman-js to foreman
+        if: ${{ matrix.use-foreman }}
+        run: npm run link -- --location '${{ github.workspace }}/projects/foreman'
+        working-directory: ${{ github.workspace }}/projects/foreman-js
+      - name: Link foreman-js to ${{ matrix.repo }}
         run: npm run link -- --location '${{ github.workspace }}/projects/${{ matrix.repo }}'
         working-directory: ${{ github.workspace }}/projects/foreman-js
       - name: Run ${{ matrix.repo }} tests
