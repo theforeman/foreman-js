@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.13.2](https://github.com/theforeman/foreman-js/compare/v4.13.1...v4.13.2) (2020-08-06)
+
+
+### Bug Fixes
+
+* **eslint-plugin-foreman:** allow linting plugins without foreman ([#190](https://github.com/theforeman/foreman-js/issues/190)) ([3487135](https://github.com/theforeman/foreman-js/commit/348713592614cf11a25adbe5b79a6301e87a71fe))
+
+
+### Features
+
+* **root:** link foreman-js to your project ([d72489d](https://github.com/theforeman/foreman-js/commit/d72489d25fb147e371229eeb470263c878f9e858))
+
+
+
+
+
 ## [4.13.1](https://github.com/theforeman/foreman-js/compare/v4.13.0...v4.13.1) (2020-08-02)
 
 
