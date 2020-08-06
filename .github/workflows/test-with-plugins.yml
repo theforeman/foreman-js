@@ -15,10 +15,10 @@ jobs:
             use-foreman: true
           - repo: foreman-tasks
             org: theforeman
-            use-foreman: true
+            use-foreman: false
           - repo: foreman_rh_cloud
             org: theforeman
-            use-foreman: true
+            use-foreman: false
     steps:
       - name: Use Node.js
         uses: actions/setup-node@v1
