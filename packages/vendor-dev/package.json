@@ -21,9 +21,6 @@
     "babel.preset.js",
     "eslint.extends.js"
   ],
-  "scripts": {
-    "lint": "eslint ."
-  },
   "dependencies": {
     "@theforeman/find-foreman": "^8.3.0",
     "@theforeman/vendor-core": "^8.3.0",

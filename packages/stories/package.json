@@ -25,9 +25,6 @@
     "tfm-stories": "./bin/tfm-stories.js",
     "tfm-build-stories": "./bin/tfm-build-stories.js"
   },
-  "scripts": {
-    "lint": "eslint ."
-  },
   "dependencies": {
     "@babel/core": "^7.7.0",
     "@mdx-js/loader": "^1.6.18",

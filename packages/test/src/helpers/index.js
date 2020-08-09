@@ -9,48 +9,52 @@ module.exports = {
   remainingArgs: cli => {
     const execArgs = ['bin/node', '.bin/tfm-test'];
 
-    const isExecArg = (item, execArgs) =>
-      execArgs.reduce((memo, execArgs) => memo || item.endsWith(execArgs), false);
+    const isExecArg = item =>
+      execArgs.reduce((memo, current) => memo || item.endsWith(current), false);
 
-    return cli.rawArgs
-      // Only retain elements starting from the first --option
-      .reduce(
-        (acc, item) =>
-          acc.length || item.startsWith('-') || !isExecArg(item, execArgs) ? [...acc, item] : acc,
-        []
-      )
-      // Filter out arguments already parsed by commander.js
-      .filter((rawArg, index, rawArgs) => {
-        // --option=B, --oB
-        const matches =
-          rawArg.match(/^(--.+)=(.+)$/) || rawArg.match(/^(-[^-])(.+)$/);
-        if (matches) {
-          const [, option] = matches;
-          if (cli.optionFor(option)) {
+    return (
+      cli.rawArgs
+        // Only retain elements starting from the first --option
+        .reduce(
+          (acc, item) =>
+            acc.length || item.startsWith('-') || !isExecArg(item)
+              ? [...acc, item]
+              : acc,
+          []
+        )
+        // Filter out arguments already parsed by commander.js
+        .filter((rawArg, index, rawArgs) => {
+          // --option=B, --oB
+          const matches =
+            rawArg.match(/^(--.+)=(.+)$/) || rawArg.match(/^(-[^-])(.+)$/);
+          if (matches) {
+            const [, option] = matches;
+            if (cli.optionFor(option)) {
+              return false;
+            }
+            return true;
+          }
+
+          // If the option is consumed by commander.js, then we skip it
+          if (cli.optionFor(rawArg)) {
             return false;
           }
+
+          // If it's an argument of an option consumed by commander.js, then we
+          // skip it too
+          const previousRawArg = rawArgs[index - 1];
+          const previousOption = cli.optionFor(previousRawArg);
+          if (previousOption) {
+            // Option consumed by commander.js
+            const previousKey = previousOption.attributeName();
+            if (cli[previousKey] === rawArg) {
+              return false;
+            }
+          }
+
           return true;
-        }
-
-        // If the option is consumed by commander.js, then we skip it
-        if (cli.optionFor(rawArg)) {
-          return false;
-        }
-
-        // If it's an argument of an option consumed by commander.js, then we
-        // skip it too
-        const previousRawArg = rawArgs[index - 1];
-        const previousOption = cli.optionFor(previousRawArg);
-        if (previousOption) {
-          // Option consumed by commander.js
-          const previousKey = previousOption.attributeName();
-          if (cli[previousKey] === rawArg) {
-            return false;
-          }
-        }
-
-        return true;
-      });
+        })
+    );
   },
 
   runScript: (scriptPath, callback, args) => {
