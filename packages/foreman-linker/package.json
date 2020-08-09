@@ -1,0 +1,41 @@
+{
+  "name": "@theforeman/foreman-linker",
+  "version": "4.13.2",
+  "description": "For Foreman plugins to link the foreman to their plugin node_modules.",
+  "author": "Avi Sharvit (asharvit@redhat.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/theforeman/foreman-js#readme",
+  "bugs": {
+    "url": "https://github.com/theforeman/foreman-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theforeman/foreman-js.git",
+    "directory": "packages/foreman-linker"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/foreman-linker.js",
+  "bin": {
+    "link-foreman": "./bin/link-foreman.js",
+    "unlink-foreman": "./bin/unlink-foreman.js"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "commander": "^6.0.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "keywords": [
+    "Foreman"
+  ]
+}

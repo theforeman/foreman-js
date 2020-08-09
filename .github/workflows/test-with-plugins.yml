@@ -52,6 +52,9 @@ jobs:
         if: ${{ matrix.repo != 'foreman' }}
         run: npm install
         working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
+      - name: Build @theforeman/foreman-linker
+        run: npm run build
+        working-directory: ${{ github.workspace }}/projects/foreman-js/packages/foreman-linker
       - name: Link foreman-js to foreman
         if: ${{ matrix.use-foreman }}
         run: npm run link -- --location '${{ github.workspace }}/projects/foreman'

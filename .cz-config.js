@@ -45,6 +45,7 @@ const scopes = [
   'root',
   'builder',
   'eslint-plugin-foreman',
+  'foreman-linker',
   'stories',
   'test',
   'vendor',
