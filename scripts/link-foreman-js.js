@@ -53,3 +53,5 @@ if (isSymlink(userForemanJsDestination)) {
   console.log('Removing...');
   rimraf(userForemanJsDestination, () => createSymlink());
 }
+
+return 0;
