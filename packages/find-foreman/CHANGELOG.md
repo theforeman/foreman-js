@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.13.3](https://github.com/theforeman/foreman-js/compare/v4.13.2...v4.13.3) (2020-08-12)
+
+
+### Bug Fixes
+
+* **find-foreman:** fix path finding algorithm in foreman-find ([f10b0fe](https://github.com/theforeman/foreman-js/commit/f10b0fe7fcb94f67a67ef31dcdd199269ad65c86))
+
+
+
+
+
 ## [4.13.2](https://github.com/theforeman/foreman-js/compare/v4.13.1...v4.13.2) (2020-08-06)
 
 
