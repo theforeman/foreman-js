@@ -16,18 +16,21 @@ const foremanLocation = (throwError = true) => {
     'Foreman directory cannot be found! This action requires Foreman to be present ' +
     'in either a parent, sibling, or child directory relative to the plugin.';
   const currentDir = process.cwd();
-  let fullPath;
 
-  relativePaths.forEach(relativePath => {
+  const foremanRelativePath = relativePaths.find(relativePath => {
     const result = path.join(currentDir, relativePath);
-    if (fs.existsSync(result)) fullPath = result;
+    return fs.existsSync(result);
   });
 
-  if (!fullPath && throwError) {
-    throw new Error(notFound);
+  if (!foremanRelativePath) {
+    if (throwError) {
+      throw new Error(notFound);
+    } else {
+      return null;
+    }
   }
 
-  return fullPath;
+  return path.join(currentDir, foremanRelativePath);
 };
 
 // Get a subdirectory within Foreman
