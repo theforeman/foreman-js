@@ -36,7 +36,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-modules-amd": "7.9.0",
-    "@babel/plugin-transform-modules-commonjs": "7.9.0",
+    "@babel/plugin-transform-modules-commonjs": "7.10.4",
     "@babel/plugin-transform-modules-systemjs": "7.9.0",
     "@babel/plugin-transform-object-assign": "^7.2.0",
     "@babel/preset-env": "7.9.5",
