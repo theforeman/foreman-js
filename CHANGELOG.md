@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.14.0](https://github.com/theforeman/foreman-js/compare/v4.13.3...v4.14.0) (2020-08-17)
+
+
+### Features
+
+* **vendor-core:** adds rc-number-input ([4135662](https://github.com/theforeman/foreman-js/commit/41356628b8343f7ff2e3a7d5ed340886829366dd))
+
+
+
+
+
 ## [4.13.3](https://github.com/theforeman/foreman-js/compare/v4.13.2...v4.13.3) (2020-08-12)
 
 
