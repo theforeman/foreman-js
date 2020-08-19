@@ -1,5 +1,6 @@
 import 'core-js/shim';
 import 'regenerator-runtime/runtime';
+import MutationObserver from '@sheerun/mutationobserver-shim';
 
 const { configure } = require('enzyme');
 const Adapter = require('enzyme-adapter-react-16');
@@ -15,3 +16,7 @@ console.error = (message, ...args) => {
   const err = message instanceof Error ? message : new Error(message);
   throw err;
 };
+
+// Needed for react-testing-library
+// see https://github.com/testing-library/dom-testing-library/releases/tag/v7.0.0
+window.MutationObserver = MutationObserver;
