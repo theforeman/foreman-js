@@ -67,7 +67,7 @@
     "react-debounce-input": "^3.2.0",
     "react-diff-view": "^1.8.1",
     "react-dnd": "^9.3.2",
-    "react-dnd-html5-backend": "^9.3.2",
+    "react-dnd-html5-backend": "^11.1.3",
     "react-dom": "^16.8.1",
     "react-ellipsis-with-tooltip": "^1.0.8",
     "react-helmet": "^5.2.1",
