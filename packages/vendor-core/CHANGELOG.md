@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.14.3](https://github.com/theforeman/foreman-js/compare/v4.14.2...v4.14.3) (2020-08-27)
+
+
+### Bug Fixes
+
+* **deps:** bump axios from 0.19.0 to 0.19.2 ([91a3609](https://github.com/theforeman/foreman-js/commit/91a360932d53647182abcb7ddd5d330f2660c786))
+
+
+
+
+
 ## [4.14.2](https://github.com/theforeman/foreman-js/compare/v4.14.1...v4.14.2) (2020-08-17)
 
 **Note:** Version bump only for package @theforeman/vendor-core
