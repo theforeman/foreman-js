@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.14.5](https://github.com/theforeman/foreman-js/compare/v4.14.4...v4.14.5) (2020-09-01)
+
+
+### Bug Fixes
+
+* **deps:** bump react-helmet from 5.2.1 to 6.1.0 ([#179](https://github.com/theforeman/foreman-js/issues/179)) ([a87976d](https://github.com/theforeman/foreman-js/commit/a87976d8ec3a0897f75c7960695d9940307b309c))
+
+
+
+
+
 ## [4.14.4](https://github.com/theforeman/foreman-js/compare/v4.14.3...v4.14.4) (2020-09-01)
 
 **Note:** Version bump only for package @theforeman/vendor-core
