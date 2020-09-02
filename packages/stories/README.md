@@ -15,12 +15,11 @@ It uses [storybook](https://storybook.js.org/), and some tailor-made configurati
 
 ## Writing a story
 
-There are 3 types of stories formats:
+You can write stories in two ways:
 1. Component Story Format (CSF) - https://github.com/storybookjs/storybook/blob/next/addons/docs/docs/mdx.md
-2. Storybook Docs MDX - https://github.com/storybookjs/storybook/blob/next/addons/docs/docs/mdx.md
-3. StoriesOf API (will be deprecated) - https://storybook.js.org/docs/formats/storiesof-api/
+2. MDX - https://github.com/storybookjs/storybook/blob/next/addons/docs/docs/mdx.md
 
-Assuming having a `Toggle` component lives in `webpack/components/Toggle/Toggle.js`:
+Assuming we have a `Toggle` component that lives in `webpack/components/Toggle/Toggle.js`:
 ```js
 import React from 'react';
 
@@ -113,7 +112,9 @@ Read more about writing mdx stories:
 https://github.com/storybookjs/storybook/blob/master/addons/docs/docs/mdx.md
 
 ```mdx
-import { Meta, Story, Preview, Props, action } from '@theforeman/stories';
+import { Meta } from '@theforeman/stories';
+import { Story, Canvas, ArgsTable, action } from '@theforeman/stories';
+// note: In Storybook v6 Preview was renamed to Canvas, and Props was renamed to ArgsTable
 
 import Toggle from './Toggle';
 
@@ -126,29 +127,29 @@ import Toggle from './Toggle';
 
 Use `Toggle` to highlight key info with a predefined status.
 
-<Props of={Toggle} />
+<ArgsTable of={Toggle} />
 
-<Preview>
+<Canvas>
   <Story name="With Knobs">
     <Toggle setOpened={action('setOpened')} opened={boolean('opened')} />
   </Story>
-</Preview>
+</Canvas>
 
 With `opened={true}`
 
-<Preview>
+<Canvas>
   <Story name="opened">
     <Toggle opened={true} />
   </Story>
-</Preview>
+</Canvas>
 
 With `opened={false}`
 
-<Preview>
+<Canvas>
   <Story name="closed">
     <Toggle opened={false} />
   </Story>
-</Preview>
+</Canvas>
 
 ```
 
@@ -227,9 +228,9 @@ Storybook Docs transforms your Storybook stories into world-class component docu
 
 **MDX.** If you want more control, `MDX` allows you to write long-form markdown documentation and stories in one file. You can also use it to write pure documentation pages and embed them inside your Storybook alongside your stories.
 
-All the components from `@storybook/addon-docs` are available by using `@theforeman/stories`:
+Import components from `@storybook/addon-docs` directly:
 ```js
-import { Meta, Story, Preview, Props } from '@theforeman/stories';
+import { Story, Canvas, ArgsTable } from '@storybook/addon-docs';
 ```
 
 See: https://github.com/storybookjs/storybook/tree/next/addons/docs
@@ -238,10 +239,10 @@ See: https://github.com/storybookjs/storybook/tree/next/addons/docs
 
 [@storybook/addon-actions](https://github.com/storybookjs/storybook/tree/HEAD/addons/actions) can be used to display data received by event handlers in Storybook.
 
-To use it in your stories, import the `action` method from `@theforeman/stories` and assign it to an event handler.
+To use it in your stories, import the `action` method from `@storybook/addon-actions` and assign it to an event handler.
 
 ```js
-import { action } from '@theforeman/stories';
+import { action } from '@storybook/addon-actions';
 
 export const myByttonStory = () => <Button onClick={action('buttonClicked')}>Click Here</Button>;
 ```
@@ -250,11 +251,11 @@ export const myByttonStory = () => <Button onClick={action('buttonClicked')}>Cli
 
 [@storybook/addon-knobs](https://github.com/storybookjs/storybook/tree/master/addons/knobs) allow you to edit props dynamically using the Storybook UI. You can also use Knobs as a dynamic variable inside stories in Storybook.
 
-To use it in your stories, import the knobs that you need from `@theforeman/stories` and assign them to props.
+To use it in your stories, import the knobs that you need from `@storybook/addon-knobs` and assign them to props.
 See available knobs: https://github.com/storybookjs/storybook/tree/master/addons/knobs#available-knobs
 
 ```js
-import { boolean, text, number } from '@theforeman/stories';
+import { boolean, text, number } from '@storybook/addon-knobs';
 
 // Knobs for React props
 export const withAButton = () => (
@@ -275,28 +276,18 @@ export const asDynamicVariables = () => {
 
 ### @storybook/addon-centered
 
-[@storybook/addon-centered](https://github.com/storybookjs/storybook/tree/master/addons/centered) can be used to center components inside the preview in Storybook.
+[@storybook/addon-centered](https://github.com/storybookjs/storybook/tree/master/addons/centered) was an addon that, in previous Storybook versions, could be used to center components inside the preview in Storybook.  As of Storybook v6 it is no longer needed.
 
-This addon will automatically centerize all your stories. To disable it, add a parameter to your story.
+To center a story:
+
 ```js
-// disable centered for all the stories in a given file
-export default {
-  title: 'MyComponent|MyComponent/MyComponent',
-  component: MyComponent,
-  parameters: {
-    centered: { disable: true },
-  },
-};
-
-// disable centered for a given story
-export const Basic = () => <MyComponent />;
-
-Basic.story = {
-  parameters: {
-    centered: { disable: true },
-  },
-};
+  export const MyStory = () => <div>my story</div>;
+  MyStory.story = {
+    parameters: { layout: 'centered' },
+  };
 ```
+
+`layout` also accepts `padded` and `fullscreen`.
 
 ### @storybook/addon-storysource
 
