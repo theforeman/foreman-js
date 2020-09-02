@@ -22,11 +22,13 @@ const isPlugin = !isForemanLocation();
 const foreman = foremanLocation(false);
 const foremanVendorRelative = './node_modules/@theforeman/vendor-core/';
 const foremanTestRelative = './node_modules/@theforeman/test/';
+const foremanStoriesRelative = './node_modules/@theforeman/stories/';
 
 const packageJsonDirectories = [
   './',
   foremanVendorRelative,
   foremanTestRelative,
+  foremanStoriesRelative,
 ];
 
 if (isPlugin && foreman) {
