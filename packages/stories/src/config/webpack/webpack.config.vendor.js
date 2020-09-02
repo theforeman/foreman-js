@@ -10,8 +10,9 @@ module.exports = ({ config, mode }) => {
   const vendorJsFiles = getFilenamesWithExt(vendorManifest.files, '.js');
   const vendorCssFiles = getFilenamesWithExt(vendorManifest.files, '.css');
 
-  // htmlWebpackPlugin is the first plugin in the array
-  const htmlWebpackPlugin = config.plugins[0];
+  const htmlWebpackPlugin = config.plugins.find(
+    p => p.constructor.name === 'HtmlWebpackPlugin'
+  );
 
   const { templateParameters } = htmlWebpackPlugin.options;
 
