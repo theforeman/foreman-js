@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.14.6](https://github.com/theforeman/foreman-js/compare/v4.14.5...v4.14.6) (2020-09-03)
+
+
+### Bug Fixes
+
+* **deps:** bump yup from 0.27.0 to 0.29.3 ([5065bd9](https://github.com/theforeman/foreman-js/commit/5065bd9c3a5d65328327e5462154ee8e5c092acb))
+
+
+
+
+
 ## [4.14.5](https://github.com/theforeman/foreman-js/compare/v4.14.4...v4.14.5) (2020-09-01)
 
 
