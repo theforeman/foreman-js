@@ -102,6 +102,7 @@ module.exports = [
   'unidiff',
   'urijs',
   'yup',
+  'select2',
   '@novnc/novnc/core/rfb',
   '@spice-project/spice-html5',
   '@webcomponents/webcomponentsjs/webcomponents-bundle',
