@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.15.0](https://github.com/theforeman/foreman-js/compare/v4.14.6...v4.15.0) (2020-09-06)
+
+
+### Features
+
+* **vendor-core:** upgrade pf3-extensions v3.0.12 ([43b392c](https://github.com/theforeman/foreman-js/commit/43b392cd798598e84f780c2a7cb4459ef144bda0))
+
+
+
+
+
 ## [4.14.6](https://github.com/theforeman/foreman-js/compare/v4.14.5...v4.14.6) (2020-09-03)
 
 

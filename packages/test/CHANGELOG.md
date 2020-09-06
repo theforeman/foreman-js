@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.15.0](https://github.com/theforeman/foreman-js/compare/v4.14.6...v4.15.0) (2020-09-06)
+
+**Note:** Version bump only for package @theforeman/test
+
+
+
+
+
 ## [4.14.6](https://github.com/theforeman/foreman-js/compare/v4.14.5...v4.14.6) (2020-09-03)
 
 **Note:** Version bump only for package @theforeman/test
