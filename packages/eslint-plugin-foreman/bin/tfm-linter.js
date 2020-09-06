@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const ForemanLinter = require('../lib/src/linter');
+const ForemanLinter = require('../src/linter');
 const { version } = require('../package.json');
 
 function spaceSeparatedList(value) {

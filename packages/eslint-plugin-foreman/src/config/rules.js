@@ -1,11 +1,28 @@
-module.exports = {
-  plugins: ['patternfly-react', 'promise', 'jquery', 'react-hooks'],
-  extends: [
-    'plugin:patternfly-react/recommended',
-    require.resolve('@theforeman/vendor-dev/eslint.extends.js'),
-    'plugin:jquery/deprecated',
-  ],
-  rules: {
+const { getPackageJsonDirectories } = require('./helpers');
+
+module.exports = (isPlugin = false) => {
+  const pluginRules = {
+    'import/no-unresolved': [
+      'error',
+      {
+        ignore: ['foremanReact/.*'],
+      },
+    ],
+    'import/extensions': [
+      'error',
+      {
+        ignore: ['foremanReact/.*'],
+      },
+    ],
+  };
+
+  const rules = {
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        packageDir: getPackageJsonDirectories(isPlugin),
+      },
+    ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'max-lines': [
@@ -42,5 +59,11 @@ module.exports = {
         trailingComma: 'es5',
       },
     ],
-  },
+  };
+
+  if (isPlugin) {
+    return { ...rules, ...pluginRules };
+  }
+
+  return rules;
 };
