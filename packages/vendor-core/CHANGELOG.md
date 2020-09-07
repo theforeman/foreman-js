@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.15.1](https://github.com/theforeman/foreman-js/compare/v4.15.0...v4.15.1) (2020-09-07)
+
+
+### Bug Fixes
+
+* **vendor-core:** export select2 ([8fe31c6](https://github.com/theforeman/foreman-js/commit/8fe31c6e7457bd82e8396d6831e3571d5ccb1392))
+
+
+
+
+
 # [4.15.0](https://github.com/theforeman/foreman-js/compare/v4.14.6...v4.15.0) (2020-09-06)
 
 
