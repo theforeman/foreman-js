@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.7.0",
-    "@mdx-js/loader": "^1.5.3",
+    "@mdx-js/loader": "^1.6.18",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-docs": "^6.0.21",
     "@storybook/addon-knobs": "^6.0.21",
