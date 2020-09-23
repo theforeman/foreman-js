@@ -3,7 +3,7 @@ const childProcess = require('child_process');
 
 module.exports = {
   getJestBin() {
-    return path.resolve(require.resolve('jest-cli'), '../../../.bin/', 'jest');
+    return path.resolve(require.resolve('jest'), '../../../.bin/', 'jest');
   },
 
   remainingArgs: cli => {
