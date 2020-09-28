@@ -1,5 +1,4 @@
 const path = require('path');
-const createMdxCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 const {
   cwdWebpack,
@@ -29,39 +28,6 @@ module.exports = ({ config }) => {
       },
     },
   ];
-
-  // Stories MDX loader
-  // config.module.rules.push({
-  //   test: /\.mdx$/,
-  //   exclude: /node_modules/,
-  //   use: [
-  //     {
-  //       loader: require.resolve('babel-loader'),
-  //     },
-  //     {
-  //       loader: require.resolve('@mdx-js/loader'),
-  //       options: {
-  //         compilers: [createMdxCompiler({})],
-  //       },
-  //     },
-  //   ],
-  // });
-
-  // Stories source code loader
-  // config.module.rules.push({
-  //   test: /\.stories\.js$/,
-  //   loaders: [
-  //     {
-  //       loader: require.resolve('@storybook/source-loader'),
-  //       options: {
-  //         prettierConfig: {
-  //           parser: 'babel',
-  //         },
-  //       },
-  //     },
-  //   ],
-  //   enforce: 'pre',
-  // });
 
   // scss loader
   config.module.rules.push({
