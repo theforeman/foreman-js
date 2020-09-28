@@ -1,9 +1,16 @@
-import { configure } from '@storybook/react';
+import { addDecorator, addParameters } from '@storybook/react';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import { storyWeight, storySort } from './services/sorting';
 
-import './decorators';
-import './parameters';
+export const docs = {
+  container: DocsContainer,
+  page: DocsPage,
+};
 
-// configure(
-//   require.context(`${process.env.CWD}/webpack`, true, /\.stories\.(js|mdx)$/),
-//   module
-// );
+addParameters({
+  docs,
+  storyWeight,
+  options: {
+    storySort,
+  },
+});
