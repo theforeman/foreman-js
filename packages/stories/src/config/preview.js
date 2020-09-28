@@ -1,4 +1,3 @@
-import { addDecorator, addParameters } from '@storybook/react';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import { storyWeight, storySort } from './services/sorting';
 
@@ -7,10 +6,13 @@ export const docs = {
   page: DocsPage,
 };
 
-addParameters({
+// if we add any decorators, do it here
+// export const decorators = [];
+
+export const parameters = {
   docs,
   storyWeight,
   options: {
     storySort,
   },
-});
+};

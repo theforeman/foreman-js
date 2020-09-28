@@ -1,6 +1,5 @@
 module.exports = {
-  // stories: [`${process.cwd()}/webpack/**/*.stories.@(js|mdx)`],
-  stories: [`${process.cwd()}/webpack/**/adding-new-components.stories.mdx`],
+  stories: [`${process.cwd()}/webpack/**/*.stories.@(js|mdx)`],
   addons: [
     '@storybook/addon-actions',
     '@storybook/addon-knobs',
