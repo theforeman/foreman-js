@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.15.2](https://github.com/theforeman/foreman-js/compare/v4.15.1...v4.15.2) (2020-10-12)
+
+
+### Bug Fixes
+
+* **deps:** bump patternfly from 3.59.3 to 3.59.5 ([9ae84b1](https://github.com/theforeman/foreman-js/commit/9ae84b1822b062d17443dba43bb42068c737a90f))
+
+
+
+
+
 ## [4.15.1](https://github.com/theforeman/foreman-js/compare/v4.15.0...v4.15.1) (2020-09-07)
 
 
