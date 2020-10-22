@@ -28,13 +28,6 @@ module.exports = [
   'react-router-bootstrap',
   'react-loading-skeleton',
   'react-markdown',
-  'patternfly-react',
-  'patternfly-react-extensions',
-  '@patternfly/react-core',
-  '@patternfly/react-icons',
-  '@patternfly/react-table',
-  '@patternfly/react-tokens',
-  '@patternfly/react-styles',
   'react-redux',
   'redux',
   'redux-logger',
@@ -46,6 +39,18 @@ module.exports = [
   'isomorphic-fetch',
   'connected-react-router',
   'react-helmet',
+
+  /**
+   * Patternfly related
+   */
+  'patternfly-react',
+  'patternfly-react-extensions',
+  '@patternfly/react-catalog-view-extension',
+  '@patternfly/react-core',
+  '@patternfly/react-icons',
+  '@patternfly/react-table',
+  '@patternfly/react-tokens',
+  '@patternfly/react-styles',
 
   /**
    * Brace related

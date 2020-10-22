@@ -27,6 +27,7 @@
   "dependencies": {
     "@novnc/novnc": "novnc/noVNC#25b3d49d322b0a7c9ee1e071d93042d70f5176b7 ",
     "@patternfly/patternfly": "^4.65.5",
+    "@patternfly/react-catalog-view-extension": "^4.8.105",
     "@patternfly/react-core": "^4.79.2",
     "@patternfly/react-icons": "^4.7.18",
     "@patternfly/react-styles": "^4.7.16",
