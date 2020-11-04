@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/theforeman/foreman-js/compare/v4.15.2...v6.0.0) (2020-11-04)
+
+
+### Features
+
+* **test:** upgrade jest ([1cdf73e](https://github.com/theforeman/foreman-js/commit/1cdf73e88fb73693efc9497bd2aa428571bd070e))
+
+
+### BREAKING CHANGES
+
+* **test:** move from jest-cli v14 to jest v16
+
+
+
+
+
 ## [4.15.2](https://github.com/theforeman/foreman-js/compare/v4.15.1...v4.15.2) (2020-10-12)
 
 **Note:** Version bump only for package @theforeman/test
