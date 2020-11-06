@@ -3,4 +3,4 @@
 
 set -e
 
-npm run lerna -- publish from-git --yes
+npm run lerna -- publish from-package --yes
