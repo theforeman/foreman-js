@@ -16,12 +16,8 @@ See [`contributing.md`](./contributing.md)
 ### Want to do
 
 - Switch to yarn
-- Automate npm deployment
-- Automate the npm release process for contributes who want to test their changes
 
 ### Might do
-
-- Install greenkeeper
 
 ### Won‘t do
 
