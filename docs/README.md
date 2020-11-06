@@ -1,0 +1,2 @@
+- [Automations](./automations.md)
+- [Commit message format](./commit-message-format.md)

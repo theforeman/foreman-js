@@ -1,11 +1,9 @@
-name: foreman-js ci
-on:
-  pull_request:
-    branches: [master]
+name: Test foreman with foreman-js
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
 
-  test-with-foreman:
+  test-foreman:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false

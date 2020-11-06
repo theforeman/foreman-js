@@ -77,6 +77,8 @@ npm run commit
 # answer the questions
 ```
 
+> Read more about the commit message format at [docs/commit-message-format.md](./docs/commit-message-format.md)
+
 4. Push your changes:
 
 ```sh
@@ -90,7 +92,7 @@ git push origin my-branch
 1. Open the pull request in Github and go to the "Checks" tab.
 2. Expand `Build tarballs for testing` job and open any of the associated actions. For example, the job for the test package would be `build-tarball (test)`.
 3. Expand the artifacts dropdown on the top right and download the appropiate artifact. For example, the test package will be titled `foreman-js-test-pr-###.tgz`.
-  - Alternatively, you can download the zipped tarball directly using the API. Note this different than the link provided in the action. A direct download can be done with a command like this: 
+  - Alternatively, you can download the zipped tarball directly using the API. Note this different than the link provided in the action. A direct download can be done with a command like this:
     ```
     wget -v -O foreman-js-pr-$PR_NUM.tgz.zip --header "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/theforeman/foreman-js/actions/artifacts/$ARTIFACT_ID/zip
     ```

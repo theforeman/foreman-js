@@ -15,15 +15,13 @@
     "build": "node --max_old_space_size=8192 ./node_modules/.bin/lerna run --stream build",
     "test": "lerna run --stream test",
     "lint": "lerna run --stream lint",
-    "lint:commit": "commitlint -e",
-    "lint:commit-travis": "commitlint-travis",
+    "lint:commit": "commitlint --from=HEAD~1",
     "link": "./scripts/link-foreman-js.js",
     "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
-    "@commitlint/travis-cli": "^9.1.1",
     "commander": "^6.0.0",
     "commitlint-config-cz": "^0.13.1",
     "cz-customizable": "^6.2.1",

@@ -1,10 +1,8 @@
-name: foreman-js ci
-on:
-  pull_request:
-    branches: [master]
+name: Test foreman-js
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  test-foreman-js:
+  test:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
