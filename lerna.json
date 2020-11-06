@@ -5,16 +5,14 @@
     "packages/*"
   ],
   "command": {
-    "command": {
-      "version": {
-        "allowBranch": "master",
-        "message": "chore(release): publish %s",
-        "ignoreChanges": [
-          "**/*.md",
-          "**/*.test.js",
-          "**/__mocks__/**/*"
-        ]
-      }
+    "version": {
+      "allowBranch": ["master", "next*"],
+      "message": "chore(release): publish %s",
+      "ignoreChanges": [
+        "**/*.md",
+        "**/*.test.js",
+        "**/__mocks__/**/*"
+      ]
     }
   }
 }

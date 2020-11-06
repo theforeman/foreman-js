@@ -1,10 +1,8 @@
-name: foreman-js ci
-on:
-  pull_request:
-    branches: [master]
+name: Test foreman-js
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  test-foreman-js:
+  test:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -23,13 +21,10 @@ jobs:
       - name: Build foreman-js
         run: npm run build
       - name: Run foreman-js commit linter
-        if: ${{ always() }}
         uses: wagoid/commitlint-github-action@v1
         with:
           configFile: .commitlintrc.json
       - name: Run foreman-js lint
-        if: ${{ always() }}
         run: npm run lint
       - name: Run foreman-js test
-        if: ${{ always() }}
         run: npm run test

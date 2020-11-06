@@ -1,10 +1,8 @@
-name: foreman-js ci
-on:
-  pull_request:
-    branches: [master]
+name: Test foreman plugins with foreman-js
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  test-with-plugins:
+  test-plugins:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
