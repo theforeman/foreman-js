@@ -7,6 +7,9 @@ GH_TOKEN=${GH_TOKEN}
 GITHUB_REF=${GITHUB_REF} # refs/heads/{branch-name}
 
 BRANCH_NAME=${GITHUB_REF#refs/heads/}
+LERNA_CHANGED_ARGS=(
+  --conventional-commits
+)
 LERNA_VERSION_ARGS=(
   --conventional-commits
   --create-release github
@@ -17,6 +20,12 @@ LERNA_VERSION_ARGS=(
 
 if [ $BRANCH_NAME == 'master' ]; then
   NPM_TAG='latest'
+  LERNA_CHANGED_ARGS+=(
+    --conventional-graduate
+  )
+  LERNA_VERSION_ARGS+=(
+    --conventional-graduate
+  )
 else
   NPM_TAG=${BRANCH_NAME/\//-}
   LERNA_VERSION_ARGS+=(
@@ -26,7 +35,7 @@ else
 fi
 
 # detect for changes
-npm run lerna -- changed --conventional-commits
+npm run lerna -- changed ${LERNA_CHANGED_ARGS[@]}
 CHANGED=$?
 
 set -e
