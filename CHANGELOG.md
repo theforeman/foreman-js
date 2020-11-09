@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1-next.0](https://github.com/theforeman/foreman-js/compare/v6.0.0...v6.0.1-next.0) (2020-11-09)
+
+
+### Features
+
+* **root:** migrate deploy to github actions ([1b53640](https://github.com/theforeman/foreman-js/commit/1b53640f2a74e0b17df14ccaec25b0475cdea1a3))
+
+
+
+
+
 # [6.0.0](https://github.com/theforeman/foreman-js/compare/v4.15.2...v6.0.0) (2020-11-04)
 
 
