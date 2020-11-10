@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-next.1](https://github.com/theforeman/foreman-js/compare/v6.1.0-next.0...v6.1.0-next.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* **root:** use --dist-tag instead --preid when lerna publish ([70b5d26](https://github.com/theforeman/foreman-js/commit/70b5d2600114090150535c57a753e13787b6fb85))
+
+
+### Features
+
+* **builder:** dummy commit to trigger deploy ([272baba](https://github.com/theforeman/foreman-js/commit/272babab1a07bb9100b991ba4045d2e2579f33d1))
+
+
+
+
+
 # [6.1.0-next.0](https://github.com/theforeman/foreman-js/compare/v6.0.1-next.0...v6.1.0-next.0) (2020-11-10)
 
 
