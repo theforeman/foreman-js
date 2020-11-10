@@ -16,4 +16,4 @@ if [[ $VERSION =~ $REGEX_VERSION ]]; then
   NPM_TAG=${BASH_REMATCH[1]}
 fi
 
-npm run lerna -- publish from-git --preid ${NPM_TAG} --yes
+npm run lerna -- publish from-git --dist-tag ${NPM_TAG} --yes
