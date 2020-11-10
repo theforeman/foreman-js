@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-next.0](https://github.com/theforeman/foreman-js/compare/v6.0.1-next.0...v6.1.0-next.0) (2020-11-10)
+
+
+### Features
+
+* **builder:** dummy commit to trigger deploy ([0b56ab9](https://github.com/theforeman/foreman-js/commit/0b56ab989d62964214c8e3c3eb44cb72b84d9940))
+
+
+
+
+
 ## [6.0.1-next.0](https://github.com/theforeman/foreman-js/compare/v6.0.0...v6.0.1-next.0) (2020-11-09)
 
 **Note:** Version bump only for package @theforeman/builder
