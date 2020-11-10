@@ -28,7 +28,7 @@
   ],
   "scripts": {
     "test": "echo \"@theforeman/builder does not contain any tests at the moment.\"",
-    "test-next-branch": "echo \"dummy change to test next branch deployment\"",
+    "test-next-branch": "echo \"dummy change to test next branch deployment. Number 2.\"",
     "lint": "eslint ."
   },
   "dependencies": {
