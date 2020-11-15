@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-next-storybook-6-upgrade.0](https://github.com/theforeman/foreman-js/compare/v6.1.0-next.1...v6.1.0-next-storybook-6-upgrade.0) (2020-11-15)
+
+
+### Features
+
+* **stories:** extend import/no-extraneous-dependencies to Storybook ([6b295c5](https://github.com/theforeman/foreman-js/commit/6b295c576f2f1cdc0887a6ee5b38eaf650b49b66))
+
+
+
+
+
 # [6.1.0-next.1](https://github.com/theforeman/foreman-js/compare/v6.1.0-next.0...v6.1.0-next.1) (2020-11-10)
 
 **Note:** Version bump only for package @theforeman/vendor-dev

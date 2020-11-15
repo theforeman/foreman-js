@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0-next-storybook-6-upgrade.0](https://github.com/theforeman/foreman-js/compare/v6.1.0-next.1...v6.1.0-next-storybook-6-upgrade.0) (2020-11-15)
+
+
+### Features
+
+* **stories:** add deprecations for removed exports ([0de1b91](https://github.com/theforeman/foreman-js/commit/0de1b91038dd5f81b453fc5454a2c0a236569eac))
+* **stories:** don't load [@mdx-js](https://github.com/mdx-js) twice ([673299a](https://github.com/theforeman/foreman-js/commit/673299a1f6237b8d411bddefa577f01c8486aeef))
+* **stories:** extend import/no-extraneous-dependencies to Storybook ([6b295c5](https://github.com/theforeman/foreman-js/commit/6b295c576f2f1cdc0887a6ee5b38eaf650b49b66))
+* **stories:** fix error on storybook build: ([9f463ba](https://github.com/theforeman/foreman-js/commit/9f463bacb9e4690bba6c37930d4933fec8962441))
+* **stories:** fix node.js cwd syntax ([30acc1f](https://github.com/theforeman/foreman-js/commit/30acc1f5642b2b71f3ad08976ef42022b317c062))
+* **stories:** remove extra webpack loaders ([c2e2f51](https://github.com/theforeman/foreman-js/commit/c2e2f518e4808aedda97ffdf815707e223174637))
+* **stories:** remove unneeded exports ([21753d6](https://github.com/theforeman/foreman-js/commit/21753d6617976e84733d8c14663cee2486748b56))
+* **stories:** storybook renders now ([e50a9c0](https://github.com/theforeman/foreman-js/commit/e50a9c05afaa051029f12ba59ad107b759e5dc1d))
+* **stories:** switch to new main.js api ([f0ee890](https://github.com/theforeman/foreman-js/commit/f0ee89047d42666f070fe32db474ad3e06d31c6f))
+* **stories:** update package-lock.json ([8f67d8c](https://github.com/theforeman/foreman-js/commit/8f67d8cb49d0c8bfc41dcac440604cc0f36c55dc))
+* **stories:** update sorting function to work around sb issue ([5112dda](https://github.com/theforeman/foreman-js/commit/5112ddabd88499dfd761dd3a442ec05cf1dfd366))
+* **stories:** update storySort per v6 api ([e2110de](https://github.com/theforeman/foreman-js/commit/e2110de635befe2bfda63a0b2f4a7edc1b153c74))
+* **stories:** upgrade @mdx-js/loader ([b55c02a](https://github.com/theforeman/foreman-js/commit/b55c02aac8eb0ff85d8f98f4aa78f7ba513bab7f))
+* **stories:** upgrade Storybook packages to v6 ([b052ded](https://github.com/theforeman/foreman-js/commit/b052ded26fbecf8fc473e72f595792577c1cf4b6))
+* **stories:** upgrade to 6.0.22 ([310eada](https://github.com/theforeman/foreman-js/commit/310eada88f3e66820bcb15898fdc74c45e865b11))
+
+
+
+
+
 # [6.1.0-next.1](https://github.com/theforeman/foreman-js/compare/v6.1.0-next.0...v6.1.0-next.1) (2020-11-10)
 
 

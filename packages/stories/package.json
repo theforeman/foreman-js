@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/stories",
-  "version": "6.1.0-next.1",
+  "version": "6.1.0-next-storybook-6-upgrade.0",
   "description": "Documentation library for the foreman project",
   "author": "Avi Sharvit <sharvita@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -31,8 +31,6 @@
   "dependencies": {
     "@babel/core": "^7.7.0",
     "@mdx-js/loader": "^1.6.18",
-    "@theforeman/builder": "^6.1.0-next.1",
-    "@theforeman/vendor": "^6.1.0-next.1",
     "@storybook/addon-actions": "^6.0.22",
     "@storybook/addon-docs": "^6.0.22",
     "@storybook/addon-knobs": "^6.0.22",
@@ -40,6 +38,8 @@
     "@storybook/addon-viewport": "^6.0.22",
     "@storybook/react": "^6.0.22",
     "@storybook/source-loader": "^6.0.22",
+    "@theforeman/builder": "^6.1.0-next-storybook-6-upgrade.0",
+    "@theforeman/vendor": "^6.1.0-next-storybook-6-upgrade.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-react-docgen": "^3.2.0",
     "commander": "^4.0.1",
