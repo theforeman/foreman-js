@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/theforeman/foreman-js/compare/v6.0.0...v7.0.0) (2020-11-18)
+
+
+### Features
+
+* **stories:** update Storybook to v6 ([f9abe6e](https://github.com/theforeman/foreman-js/commit/f9abe6e1a84a783f5bd2419e803ab9d6684d5d8b))
+
+
+### BREAKING CHANGES
+
+* **stories:** @storybook/addon-knobs, @storybook/addon-actions,
+and @storybook/addon-storysource are no longer re-exported
+from @theforeman/stories.  Going forward, import these items
+directly: e.g. `import { withKnobs } from @storybook/addon-knobs`
+instead of `import { withKnobs } from @theforeman/stories`.
+Deprecation error messages have been added where appropriate.
+* **stories:** The Preview component has been renamed to Canvas.
+* **stories:** The Props component has been renamed to ArgsTable.
+* **stories:** Custom separators are no longer supported in story titles.
+Instead of `title: 'Components|DiffView'` you must write `title: 'Components/DiffView'`.
+* **stories:** The storiesOf API is no longer supported.
+Please use Component Story Format or MDX instead.
+
+
+
+
+
 # [6.0.0](https://github.com/theforeman/foreman-js/compare/v4.15.2...v6.0.0) (2020-11-04)
 
 **Note:** Version bump only for package @theforeman/stories
