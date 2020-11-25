@@ -1,12 +1,15 @@
 {
-  "version": "7.0.0",
+  "version": "7.1.0",
   "npmClient": "npm",
   "packages": [
     "packages/*"
   ],
   "command": {
     "version": {
-      "allowBranch": ["master", "next*"],
+      "allowBranch": [
+        "master",
+        "next*"
+      ],
       "message": "chore(release): publish %s",
       "ignoreChanges": [
         "**/*.md",

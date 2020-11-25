@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/theforeman/foreman-js/compare/v7.0.0...v7.1.0) (2020-11-25)
+
+
+### Features
+
+* **root:** migrate deploy to github actions ([11123a9](https://github.com/theforeman/foreman-js/commit/11123a90a79dfb8bb09c0058f48bc699cb0fc223))
+* **vendor-core:** upgrade all the [@patternfly](https://github.com/patternfly) packages ([77a988d](https://github.com/theforeman/foreman-js/commit/77a988d8daec4e5bb5c51c6517eec9c8f1eeedc9))
+
+
+
+
+
 # [7.0.0](https://github.com/theforeman/foreman-js/compare/v6.0.0...v7.0.0) (2020-11-18)
 
 
