@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1](https://github.com/theforeman/foreman-js/compare/v7.2.0...v7.2.1) (2020-11-26)
+
+
+### Bug Fixes
+
+* **root:** conventional graduate only when last commit already prereleased ([66b6086](https://github.com/theforeman/foreman-js/commit/66b6086ef827d4f2d14376dab476546fffbe2703))
+* **root:** reinstall packages on CI pre-commit ([862812a](https://github.com/theforeman/foreman-js/commit/862812a383b6a744b322e99f1031b51c5a7c6eff))
+
+
+
+
+
 # [7.2.0](https://github.com/theforeman/foreman-js/compare/v7.1.0...v7.2.0) (2020-11-26)
 
 
