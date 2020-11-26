@@ -20,12 +20,17 @@ LERNA_VERSION_ARGS=(
 
 if [ $BRANCH_NAME == 'master' ]; then
   NPM_TAG='latest'
-  LERNA_CHANGED_ARGS+=(
-    --conventional-graduate
-  )
-  LERNA_VERSION_ARGS+=(
-    --conventional-graduate
-  )
+
+  # conventional-graduate if last commit already prereleased
+  LAST_COMMIT_MESSAGE=$(git log --oneline --format=%B -n 1 HEAD)
+  if [[ $LAST_COMMIT_MESSAGE == chore\(release\)\:* ]]; then
+    LERNA_CHANGED_ARGS+=(
+      --conventional-graduate
+    )
+    LERNA_VERSION_ARGS+=(
+      --conventional-graduate
+    )
+  fi
 else
   NPM_TAG=${BRANCH_NAME/\//-}
   LERNA_VERSION_ARGS+=(
