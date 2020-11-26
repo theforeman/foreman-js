@@ -6,6 +6,6 @@ if [ $CI ]; then
   echo "pre-commit: CI detected, updating lock files before commit"
 
   npm run clean -- --yes
-  npm run bootstrap -- --no-ci --ignore-scripts -- --package-lock-only --no-audit
+  npm run bootstrap -- --no-ci
   git add packages/*/package-lock.json
 fi
