@@ -41,12 +41,6 @@ See: https://github.com/theforeman/foreman-js/blob/master/CONTRIBUTING.md#testin
 
 # Deployment
 
-The deployment process contain 2 steps:
-- [Deploy to github](#deploy-to-github)
-- [Deploy to npm](#deploy-to-npm)
-
-## Git and Github deployment
-
 Run on every push to the following branches:
 - `master`
 - `next**` (`next`, `next-react-v17`, `next-webpack-v4`)
@@ -62,23 +56,21 @@ See: [commit-message-format.md](./commit-message-format.md)
 - Create a tagged commit and push to Github
 - Publish the release notes to Github
   - When using `next*` branch, the release notes will be marked as a prerelease.
-
-## Deploy to npm
-
-Run when pushing tags (by the previous automation or manually) with the template `v*` (e.g. `v2.0.1`, `v3.0.0-next.0`, `v3.0.0-next-react.3`).
-
 - Build all `foreman-js` packages
 - Deploy all `foreman-js` packages to `npm`
 
-> To install a prerelease run `npm install @theforeman/vendor@next` or `npm install @theforeman/vendor@next-react`. Another option is to update the version in the `package.json` to `^3.0.0-next.0` or `v3.0.0-next-react.0`.
 
 ## Prereleases
+
+Prerelease is a tool for maintainers so they can test and share beta versions of foreman-js.
 
 **When to create a prerelease:**
 - Before releasing breaking changes that we would like to test with a broader audience.
 - When you want to publish a new version with a combination of multiple commits and pull-requests.
 
-**How to create a prerelease:**
+### How to create a prerelease
+
+The prerelease automation run on every push to the `next` branch or any branch starts with the `next-` prefix (e.g. `next-storybook-v6`, `next-webpack-v4`).
 
 1. Choose a name to your prerelease with the `next-` prefix.
 2. Create a new branch based on the `master` branch with your prerelease name.
@@ -87,3 +79,9 @@ Run when pushing tags (by the previous automation or manually) with the template
 5. Share your prerelease with others by setting the version field in the `package.json` to the prerelease version (e.g. `^8.0.0-next-something.0`).
 6. When the prerelease is ready to be published as an official release, rebase and merge into the `master` branch, and gh-actions will create an official release.
 7. Remove the prerelease branch from the `foreman-js` repository.
+
+### Installing a prerelease
+
+Prereleases are published to `npm`, to install them in foreman or in a foreman plugin, update the version in the `package.json` to the prerelease version (e.g. `^3.0.0-next.0`, `v3.0.0-next-react.0`).
+
+Performing `npm install` locally and on CI should download and install the prereleases from `npm`.

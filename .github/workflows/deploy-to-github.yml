@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Use Node.js
         uses: actions/setup-node@v1
@@ -26,5 +27,13 @@ jobs:
           GH_EMAIL: foreman-js-bot@theforeman.org
           GH_NAME: foreman-js-bot
         run: ./scripts/set-git-user-to-foreman-js-bot-ci.sh
+      - name: Configure npm user
+        run: ./scripts/configure-npm-user-ci.sh
       - name: Publish to github
         run: ./scripts/publish-github-ci.sh
+      - name: Build foreman-js
+        run: npm run build
+      - name: Publish to npm
+        run: ./scripts/publish-npm-ci.sh
+      - name: Comment on the pull-request about the new release
+        run: ./scripts/post-publish-comment-github.sh

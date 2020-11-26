@@ -47,4 +47,5 @@ if [ $CHANGED -eq 0 ]; then
   npm run lerna -- version ${LERNA_VERSION_ARGS[@]}
 else
   echo "Detected no relevat changes, skipping github publish."
+  exit 1
 fi

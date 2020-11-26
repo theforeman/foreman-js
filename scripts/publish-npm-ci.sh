@@ -1,19 +1,19 @@
 #!/bin/bash
-# Publish to npm when pushing a new version tag
+# Publish to npm
 
 set -e
 
 # required env variables
 NPM_TOKEN=${NPM_TOKEN}
-GITHUB_REF=${GITHUB_REF} # refs/heads/{tag-name}
+GITHUB_REF=${GITHUB_REF} # refs/heads/{branch-name}
 
-VERSION=${GITHUB_REF#refs/heads/}
-REGEX_VERSION='v[0-9]+\.[0-9]+.[0-9]+-(.*)\.[0-9]+'
+BRANCH_NAME=${GITHUB_REF#refs/heads/}
 
-NPM_TAG="latest"
-
-if [[ $VERSION =~ $REGEX_VERSION ]]; then
-  NPM_TAG=${BASH_REMATCH[1]}
+if [ $BRANCH_NAME == 'master' ]; then
+  NPM_TAG="latest"
+else
+  # prerelease
+  NPM_TAG=${BRANCH_NAME/\//-}
 fi
 
 npm run lerna -- publish from-git --dist-tag ${NPM_TAG} --yes
