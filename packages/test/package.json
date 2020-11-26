@@ -16,12 +16,12 @@
     "url": "git+https://github.com/theforeman/foreman-js.git",
     "directory": "packages/test"
   },
-  "scripts": {
-    "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
-  },
   "bin": {
     "tfm-test": "./bin/tfm-test.js",
     "tfm-publish-coverage": "./bin/tfm-publish-coverage.js"
+  },
+  "scripts": {
+    "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.3.0",
