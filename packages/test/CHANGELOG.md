@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/theforeman/foreman-js/compare/v7.1.0...v7.2.0) (2020-11-26)
+
+
+### Features
+
+* **test:** add @testing-library/react-hooks ([6bd7f4e](https://github.com/theforeman/foreman-js/commit/6bd7f4eb45b47a2db0fd002115fd6f4422e75266)), closes [#31250](https://github.com/theforeman/foreman-js/issues/31250) [#31250](https://github.com/theforeman/foreman-js/issues/31250)
+
+
+
+
+
 # [7.1.0](https://github.com/theforeman/foreman-js/compare/v7.0.0...v7.1.0) (2020-11-25)
 
 **Note:** Version bump only for package @theforeman/test

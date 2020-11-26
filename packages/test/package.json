@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/test",
-  "version": "7.1.0",
+  "version": "7.2.0",
   "description": "Test utils for theforeman",
   "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
