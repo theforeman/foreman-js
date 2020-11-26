@@ -8,14 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+          registry-url: 'https://registry.npmjs.org'
       - name: Checkout foreman-js
         uses: actions/checkout@v2
         with:
@@ -27,13 +25,17 @@ jobs:
           GH_EMAIL: foreman-js-bot@theforeman.org
           GH_NAME: foreman-js-bot
         run: ./scripts/set-git-user-to-foreman-js-bot-ci.sh
-      - name: Configure npm user
-        run: ./scripts/configure-npm-user-ci.sh
       - name: Publish to github
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./scripts/publish-github-ci.sh
       - name: Build foreman-js
         run: npm run build
       - name: Publish to npm
+        env:
+          NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
         run: ./scripts/publish-npm-ci.sh
       - name: Comment on the pull-request about the new release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./scripts/post-publish-comment-github.sh
