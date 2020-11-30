@@ -16,17 +16,17 @@
     "url": "git+https://github.com/theforeman/foreman-js.git",
     "directory": "packages/stories"
   },
-  "scripts": {
-    "lint": "eslint ."
-  },
+  "main": "./src/index.js",
   "lib": [
     "bin",
     "src"
   ],
-  "main": "./src/index.js",
   "bin": {
     "tfm-stories": "./bin/tfm-stories.js",
     "tfm-build-stories": "./bin/tfm-build-stories.js"
+  },
+  "scripts": {
+    "lint": "eslint ."
   },
   "dependencies": {
     "@babel/core": "^7.7.0",
