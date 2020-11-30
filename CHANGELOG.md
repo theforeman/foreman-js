@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.4](https://github.com/theforeman/foreman-js/compare/v7.2.3...v7.2.4) (2020-11-30)
+
+
+### Bug Fixes
+
+* **deps:** bump react from 16.9.0 to 17.0.1 ([#232](https://github.com/theforeman/foreman-js/issues/232)) ([b0ecb63](https://github.com/theforeman/foreman-js/commit/b0ecb639a9c20b1b663a00078f55cbaa80143ee6))
+
+
+
+
+
 ## [7.2.3](https://github.com/theforeman/foreman-js/compare/v7.2.2...v7.2.3) (2020-11-30)
 
 
