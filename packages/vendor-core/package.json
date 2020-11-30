@@ -62,7 +62,7 @@
     "patternfly-react-extensions": "^3.0.12",
     "prop-types": "^15.6.0",
     "rc-input-number": "^6.0.0",
-    "react": "^16.9.0",
+    "react": "^17.0.1",
     "react-ace": "^6.3.2",
     "react-debounce-input": "^3.2.0",
     "react-diff-view": "^1.8.1",
