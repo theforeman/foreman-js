@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.5](https://github.com/theforeman/foreman-js/compare/v7.2.4...v7.2.5) (2020-12-02)
+
+
+### Bug Fixes
+
+* **root:** dummy commit to trigger deploy ([8c583e1](https://github.com/theforeman/foreman-js/commit/8c583e155bf69236cee7827f129ec13b6612c8a0))
+
+
+
+
+
 ## [7.2.4](https://github.com/theforeman/foreman-js/compare/v7.2.3...v7.2.4) (2020-11-30)
 
 **Note:** Version bump only for package @theforeman/stories
