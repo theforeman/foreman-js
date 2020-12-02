@@ -3,11 +3,11 @@
   "version": "7.2.4",
   "description": "Documentation library for the foreman project",
   "author": "Avi Sharvit <sharvita@gmail.com>",
+  "license": "MIT",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
   "bugs": {
     "url": "https://github.com/theforeman/foreman-js/issues"
   },
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
