@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.8](https://github.com/theforeman/foreman-js/compare/v7.2.7...v7.2.8) (2020-12-02)
+
+
+### Bug Fixes
+
+* **root:** dummy commit to trigger deploy ([ced63a6](https://github.com/theforeman/foreman-js/commit/ced63a65fe69b2b910e923ebed4a358032172b33))
+
+
+
+
+
 ## [7.2.7](https://github.com/theforeman/foreman-js/compare/v7.2.6...v7.2.7) (2020-12-02)
 
 **Note:** Version bump only for package @theforeman/find-foreman
