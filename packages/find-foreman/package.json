@@ -2,6 +2,7 @@
   "name": "@theforeman/find-foreman",
   "version": "7.2.5",
   "description": "For Foreman plugins to find the foreman directory relative to the plugin and return a full path. This can be useful in testing environments where you want to point testing tools at installed Foreman packages rather than duplicate them in the plugin.",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -16,7 +17,6 @@
     "Foreman"
   ],
   "author": "John Mitsch (jomitsch@redhat.com)",
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
