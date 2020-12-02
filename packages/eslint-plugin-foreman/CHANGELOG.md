@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.7](https://github.com/theforeman/foreman-js/compare/v7.2.6...v7.2.7) (2020-12-02)
+
+
+### Bug Fixes
+
+* **root:** dummy commit to trigger deploy ([4d9be4e](https://github.com/theforeman/foreman-js/commit/4d9be4e3d5161b79d5eef9e9718e5ce38f2c4c67))
+
+
+
+
+
 ## [7.2.6](https://github.com/theforeman/foreman-js/compare/v7.2.5...v7.2.6) (2020-12-02)
 
 **Note:** Version bump only for package @theforeman/eslint-plugin-foreman
