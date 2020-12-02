@@ -13,18 +13,20 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-          registry-url: 'https://registry.npmjs.org'
       - name: Checkout foreman-js
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Install foreman-js npm dependencies
-        run: npm install
       - name: Configure foreman-js-bot user
         env:
-          GH_EMAIL: foreman-js-bot@theforeman.org
-          GH_NAME: foreman-js-bot
-        run: ./scripts/set-git-user-to-foreman-js-bot-ci.sh
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          git config --global user.email "foreman-js-bot@theforeman.org"
+          git config --global user.name "foreman-js-bot"
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+          npm whoami
+      - name: Install foreman-js npm dependencies
+        run: npm install
       - name: Publish to github
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,8 +35,7 @@ jobs:
         run: npm run build
       - name: Publish to npm
         env:
-          NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: ./scripts/publish-npm-ci.sh
       - name: Comment on the pull-request about the new release
         env:
