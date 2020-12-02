@@ -23,7 +23,8 @@ jobs:
         run: |
           git config --global user.email "foreman-js-bot@theforeman.org"
           git config --global user.name "foreman-js-bot"
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+          cat ~/.npmrc
           npm whoami
       - name: Install foreman-js npm dependencies
         run: npm install
@@ -36,7 +37,10 @@ jobs:
       - name: Publish to npm
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: ./scripts/publish-npm-ci.sh
+        run: |
+          cat ~/.npmrc
+          npm whoami
+          ./scripts/publish-npm-ci.sh
       - name: Comment on the pull-request about the new release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
