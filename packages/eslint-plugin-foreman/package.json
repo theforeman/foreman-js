@@ -7,8 +7,8 @@
   "bugs": {
     "url": "https://github.com/theforeman/foreman-js/issues"
   },
-  "main": "./index.js",
   "license": "MIT",
+  "main": "./index.js",
   "publishConfig": {
     "access": "public"
   },
