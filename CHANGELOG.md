@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.9](https://github.com/theforeman/foreman-js/compare/v7.2.8...v7.2.9) (2020-12-07)
+
+
+### Bug Fixes
+
+* **root:** attempt to fix the gh-actions npm deploy ([1fb38bc](https://github.com/theforeman/foreman-js/commit/1fb38bc26742991e38dc9cc4798abcaddf42323a))
+* **root:** attempt to fix the gh-actions npm deploy ([1f7694e](https://github.com/theforeman/foreman-js/commit/1f7694ecf2412817401a3b9827201f11314bfa18))
+* **root:** dummy commit to trigger deploy ([7f64d1b](https://github.com/theforeman/foreman-js/commit/7f64d1bcf87796c6b9a66f9d861d7bcdbec5c980))
+
+
+
+
+
 ## [7.2.8](https://github.com/theforeman/foreman-js/compare/v7.2.7...v7.2.8) (2020-12-02)
 
 
