@@ -37,13 +37,15 @@ GIT_LOG=`git log --format="%H" $(git describe --abbrev=0 --tags $(git rev-list -
 for COMMIT_HASH in $(echo $GIT_LOG); do
   # Search for github pr's comments url that contains the current $COMMIT_HASH
   GITHUB_PR_SEARCH_URL="https://api.github.com/search/issues?q=${COMMIT_HASH}"
-  GITHUB_PR_COMMENTS_URL=$(curl -H "Authorization: token ${GH_TOKEN}" -s "${GITHUB_PR_SEARCH_URL}" | jq -r '.items[0].comments_url'  2>/dev/null)
+  GITHUB_RELATED_COMMENTS_URL=$(curl -H "Authorization: token ${GH_TOKEN}" -s "${GITHUB_PR_SEARCH_URL}" | jq -r '.items[].comments_url'  2>/dev/null)
 
-  # Create a comment string for the PR
-  COMMENT=$(print_github_comment)
-  JSON_DATA="$( jq -nc --arg str "$COMMENT" '{"body": $str}' )"
+  for GITHUB_RELATED_COMMENT_URL in $GITHUB_RELATED_COMMENTS_URL; do
+    # Create a comment string for the PR
+    COMMENT=$(print_github_comment)
+    JSON_DATA="$( jq -nc --arg str "$COMMENT" '{"body": $str}' )"
 
-  # Comment on the github PR
-  echo "Adding github PR comment ${GITHUB_PR_COMMENTS_URL}"
-  curl -H "Authorization: token ${GH_TOKEN}" --request POST --data "${JSON_DATA}" "${GITHUB_PR_COMMENTS_URL}"
+    # Comment on the github PR
+    echo "Adding github PR comment ${GITHUB_RELATED_COMMENT_URL}"
+    curl -H "Authorization: token ${GH_TOKEN}" --request POST --data "${JSON_DATA}" "${GITHUB_RELATED_COMMENT_URL}"
+  done
 done
