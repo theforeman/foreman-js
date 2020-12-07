@@ -16,4 +16,4 @@ else
   NPM_TAG=${BRANCH_NAME/\//-}
 fi
 
-npm run lerna -- publish from-git --dist-tag ${NPM_TAG} --yes
+npm run lerna -- publish from-git --no-verify-access --dist-tag ${NPM_TAG} --yes

@@ -26,6 +26,7 @@ jobs:
           echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
           cat .npmrc
           npm whoami
+          npm access ls-packages
       - name: Install foreman-js npm dependencies
         run: npm install
       - name: Publish to github
@@ -40,6 +41,7 @@ jobs:
         run: |
           cat .npmrc
           npm whoami
+          npm access ls-packages
           ./scripts/publish-npm-ci.sh
       - name: Comment on the pull-request about the new release
         env:
