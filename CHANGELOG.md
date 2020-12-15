@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/theforeman/foreman-js/compare/v7.2.9...v8.0.0) (2020-12-15)
+
+
+### Bug Fixes
+
+* **root:** support edge cases when commenting on published prs ([151cac9](https://github.com/theforeman/foreman-js/commit/151cac9aa324fe36325cbeb38eb87b300177e15b))
+
+
+### Features
+
+* **vendor-core:** upgrade react-diff-view ([ae6d2a2](https://github.com/theforeman/foreman-js/commit/ae6d2a225991ea4d139fd52659feae010a172ec1))
+
+
+### BREAKING CHANGES
+
+* **vendor-core:** Breaks foreman DiffView component
+
+Co-authored-by: MariaAga <mariaagaphonchev@gmail.com>
+
+
+
+
+
 ## [7.2.9](https://github.com/theforeman/foreman-js/compare/v7.2.8...v7.2.9) (2020-12-07)
 
 

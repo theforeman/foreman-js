@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/theforeman/foreman-js/compare/v7.2.9...v8.0.0) (2020-12-15)
+
+**Note:** Version bump only for package @theforeman/stories
+
+
+
+
+
 ## [7.2.9](https://github.com/theforeman/foreman-js/compare/v7.2.8...v7.2.9) (2020-12-07)
 
 **Note:** Version bump only for package @theforeman/stories
