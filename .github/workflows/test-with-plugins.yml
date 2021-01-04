@@ -18,6 +18,9 @@ jobs:
             org: theforeman
             use-foreman: false
     steps:
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
