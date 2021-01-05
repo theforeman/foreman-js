@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/theforeman/foreman-js/compare/v8.0.0...v8.0.1) (2021-01-05)
+
+
+### Bug Fixes
+
+* **deps:** bump react-test-renderer from 16.12.0 to 17.0.1 ([b15f499](https://github.com/theforeman/foreman-js/commit/b15f499dee28da7ca29c57ff95a79f38770d79a7))
+
+
+
+
+
 # [8.0.0](https://github.com/theforeman/foreman-js/compare/v7.2.9...v8.0.0) (2020-12-15)
 
 **Note:** Version bump only for package @theforeman/test
