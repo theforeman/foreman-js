@@ -2,5 +2,8 @@
   "extends": [
     "@commitlint/config-conventional",
     "cz"
-  ]
+  ],
+  "rules": {
+    "body-max-line-length": [0, "always", 100]
+  }
 }
