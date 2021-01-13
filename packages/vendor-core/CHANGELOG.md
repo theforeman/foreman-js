@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.10](https://github.com/theforeman/foreman-js/compare/v7.2.9...v7.2.10) (2021-01-13)
+
+
+### Reverts
+
+* fix(deps): bump react from 16.9.0 to 17.0.1 ([#232](https://github.com/theforeman/foreman-js/issues/232)) ([8ffa059](https://github.com/theforeman/foreman-js/commit/8ffa0591698ba027c917f17e1e82471a7127f782))
+
+
+
+
+
 ## [7.2.9](https://github.com/theforeman/foreman-js/compare/v7.2.8...v7.2.9) (2020-12-07)
 
 **Note:** Version bump only for package @theforeman/vendor-core
