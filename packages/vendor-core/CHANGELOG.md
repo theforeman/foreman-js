@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.3](https://github.com/theforeman/foreman-js/compare/v8.0.2...v8.0.3) (2021-01-14)
+
+
+### Bug Fixes
+
+* **vendor-core:** update patternfly-react to 2.39.17 ([a94f06b](https://github.com/theforeman/foreman-js/commit/a94f06b209858569aca1ceeba9ba4c6bbdc0b405)), closes [#29020](https://github.com/theforeman/foreman-js/issues/29020)
+
+
+
+
+
 ## [8.0.2](https://github.com/theforeman/foreman-js/compare/v8.0.1...v8.0.2) (2021-01-14)
 
 **Note:** Version bump only for package @theforeman/vendor-core
