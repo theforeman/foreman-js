@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.4](https://github.com/theforeman/foreman-js/compare/v8.0.3...v8.0.4) (2021-01-17)
+
+
+### Reverts
+
+* fix(deps): bump react from 16.9.0 to 17.0.1 ([#232](https://github.com/theforeman/foreman-js/issues/232)) ([e4e939d](https://github.com/theforeman/foreman-js/commit/e4e939d7bde30a9b8c753de2a8770ba2701fb8b2))
+
+
+
+
+
 ## [8.0.3](https://github.com/theforeman/foreman-js/compare/v8.0.2...v8.0.3) (2021-01-14)
 
 
