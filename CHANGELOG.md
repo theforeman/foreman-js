@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/theforeman/foreman-js/compare/v8.0.5...v8.1.0) (2021-01-18)
+
+
+### Features
+
+* **vendor-core:** add @patternfly/react-catalog-view-extension ([3bf3160](https://github.com/theforeman/foreman-js/commit/3bf3160c9bd59c2c748734781a8943470057aaf0))
+
+
+
+
+
 ## [8.0.5](https://github.com/theforeman/foreman-js/compare/v8.0.4...v8.0.5) (2021-01-18)
 
 
