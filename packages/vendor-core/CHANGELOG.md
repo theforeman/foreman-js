@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.5](https://github.com/theforeman/foreman-js/compare/v8.0.4...v8.0.5) (2021-01-18)
+
+
+### Bug Fixes
+
+* **deps:** bump patternfly-react-extensions from 3.0.12 to 3.0.13 ([b3d7eff](https://github.com/theforeman/foreman-js/commit/b3d7effe4276794a855831511b54ed4fd87fb956))
+
+
+
+
+
 ## [8.0.4](https://github.com/theforeman/foreman-js/compare/v8.0.3...v8.0.4) (2021-01-17)
 
 
