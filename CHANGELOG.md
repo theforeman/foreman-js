@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.2](https://github.com/theforeman/foreman-js/compare/v8.1.1...v8.1.2) (2021-01-18)
+
+
+### Bug Fixes
+
+* **deps:** bump babel-loader from 8.0.6 to 8.2.2 ([#240](https://github.com/theforeman/foreman-js/issues/240)) ([78d13ee](https://github.com/theforeman/foreman-js/commit/78d13ee853e2bb832be5d9c7fbdd84b4e26e38aa))
+
+
+
+
+
 ## [8.1.1](https://github.com/theforeman/foreman-js/compare/v8.1.0...v8.1.1) (2021-01-18)
 
 **Note:** Version bump only for package foreman-js
