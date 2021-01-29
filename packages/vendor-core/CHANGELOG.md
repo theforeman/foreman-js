@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.2.0](https://github.com/theforeman/foreman-js/compare/v8.1.2...v8.2.0) (2021-01-29)
+
+
+### Features
+
+* **vendor-core:** upgrade all the [@patternfly](https://github.com/patternfly) packages ([f8661db](https://github.com/theforeman/foreman-js/commit/f8661db86e85d8fe823a25ca5281da684025f254))
+
+
+
+
+
 ## [8.1.2](https://github.com/theforeman/foreman-js/compare/v8.1.1...v8.1.2) (2021-01-18)
 
 **Note:** Version bump only for package @theforeman/vendor-core
