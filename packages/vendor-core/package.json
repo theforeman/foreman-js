@@ -25,6 +25,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@apollo/client": "^3.3.7",
     "@novnc/novnc": "novnc/noVNC#25b3d49d322b0a7c9ee1e071d93042d70f5176b7 ",
     "@patternfly/patternfly": "^4.70.2",
     "@patternfly/react-catalog-view-extension": "^4.8.126",
@@ -47,6 +48,7 @@
     "dsmorse-gridster": "^0.8.0",
     "file-saver": "^2.0.1",
     "formik": "^1.5.8",
+    "graphql": "^15.5.0",
     "history": "^4.7.2",
     "ipaddr.js": "~1.2.0",
     "isomorphic-fetch": "^2.2.1",
