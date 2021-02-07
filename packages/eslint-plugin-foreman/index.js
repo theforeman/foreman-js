@@ -1,9 +1,8 @@
-const core = require('./lib/src/core');
-const plugins = require('./lib/src/plugins');
+const createConfig = require('./src/config');
 
 module.exports = {
   configs: {
-    core,
-    plugins,
+    core: createConfig(),
+    plugins: createConfig(true),
   },
 };
