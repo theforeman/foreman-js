@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.3.0](https://github.com/theforeman/foreman-js/compare/v8.2.0...v8.3.0) (2021-02-07)
+
+
+### Features
+
+* **vendor-core:** add graphql client ([96f1cc4](https://github.com/theforeman/foreman-js/commit/96f1cc4112aa5e36ebe89346ba15142d91d311bb)), closes [#31745](https://github.com/theforeman/foreman-js/issues/31745)
+
+
+
+
+
 # [8.2.0](https://github.com/theforeman/foreman-js/compare/v8.1.2...v8.2.0) (2021-01-29)
 
 
