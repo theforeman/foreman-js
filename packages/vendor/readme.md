@@ -51,10 +51,6 @@ attribute | default value | description
 @import "~@theforeman/vendor/scss/mixins";
 ```
 
-### Development enviorment
-
-See [@theforeman/vendor-dev](/packages/vendor-dev) for development installation.
-
 ## Building
 
 This project use `webpack` to produce `development` and `production` versions of bundled `javascript` and `css` files together with a `manifest.json` and a `webpack-plugin` to use by the consumer.

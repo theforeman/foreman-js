@@ -48,7 +48,6 @@ const scopes = [
   'stories',
   'test',
   'vendor',
-  'vendor-dev',
   'vendor-core',
   'find-foreman',
   // deps and deps-dev are only allowed for dependbot PRs

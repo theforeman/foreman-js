@@ -23,9 +23,8 @@ The work on this repository started based on a discussion on [community.theforem
 
 Foreman and its plugins use many of the same JavaScript dependencies (npm packages).  The main purpose of `vendor` is to __gather these common dependencies into a single package.__
 
-- [@theforeman/vendor-core](packages/vendor-core) - This is the actual list of common dependencies.  Is a dependency of `vendor` and `vendor-dev`.
+- [@theforeman/vendor-core](packages/vendor-core) - This is the actual list of common dependencies.  Is a dependency of `vendor`.
 - [@theforeman/vendor](packages/vendor) - The dependencies in `vendor-core`, bundled to be used in Webpack.
-- [@theforeman/vendor-dev](packages/vendor-dev) - The dependencies in `vendor-core`, unbundled for use in development.
 
 _Note:_ In Foreman & plugins JavaScript code, you __do not__ need to import anything explicitly from vendor (~`import react from '@theforeman/vendor'`~); you can continue to import all modules like normal (`import react from 'react';`).
 
