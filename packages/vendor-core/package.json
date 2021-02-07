@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor-core",
-  "version": "8.3.1",
+  "version": "8.4.0-next-drop-vendor-dev.0",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
