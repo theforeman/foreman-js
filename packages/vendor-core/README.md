@@ -14,10 +14,10 @@
 Contains all the relevat npm dependencies.
 
 ### [lib/modules.js](lib/modules.js)
-Contains a list of exported packages, this list will be used by `@theforeman/vendor` and `@theforeman/vendor-dev`.
+Contains a list of exported packages, this list will be used by `@theforeman/vendor`.
 
 ### [scss/vendor-core.scss](scss/vendor-core.scss)
-`scss` file with relevant 3rd party scss files so `@theforeman/vendor` and `@theforeman/vendor-dev` can build a dist `css` file.
+`scss` file with relevant 3rd party scss files so `@theforeman/vendor` can build a dist `css` file.
 
 
 ## Contributing
