@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.3](https://github.com/theforeman/foreman-js/compare/v8.3.2...v8.3.3) (2021-02-15)
+
+
+### Bug Fixes
+
+* **vendor-core:** export apollo from vendor ([#261](https://github.com/theforeman/foreman-js/issues/261)) ([0a0c322](https://github.com/theforeman/foreman-js/commit/0a0c322c5e590852dae2256f9dc9ec4c33baa303))
+
+
+
+
+
 ## [8.3.2](https://github.com/theforeman/foreman-js/compare/v8.3.1...v8.3.2) (2021-02-11)
 
 **Note:** Version bump only for package @theforeman/vendor-core
