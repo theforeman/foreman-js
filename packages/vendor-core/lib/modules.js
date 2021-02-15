@@ -9,6 +9,7 @@ module.exports = [
   /**
    * React related
    */
+  '@apollo/client',
   'core-js/shim',
   'regenerator-runtime/runtime',
   'formik',
