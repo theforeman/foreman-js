@@ -26,7 +26,7 @@
     "commitlint-config-cz": "^0.13.1",
     "cz-customizable": "^6.2.1",
     "eslint": "^6.8.0",
-    "eslint-plugin-patternfly-react": "^0.3.0",
+    "eslint-plugin-patternfly-react": "^4.1.5",
     "lerna": "^3.22.1",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",

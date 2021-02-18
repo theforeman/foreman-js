@@ -29,7 +29,7 @@
     "chalk": "^4.1.0",
     "commander": "^4.0.1",
     "eslint-plugin-jquery": "^1.5.1",
-    "eslint-plugin-patternfly-react": "0.2.0",
+    "eslint-plugin-patternfly-react": "4.1.5",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react-hooks": "^2.1.1"
   },
