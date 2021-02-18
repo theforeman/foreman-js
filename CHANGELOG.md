@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.4](https://github.com/theforeman/foreman-js/compare/v8.3.3...v8.3.4) (2021-02-18)
+
+
+### Bug Fixes
+
+* **deps:** bump chalk from 3.0.0 to 4.1.0 ([#248](https://github.com/theforeman/foreman-js/issues/248)) ([9ccbbef](https://github.com/theforeman/foreman-js/commit/9ccbbefe82196bb3361f8917f456f4ef6d74c825))
+
+
+
+
+
 ## [8.3.3](https://github.com/theforeman/foreman-js/compare/v8.3.2...v8.3.3) (2021-02-15)
 
 
