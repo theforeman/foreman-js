@@ -26,6 +26,7 @@
     "@novnc/novnc": "novnc/noVNC#25b3d49d322b0a7c9ee1e071d93042d70f5176b7 ",
     "@patternfly/patternfly": "^4.70.2",
     "@patternfly/react-catalog-view-extension": "^4.8.126",
+    "@patternfly/react-charts": "^6.14.2",
     "@patternfly/react-core": "^4.84.4",
     "@patternfly/react-icons": "^4.7.22",
     "@patternfly/react-styles": "^4.7.22",
