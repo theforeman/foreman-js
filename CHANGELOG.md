@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.4.0](https://github.com/theforeman/foreman-js/compare/v8.3.4...v8.4.0) (2021-03-04)
+
+
+### Features
+
+* **vendor-core:** update pf4 to 2021.02 version ([b78ea00](https://github.com/theforeman/foreman-js/commit/b78ea0077feadf249ea9ff8f913940b0b8b9ef7c))
+
+
+
+
+
 ## [8.3.4](https://github.com/theforeman/foreman-js/compare/v8.3.3...v8.3.4) (2021-02-18)
 
 
