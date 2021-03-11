@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.1](https://github.com/theforeman/foreman-js/compare/v8.4.0...v8.4.1) (2021-03-11)
+
+
+### Bug Fixes
+
+* **vendor-core:** export apollo/client/link/batch-http from vendor ([448f38c](https://github.com/theforeman/foreman-js/commit/448f38c694a35237a3f391ad469026d4de1d8acc))
+
+
+
+
+
 # [8.4.0](https://github.com/theforeman/foreman-js/compare/v8.3.4...v8.4.0) (2021-03-04)
 
 
