@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.2](https://github.com/theforeman/foreman-js/compare/v8.4.1...v8.4.2) (2021-03-15)
+
+
+### Bug Fixes
+
+* **deps:** bump @storybook/addon-actions from 6.0.22 to 6.1.18 ([#264](https://github.com/theforeman/foreman-js/issues/264)) ([456afbc](https://github.com/theforeman/foreman-js/commit/456afbce1c0f4ce107ed9048c453c64155ed29b6))
+
+
+
+
+
 ## [8.4.1](https://github.com/theforeman/foreman-js/compare/v8.4.0...v8.4.1) (2021-03-11)
 
 
