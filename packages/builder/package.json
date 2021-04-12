@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/builder",
-  "version": "8.4.3",
+  "version": "8.4.4",
   "description": "Build production and development bundle files for foreman core and plugins.",
   "author": "Avi Sharvit <sharvita@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
