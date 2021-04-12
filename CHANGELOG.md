@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.5](https://github.com/theforeman/foreman-js/compare/v8.4.4...v8.4.5) (2021-04-12)
+
+
+### Bug Fixes
+
+* **deps:** bump jest from 26.4.2 to 26.6.3 ([43a976d](https://github.com/theforeman/foreman-js/commit/43a976d1e03f8e712fbea942332819723ead3511))
+
+
+
+
+
 ## [8.4.4](https://github.com/theforeman/foreman-js/compare/v8.4.3...v8.4.4) (2021-04-12)
 
 **Note:** Version bump only for package foreman-js
