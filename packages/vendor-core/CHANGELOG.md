@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.6](https://github.com/theforeman/foreman-js/compare/v8.4.5...v8.4.6) (2021-05-11)
+
+
+### Bug Fixes
+
+* **deps:** bump react-dnd from 9.5.1 to 14.0.2 ([7282ad6](https://github.com/theforeman/foreman-js/commit/7282ad650c60ab4bc5ce3bdc6d665158026f0cb5))
+
+
+
+
+
 ## [8.4.5](https://github.com/theforeman/foreman-js/compare/v8.4.4...v8.4.5) (2021-04-12)
 
 **Note:** Version bump only for package @theforeman/vendor-core
