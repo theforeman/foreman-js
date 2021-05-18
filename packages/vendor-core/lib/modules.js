@@ -53,6 +53,7 @@ module.exports = [
   '@patternfly/react-table',
   '@patternfly/react-tokens',
   '@patternfly/react-styles',
+  '@patternfly/react-charts',
 
   /**
    * Brace related
