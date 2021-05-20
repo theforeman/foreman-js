@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.5.0](https://github.com/theforeman/foreman-js/compare/v8.4.6...v8.5.0) (2021-05-20)
+
+**Note:** Version bump only for package @theforeman/vendor
+
+
+
+
+
 ## [8.4.6](https://github.com/theforeman/foreman-js/compare/v8.4.5...v8.4.6) (2021-05-11)
 
 **Note:** Version bump only for package @theforeman/vendor

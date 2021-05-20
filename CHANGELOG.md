@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.5.0](https://github.com/theforeman/foreman-js/compare/v8.4.6...v8.5.0) (2021-05-20)
+
+
+### Features
+
+* **vendor-core:** add pf4 react-charts ([d5b8e82](https://github.com/theforeman/foreman-js/commit/d5b8e821da50dca322647f121708e23ca1468d21))
+
+
+
+
+
 ## [8.4.6](https://github.com/theforeman/foreman-js/compare/v8.4.5...v8.4.6) (2021-05-11)
 
 
