@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.6.0](https://github.com/theforeman/foreman-js/compare/v8.5.0...v8.6.0) (2021-06-29)
+
+
+### Features
+
+* **vendor-core:** update @patternfly/react-core to 4.128.6 ([06a4e97](https://github.com/theforeman/foreman-js/commit/06a4e97f1fa4ed14078718911d7995b5bb741f29))
+
+
+
+
+
 # [8.5.0](https://github.com/theforeman/foreman-js/compare/v8.4.6...v8.5.0) (2021-05-20)
 
 
