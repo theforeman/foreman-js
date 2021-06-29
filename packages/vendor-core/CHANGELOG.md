@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.7.0](https://github.com/theforeman/foreman-js/compare/v8.6.0...v8.7.0) (2021-06-29)
+
+
+### Features
+
+* **vendor-core:** add brace searchbox to the react ace editor ([#313](https://github.com/theforeman/foreman-js/issues/313)) ([e68586a](https://github.com/theforeman/foreman-js/commit/e68586a72954a2514b8f60ce2fb0fb968c134a50))
+
+
+
+
+
 # [8.6.0](https://github.com/theforeman/foreman-js/compare/v8.5.0...v8.6.0) (2021-06-29)
 
 
