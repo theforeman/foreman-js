@@ -69,6 +69,7 @@ module.exports = [
   'brace/theme/monokai',
   'brace/keybinding/vim',
   'brace/keybinding/emacs',
+  'brace/ext/searchbox',
 
   /**
    * UUID
