@@ -47,6 +47,7 @@ module.exports = {
       'babel-jest',
       { cwd: path.resolve(__dirname), filename: 'babel.config.js' },
     ],
+    '\\.(gql|graphql)$': 'jest-transform-graphql',
   },
   resolver: require.resolve('./resolveNodeModule'),
   setupFiles: [
