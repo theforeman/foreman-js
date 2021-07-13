@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.8.0](https://github.com/theforeman/foreman-js/compare/v8.7.2...v8.8.0) (2021-07-13)
+
+
+### Features
+
+* **vendor-core:** add @reduxjs/toolkit library ([f9d46b0](https://github.com/theforeman/foreman-js/commit/f9d46b0c93a20afe47bd1ec3f6a6561dda717530)), closes [#32903](https://github.com/theforeman/foreman-js/issues/32903)
+
+
+
+
+
 ## [8.7.2](https://github.com/theforeman/foreman-js/compare/v8.7.1...v8.7.2) (2021-07-03)
 
 **Note:** Version bump only for package @theforeman/vendor-core
