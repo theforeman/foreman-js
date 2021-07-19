@@ -14,9 +14,6 @@ jobs:
           - repo: foreman-tasks
             org: theforeman
             use-foreman: false
-          - repo: foreman_rh_cloud
-            org: theforeman
-            use-foreman: false
     steps:
       - uses: ruby/setup-ruby@v1
         with:
