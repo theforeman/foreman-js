@@ -32,6 +32,7 @@ module.exports = [
   'react-loading-skeleton',
   'react-markdown',
   'react-redux',
+  'react-use',
   'redux',
   'redux-logger',
   'redux-thunk',
