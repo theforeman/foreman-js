@@ -55,6 +55,7 @@ module.exports = [
   '@patternfly/react-tokens',
   '@patternfly/react-styles',
   '@patternfly/react-charts',
+  '@redhat-cloud-services/frontend-components',
 
   /**
    * Brace related
