@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.11.0](https://github.com/theforeman/foreman-js/compare/v8.10.0...v8.11.0) (2021-08-26)
+
+
+### Features
+
+* **vendor-core:** add @redhat-cloud-services/frontend-components ([6d53fc5](https://github.com/theforeman/foreman-js/commit/6d53fc555a4d9c9f4b7b7244e1f18964ae9d6e8a))
+
+
+
+
+
 # [8.10.0](https://github.com/theforeman/foreman-js/compare/v8.9.0...v8.10.0) (2021-08-16)
 
 
