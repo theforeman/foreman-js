@@ -23,6 +23,13 @@
   "scripts": {
     "test": "echo \"@theforeman/env does not contain any tests at the moment.\""
   },
+  "peerDependencies": {
+    "react": "16.x",
+    "react-redux": "7.x",
+    "redux": "4.x",
+    "redux-thunk": "2.x",
+    "react-router-dom": "5.x"
+  },
   "dependencies": {
     "@apollo/react-testing": "^4.0.0",
     "@testing-library/jest-dom": "^5.3.0",
