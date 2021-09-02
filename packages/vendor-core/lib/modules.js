@@ -110,6 +110,7 @@ module.exports = [
   'lodash',
   'axios',
   'file-saver',
+  'humanize-duration',
   'unidiff',
   'urijs',
   'yup',
