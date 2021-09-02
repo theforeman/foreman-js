@@ -27,7 +27,7 @@
     "@patternfly/patternfly": "^4.70.2",
     "@patternfly/react-catalog-view-extension": "^4.11.46",
     "@patternfly/react-charts": "~6.14.29",
-    "@patternfly/react-core": "~4.128.6",
+    "@patternfly/react-core": "~4.135.0",
     "@patternfly/react-icons": "~4.10.11",
     "@patternfly/react-styles": "~4.10.11",
     "@patternfly/react-table": "~4.29.4",
