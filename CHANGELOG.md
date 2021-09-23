@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.12.1](https://github.com/theforeman/foreman-js/compare/v8.12.0...v8.12.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* **deps:** bump jest ([ed36c72](https://github.com/theforeman/foreman-js/commit/ed36c723acc4f7efd4f8a2d8dcb67433e42dea4c))
+
+
+
+
+
 # [8.12.0](https://github.com/theforeman/foreman-js/compare/v8.11.0...v8.12.0) (2021-08-30)
 
 
