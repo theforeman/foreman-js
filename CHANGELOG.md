@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.13.0](https://github.com/theforeman/foreman-js/compare/v8.12.2...v8.13.0) (2021-09-30)
+
+
+### Features
+
+* **vendor-core:** add humanize-duration lib ([27bd8f0](https://github.com/theforeman/foreman-js/commit/27bd8f0cda21a2458bff4df1188eaf1c1690b0db))
+
+
+
+
+
 ## [8.12.2](https://github.com/theforeman/foreman-js/compare/v8.12.1...v8.12.2) (2021-09-30)
 
 
