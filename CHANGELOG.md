@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.12.2](https://github.com/theforeman/foreman-js/compare/v8.12.1...v8.12.2) (2021-09-30)
+
+
+### Reverts
+
+* Revert "fix(deps): bump jest" ([19b6bf3](https://github.com/theforeman/foreman-js/commit/19b6bf3609a2ad17183831923cd1675036bcafc2))
+
+
+
+
+
 ## [8.12.1](https://github.com/theforeman/foreman-js/compare/v8.12.0...v8.12.1) (2021-09-23)
 
 
