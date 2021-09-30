@@ -42,6 +42,7 @@ module.exports = [
   'isomorphic-fetch',
   'connected-react-router',
   'react-helmet',
+  'react-intl',
 
   /**
    * Patternfly related
