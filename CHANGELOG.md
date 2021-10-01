@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.14.0](https://github.com/theforeman/foreman-js/compare/v8.13.0...v8.14.0) (2021-10-01)
+
+
+### Features
+
+* **eslint-plugin-foreman:** allow for-of loops ([#353](https://github.com/theforeman/foreman-js/issues/353)) ([aa69f55](https://github.com/theforeman/foreman-js/commit/aa69f55415f92331eeb7a78c391c8d53cdf75e7c))
+
+
+
+
+
 # [8.13.0](https://github.com/theforeman/foreman-js/compare/v8.12.2...v8.13.0) (2021-09-30)
 
 
