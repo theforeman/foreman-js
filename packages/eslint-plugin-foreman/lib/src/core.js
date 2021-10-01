@@ -16,6 +16,7 @@ module.exports = {
         skipComments: true,
       },
     ],
+    'no-restricted-syntax': 'off',
     'promise/prefer-await-to-then': 'error',
     'prettier/prettier': [
       'error',
