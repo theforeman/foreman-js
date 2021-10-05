@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.15.0](https://github.com/theforeman/foreman-js/compare/v8.14.0...v8.15.0) (2021-10-05)
+
+
+### Features
+
+* **vendor-core:** add react-intl ([fa2a950](https://github.com/theforeman/foreman-js/commit/fa2a95042e69c1b4ba6f90809fc255c0eb4e81a0)), closes [#33604](https://github.com/theforeman/foreman-js/issues/33604)
+
+
+
+
+
 # [8.14.0](https://github.com/theforeman/foreman-js/compare/v8.13.0...v8.14.0) (2021-10-01)
 
 **Note:** Version bump only for package @theforeman/vendor-core

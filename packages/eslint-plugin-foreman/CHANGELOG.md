@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.15.0](https://github.com/theforeman/foreman-js/compare/v8.14.0...v8.15.0) (2021-10-05)
+
+**Note:** Version bump only for package @theforeman/eslint-plugin-foreman
+
+
+
+
+
 # [8.14.0](https://github.com/theforeman/foreman-js/compare/v8.13.0...v8.14.0) (2021-10-01)
 
 
