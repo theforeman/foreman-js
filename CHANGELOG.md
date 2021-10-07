@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.16.0-next-drop-vendor-dev.0](https://github.com/theforeman/foreman-js/compare/v8.15.1...v8.16.0-next-drop-vendor-dev.0) (2021-10-07)
+
+
+### Features
+
+* **test:** exports shared-modules.js ([ba04ee4](https://github.com/theforeman/foreman-js/commit/ba04ee421a7535afb1332a26f2fb73246aa368f1))
+
+
+
+
+
 ## [8.15.1](https://github.com/theforeman/foreman-js/compare/v8.15.0...v8.15.1) (2021-10-07)
 
 **Note:** Version bump only for package foreman-js
