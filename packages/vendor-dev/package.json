@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor-dev",
-  "version": "8.15.1",
+  "version": "8.16.0",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -22,8 +22,8 @@
     "eslint.extends.js"
   ],
   "dependencies": {
-    "@theforeman/find-foreman": "^8.15.1",
-    "@theforeman/vendor-core": "^8.15.1",
+    "@theforeman/find-foreman": "^8.16.0",
+    "@theforeman/vendor-core": "^8.16.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "eslint-import-resolver-alias": "^1.1.2"
   }
