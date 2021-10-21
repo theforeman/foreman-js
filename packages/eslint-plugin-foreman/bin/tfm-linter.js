@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S NODE_PRESERVE_SYMLINKS=1 node
 
 const program = require('commander');
 const ForemanLinter = require('../src/linter');
