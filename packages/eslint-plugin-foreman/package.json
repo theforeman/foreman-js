@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/eslint-plugin-foreman",
-  "version": "8.16.0",
+  "version": "8.17.0-next-drop-vendor-dev-01.0",
   "description": "Eslint plugin for the foreman",
   "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -24,9 +24,9 @@
     "test": "echo \"@theforeman/eslint-plugin-foreman does not contain any tests at the moment.\""
   },
   "dependencies": {
-    "@theforeman/find-foreman": "^8.16.0",
-    "@theforeman/test": "^8.16.0",
-    "@theforeman/vendor-core": "^8.16.0",
+    "@theforeman/find-foreman": "^8.17.0-next-drop-vendor-dev-01.0",
+    "@theforeman/test": "^8.17.0-next-drop-vendor-dev-01.0",
+    "@theforeman/vendor-core": "^8.17.0-next-drop-vendor-dev-01.0",
     "babel-eslint": "^9.0.0",
     "chalk": "^4.1.0",
     "commander": "^4.0.1",

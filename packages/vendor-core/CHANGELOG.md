@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.17.0-next-drop-vendor-dev-01.0](https://github.com/theforeman/foreman-js/compare/v8.16.0...v8.17.0-next-drop-vendor-dev-01.0) (2021-10-26)
+
+**Note:** Version bump only for package @theforeman/vendor-core
+
+
+
+
+
 # [8.16.0](https://github.com/theforeman/foreman-js/compare/v8.15.1...v8.16.0) (2021-10-21)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.17.0-next-drop-vendor-dev-01.0](https://github.com/theforeman/foreman-js/compare/v8.16.0...v8.17.0-next-drop-vendor-dev-01.0) (2021-10-26)
+
+
+### Bug Fixes
+
+* **eslint-plugin-foreman:** preserve symlinks when running tfm-lint ([b04f23a](https://github.com/theforeman/foreman-js/commit/b04f23ad0efd9d82547effd80a46d7e73018ee0c))
+
+
+### Features
+
+* **test:** exports shared-modules.js ([e2ac3ca](https://github.com/theforeman/foreman-js/commit/e2ac3ca98757e0aa4907d752f79c7c6f79fa456e))
+
+
+
+
+
 # [8.16.0](https://github.com/theforeman/foreman-js/compare/v8.15.1...v8.16.0) (2021-10-21)
 
 
