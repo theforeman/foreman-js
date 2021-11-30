@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/theforeman/foreman-js/compare/v8.16.0...v9.0.0) (2021-11-30)
+
+
+### Code Refactoring
+
+* **deps:** drop flot.jquery library ([eba921b](https://github.com/theforeman/foreman-js/commit/eba921b54fcfb650503a31b1ce0f00f9861273cd)), closes [#32584](https://github.com/theforeman/foreman-js/issues/32584)
+
+
+### BREAKING CHANGES
+
+* **deps:** The flot.jquery has been dropped and can be no longer used.
+
+
+
+
+
 # [8.16.0](https://github.com/theforeman/foreman-js/compare/v8.15.1...v8.16.0) (2021-10-21)
 
 
