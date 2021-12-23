@@ -59,20 +59,21 @@ module.exports = [
   '@redhat-cloud-services/frontend-components',
 
   /**
-   * Brace related
+   * ace-builds related
    */
-  'brace',
-  'brace/mode/ruby',
-  'brace/mode/json',
-  'brace/mode/sh',
-  'brace/mode/html_ruby',
-  'brace/mode/xml',
-  'brace/mode/yaml',
-  'brace/theme/github',
-  'brace/theme/monokai',
-  'brace/keybinding/vim',
-  'brace/keybinding/emacs',
-  'brace/ext/searchbox',
+  'ace-builds',
+  'ace-builds/src-noconflict/ext-language_tools',
+  'ace-builds/src-noconflict/mode-ruby',
+  'ace-builds/src-noconflict/mode-json',
+  'ace-builds/src-noconflict/mode-sh',
+  'ace-builds/src-noconflict/mode-html_ruby',
+  'ace-builds/src-noconflict/mode-xml',
+  'ace-builds/src-noconflict/mode-yaml',
+  'ace-builds/src-noconflict/theme-github',
+  'ace-builds/src-noconflict/theme-monokai',
+  'ace-builds/src-noconflict/keybinding-vim',
+  'ace-builds/src-noconflict/keybinding-emacs',
+  'ace-builds/src-min-noconflict/ext-searchbox',
 
   /**
    * UUID
