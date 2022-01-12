@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/theforeman/foreman-js/compare/v9.0.1...v10.0.0) (2022-01-12)
+
+
+### Bug Fixes
+
+* **vendor-core:** updating ace editor to fix a typo ([22cd273](https://github.com/theforeman/foreman-js/commit/22cd273da0a95df2b0bd66e9b9fe7ee9a4ec0f39)), closes [#34062](https://github.com/theforeman/foreman-js/issues/34062)
+
+
+### BREAKING CHANGES
+
+* **vendor-core:** ace editor search import changes, also need to disable loadWorkerFromBlob
+
+
+
+
+
 ## [9.0.1](https://github.com/theforeman/foreman-js/compare/v9.0.0...v9.0.1) (2021-12-12)
 
 **Note:** Version bump only for package @theforeman/vendor-core
