@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "@apollo/client": "^3.3.7",
-    "@novnc/novnc": "novnc/noVNC#25b3d49d322b0a7c9ee1e071d93042d70f5176b7 ",
+    "@novnc/novnc": "^1.3.0",
     "@patternfly/patternfly": "^4.70.2",
     "@patternfly/react-catalog-view-extension": "^4.13.17",
     "@patternfly/react-charts": "~6.15.21",
