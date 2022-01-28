@@ -62,6 +62,7 @@ module.exports = [
    * ace-builds related
    */
   'ace-builds',
+  'ace-builds/src-noconflict/ace',
   'ace-builds/src-noconflict/ext-language_tools',
   'ace-builds/src-noconflict/mode-ruby',
   'ace-builds/src-noconflict/mode-json',
