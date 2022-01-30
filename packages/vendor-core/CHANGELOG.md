@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/theforeman/foreman-js/compare/v10.0.0...v10.0.1) (2022-01-30)
+
+
+### Bug Fixes
+
+* **vendor-core:** add ace-builds ace to modules ([64a7614](https://github.com/theforeman/foreman-js/commit/64a761418b2403959e911807c0b70e38be4f041a))
+
+
+
+
+
 # [10.0.0](https://github.com/theforeman/foreman-js/compare/v9.0.1...v10.0.0) (2022-01-12)
 
 
