@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.2](https://github.com/theforeman/foreman-js/compare/v10.0.1...v10.0.2) (2022-02-15)
+
+
+### Bug Fixes
+
+* **vendor-core:** remove unused packages from vendor core ([0456b7b](https://github.com/theforeman/foreman-js/commit/0456b7ba7d2635b1133f279b22eb51f30081a2b7))
+
+
+
+
+
 ## [10.0.1](https://github.com/theforeman/foreman-js/compare/v10.0.0...v10.0.1) (2022-01-30)
 
 
