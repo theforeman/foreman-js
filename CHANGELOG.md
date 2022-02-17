@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/theforeman/foreman-js/compare/v10.0.2...v10.1.0) (2022-02-17)
+
+
+### Features
+
+* **vendor-core:** update all pf4 related ([c83ff0e](https://github.com/theforeman/foreman-js/commit/c83ff0e29d68df4d229e8f2d1be3eabbff9e89a0))
+
+
+
+
+
 ## [10.0.2](https://github.com/theforeman/foreman-js/compare/v10.0.1...v10.0.2) (2022-02-15)
 
 
