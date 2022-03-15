@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.1](https://github.com/theforeman/foreman-js/compare/v10.1.0...v10.1.1) (2022-03-15)
+
+**Note:** Version bump only for package @theforeman/test
+
+
+
+
+
 # [10.1.0](https://github.com/theforeman/foreman-js/compare/v10.0.2...v10.1.0) (2022-02-17)
 
 **Note:** Version bump only for package @theforeman/test

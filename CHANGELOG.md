@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.1](https://github.com/theforeman/foreman-js/compare/v10.1.0...v10.1.1) (2022-03-15)
+
+
+### Bug Fixes
+
+* **vendor-core:** add styles of [@redhat-cloud-services](https://github.com/redhat-cloud-services) ([8fe8afe](https://github.com/theforeman/foreman-js/commit/8fe8afedecb8f02d8e1c61b1c485d92fda34bae3))
+
+
+
+
+
 # [10.1.0](https://github.com/theforeman/foreman-js/compare/v10.0.2...v10.1.0) (2022-02-17)
 
 
