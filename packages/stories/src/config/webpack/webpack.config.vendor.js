@@ -14,16 +14,24 @@ module.exports = ({ config, mode }) => {
     (p) => p.constructor.name === 'HtmlWebpackPlugin'
   );
 
-  const { templateParameters } = htmlWebpackPlugin.options;
-
-  htmlWebpackPlugin.options.templateParameters = (...args) => {
-    const htmlConfig = templateParameters(...args);
-
-    htmlConfig.files.js = [...vendorJsFiles, ...htmlConfig.files.js];
-    htmlConfig.files.css = [...vendorCssFiles, ...htmlConfig.files.css];
-
-    return htmlConfig;
-  };
+  htmlWebpackPlugin.options.templateParameters = (
+    compilation,
+    assets,
+    assetTags,
+    options
+  ) => ({
+    compilation,
+    webpackConfig: compilation.options,
+    htmlWebpackPlugin: {
+      tags: assetTags,
+      files: {
+        ...assets,
+        js: [...vendorJsFiles, ...assets.js],
+        css: [...vendorCssFiles, ...assets.css],
+      },
+      options,
+    },
+  });
 
   config.plugins.push(new WebpackForemanVendorPlugin({ mode }));
 

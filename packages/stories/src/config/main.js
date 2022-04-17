@@ -3,11 +3,17 @@ module.exports = {
   addons: [
     '@storybook/addon-actions',
     '@storybook/addon-knobs',
+    '@storybook/addon-postcss',
     '@storybook/addon-storysource',
     '@storybook/addon-viewport',
     {
       name: '@storybook/addon-docs',
-      options: { configureJSX: false },
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+        transcludeMarkdown: true,
+      },
     },
   ],
 };
