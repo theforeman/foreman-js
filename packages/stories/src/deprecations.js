@@ -22,11 +22,6 @@ export const withKnobs = () =>
   deprecationError('withKnobs', '@storybook/addon-knobs');
 export const button = () =>
   deprecationError('button', '@storybook/addon-knobs');
-export const storiesOf = () => {
-  throw new Error(
-    'storiesOf is no longer supported. Use Component Story Format or MDX instead.'
-  );
-};
 
 export const text = () => deprecationError('text', '@storybook/addon-knobs');
 export const color = () => deprecationError('color', '@storybook/addon-knobs');
