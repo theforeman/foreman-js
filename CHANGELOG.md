@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.2](https://github.com/theforeman/foreman-js/compare/v10.1.1...v10.1.2) (2022-04-20)
+
+
+### Bug Fixes
+
+* **stories:** upgrade storybook to v6.4 ([fbb1206](https://github.com/theforeman/foreman-js/commit/fbb1206d753a6cd7321b158f5839834ed3cf2d62))
+
+
+
+
+
 ## [10.1.1](https://github.com/theforeman/foreman-js/compare/v10.1.0...v10.1.1) (2022-03-15)
 
 
