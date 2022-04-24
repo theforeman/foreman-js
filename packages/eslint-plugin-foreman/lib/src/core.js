@@ -1,5 +1,11 @@
 module.exports = {
-  plugins: ['patternfly-react', 'promise', 'jquery', 'react-hooks'],
+  plugins: [
+    'patternfly-react',
+    'promise',
+    'jquery',
+    'react-hooks',
+    'sentence-case',
+  ],
   extends: [
     'plugin:patternfly-react/recommended',
     require.resolve('@theforeman/vendor-dev/eslint.extends.js'),
@@ -42,5 +48,6 @@ module.exports = {
         trailingComma: 'es5',
       },
     ],
+    'sentence-case/sentence-case': 'warn',
   },
 };

@@ -33,9 +33,9 @@ jobs:
       - name: Link foreman-js to foreman
         run: npm run link -- --location '${{ github.workspace }}/projects/foreman'
         working-directory: ${{ github.workspace }}/projects/foreman-js
-      - name: Run ${{ matrix.repo }} tests
-        run: npm test
-        working-directory: ${{ github.workspace }}/projects/foreman
       - name: Run ${{ matrix.repo }} lint
         run: npm run lint
+        working-directory: ${{ github.workspace }}/projects/foreman
+      - name: Run ${{ matrix.repo }} tests
+        run: npm test
         working-directory: ${{ github.workspace }}/projects/foreman
