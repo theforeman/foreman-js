@@ -19,19 +19,27 @@ module.exports = ({ config, mode }) => {
     assets,
     assetTags,
     options
-  ) => ({
-    compilation,
-    webpackConfig: compilation.options,
-    htmlWebpackPlugin: {
-      tags: assetTags,
-      files: {
-        ...assets,
-        js: [...vendorJsFiles, ...assets.js],
-        css: [...vendorCssFiles, ...assets.css],
-      },
-      options,
-    },
-  });
+  ) =>
+    Promise.resolve().then(() => {
+      try {
+        return {
+          compilation,
+          webpackConfig: compilation.options,
+          htmlWebpackPlugin: {
+            tags: assetTags,
+            files: {
+              ...assets,
+              js: [...vendorJsFiles, ...assets.js],
+              css: [...vendorCssFiles, ...assets.css],
+            },
+            options,
+          },
+        };
+      } catch (e) {
+        compilation.errors.push(new Error(`Template execution failed: ${e}`));
+        return Promise.reject(e);
+      }
+    });
 
   config.plugins.push(new WebpackForemanVendorPlugin({ mode }));
 
