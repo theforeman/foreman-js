@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.3](https://github.com/theforeman/foreman-js/compare/v10.1.2...v10.1.3) (2022-04-25)
+
+
+### Bug Fixes
+
+* **stories:** handle templateParameters as a promise ([89395ef](https://github.com/theforeman/foreman-js/commit/89395efde4bcb79b432f3ce56a6aa86881365e0a)), closes [#393](https://github.com/theforeman/foreman-js/issues/393)
+
+
+
+
+
 ## [10.1.2](https://github.com/theforeman/foreman-js/compare/v10.1.1...v10.1.2) (2022-04-20)
 
 
