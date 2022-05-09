@@ -18,7 +18,7 @@ module.exports = [
   'rc-input-number',
   'react',
   'react-ace',
-  'react-dom',
+  'react-dom/client',
   'react-dnd',
   'react-dnd-html5-backend',
   'react-debounce-input',
