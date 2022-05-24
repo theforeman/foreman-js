@@ -39,8 +39,8 @@
     "postpublish": "npm run deploy:docs"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
+    "@babel/core": "7.17.10",
+    "@babel/preset-env": "7.17.10",
     "@theforeman/vendor-core": "^10.1.3",
     "babel-loader": "^8.2.3",
     "compression-webpack-plugin": "^6.1.1",
