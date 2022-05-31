@@ -43,11 +43,14 @@ const resolveNodeModule = (sourcePath, currentFile) => {
     currentFileDirectory,
   });
 
-  const results = process.version.startsWith('v10')
-    ? currentFile.defaultResolver(moduleToResolve, currentFile)
-    : require.resolve(moduleToResolve, {
-        paths: [currentFileDirectory],
-      });
+  let results;
+  try {
+    results = require.resolve(moduleToResolve, {
+      paths: [currentFileDirectory],
+    });
+  } catch (error) {
+    results = currentFile.defaultResolver(moduleToResolve, currentFile);
+  }
 
   return rootDir
     ? results.replace(
