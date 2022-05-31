@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.5](https://github.com/theforeman/foreman-js/compare/v10.1.4...v10.1.5) (2022-05-31)
+
+
+### Bug Fixes
+
+* **test:** fix custom jest resolver ([83020eb](https://github.com/theforeman/foreman-js/commit/83020eb093703037953e037910320bea9157332c))
+
+
+
+
+
 ## [10.1.4](https://github.com/theforeman/foreman-js/compare/v10.1.3...v10.1.4) (2022-05-25)
 
 
