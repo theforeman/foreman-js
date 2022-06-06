@@ -1,5 +1,3 @@
-// eslint-disable-next-line import/no-unresolved, import/extensions
-import 'core-js/shim';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'regenerator-runtime/runtime';
 

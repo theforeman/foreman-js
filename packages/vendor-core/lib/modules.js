@@ -12,7 +12,6 @@ module.exports = [
   '@apollo/client',
   '@apollo/client/link/batch-http',
   '@reduxjs/toolkit',
-  'core-js/shim',
   'regenerator-runtime/runtime',
   'formik',
   'rc-input-number',
