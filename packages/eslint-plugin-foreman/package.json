@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/eslint-plugin-foreman",
-  "version": "10.1.5",
+  "version": "10.1.6",
   "description": "Eslint plugin for the foreman",
   "author": "Amir Fefer <amirfefer@gmail.com>",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
@@ -24,7 +24,7 @@
     "test": "echo \"@theforeman/eslint-plugin-foreman does not contain any tests at the moment.\""
   },
   "dependencies": {
-    "@theforeman/vendor-dev": "^10.1.5",
+    "@theforeman/vendor-dev": "^10.1.6",
     "babel-eslint": "^9.0.0",
     "chalk": "^4.1.0",
     "commander": "^4.0.1",
