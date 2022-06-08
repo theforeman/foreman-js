@@ -78,11 +78,6 @@ See [`contributing.md`](./contributing.md)
 
 - Drop `react`
 
-### Track
-
-- Track `novnc` versions, when a new version that is bigger then noVNC 1.1.0 will released we should update it
-(The last versions of novnc were not released consistently, but you can check for a new release in February).
-
 ---
 
 ## `@theforeman/vendor`
