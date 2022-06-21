@@ -17,7 +17,7 @@ program
 
 program.parse(process.argv);
 
-const { plugin, config } = program;
+const { plugin, config } = program.opts();
 
 const overrideConfig = () => {
   if (config) return config;
