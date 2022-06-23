@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.7](https://github.com/theforeman/foreman-js/compare/v10.1.6...v10.1.7) (2022-06-23)
+
+
+### Bug Fixes
+
+* **test:** updates commander from v4 to v7 ([ace2ffb](https://github.com/theforeman/foreman-js/commit/ace2ffbab655b72b0e35517af62a2b1c6066233a))
+
+
+
+
+
 ## [10.1.6](https://github.com/theforeman/foreman-js/compare/v10.1.5...v10.1.6) (2022-06-08)
 
 **Note:** Version bump only for package @theforeman/test
