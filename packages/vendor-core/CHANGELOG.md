@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/theforeman/foreman-js/compare/v10.1.7...v11.0.0) (2022-07-27)
+
+
+### Bug Fixes
+
+* **vendor:** updating scss-bundle ([3a78242](https://github.com/theforeman/foreman-js/commit/3a782426d7074f4dfef78e23368fc26eee9c5bd0))
+
+
+### BREAKING CHANGES
+
+* **vendor:** removing bootstrap mixins, replacing node-sass with sass
+
+
+
+
+
 ## [10.1.7](https://github.com/theforeman/foreman-js/compare/v10.1.6...v10.1.7) (2022-06-23)
 
 **Note:** Version bump only for package @theforeman/vendor-core
