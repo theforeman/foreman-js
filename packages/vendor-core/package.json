@@ -25,7 +25,6 @@
     "@apollo/client": "^3.3.7",
     "@novnc/novnc": "1.3",
     "@patternfly/patternfly": "^4.171.1",
-    "@patternfly/react-catalog-view-extension": "^4.45.0",
     "@patternfly/react-charts": "~6.47.0",
     "@patternfly/react-core": "~4.194.0",
     "@patternfly/react-icons": "~4.45.0",
