@@ -46,7 +46,6 @@ module.exports = [
    */
   'patternfly-react',
   'patternfly-react-extensions',
-  '@patternfly/react-catalog-view-extension',
   '@patternfly/react-core',
   '@patternfly/react-icons',
   '@patternfly/react-table',
