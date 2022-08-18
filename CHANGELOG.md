@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/theforeman/foreman-js/compare/v11.0.0...v12.0.0) (2022-08-18)
+
+
+### Features
+
+* **vendor-core:** remove patternfly/react-catalog-view-extension ([bd015b2](https://github.com/theforeman/foreman-js/commit/bd015b2be2b88265fc82708e2ae80bac6cc714a6))
+
+
+### BREAKING CHANGES
+
+* **vendor-core:** Removes patternfly/react-catalog-view-extension
+
+
+
+
+
 # [11.0.0](https://github.com/theforeman/foreman-js/compare/v10.1.7...v11.0.0) (2022-07-27)
 
 
