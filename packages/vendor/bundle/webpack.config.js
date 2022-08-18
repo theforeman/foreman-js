@@ -45,7 +45,18 @@ const config = {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              // Prefer `dart-sass`
+              // eslint-disable-next-line global-require
+              implementation: require('sass'),
+            },
+          },
+        ],
       },
       {
         test: /\.(svg|ttf|eot|woff|woff2)$/,
