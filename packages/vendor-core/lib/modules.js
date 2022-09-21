@@ -114,7 +114,7 @@ module.exports = [
   'urijs',
   'yup',
   'select2',
-  '@novnc/novnc/core/rfb',
+  '@novnc/novnc',
   '@spice-project/spice-html5',
   '@webcomponents/webcomponentsjs/webcomponents-bundle',
   '@webcomponents/webcomponentsjs/custom-elements-es5-adapter',
