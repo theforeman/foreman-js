@@ -27,7 +27,7 @@
     "cz-customizable": "^6.2.1",
     "eslint": "^7.32.0",
     "eslint-plugin-patternfly-react": "^4.1.8",
-    "lerna": "^3.22.1",
+    "lerna": "^6.0.1",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "surge": "^0.21.6"
