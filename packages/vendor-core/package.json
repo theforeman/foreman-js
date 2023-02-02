@@ -31,7 +31,7 @@
     "@patternfly/react-styles": "~4.92.3",
     "@patternfly/react-table": "~4.112.6",
     "@patternfly/react-tokens": "~4.94.3",
-    "@redhat-cloud-services/frontend-components": "3.8.12",
+    "@redhat-cloud-services/frontend-components": "3.9.29",
     "@reduxjs/toolkit": "^1.6.0",
     "@spice-project/spice-html5": "^0.2.1",
     "@webcomponents/webcomponentsjs": "^2.2.10",
