@@ -1,0 +1,28 @@
+{
+  "name": "@theforeman/eslint-plugin-rules",
+  "version": "12.0.2",
+  "description": "Eslint custom rules for the foreman",
+  "homepage": "https://github.com/theforeman/foreman-js#readme",
+  "bugs": {
+    "url": "https://github.com/theforeman/foreman-js/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theforeman/foreman-js.git",
+    "directory": "packages/eslint-plugin-rules"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"@theforeman/eslint-plugin-rules does not contain any tests at the moment.\""
+  },
+  "dependencies": {
+    "jsx-ast-utils": "^3.3.3"
+  },
+  "peerDependencies": {
+    "eslint": "^6.7.0"
+  }
+}
