@@ -9,7 +9,7 @@ jobs:
     runs-on: 'ubuntu-latest'
     strategy:
       matrix:
-        package: ['builder', 'eslint-plugin-foreman', 'find-foreman', 'stories', 'test', 'vendor-core', 'vendor-dev', 'vendor']
+        package: ['builder', 'eslint-plugin-foreman', 'eslint-plugin-rules', 'find-foreman', 'stories', 'test', 'vendor-core', 'vendor-dev', 'vendor']
 
     steps:
     # only run if changes are detected in specified path
