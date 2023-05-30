@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.1](https://github.com/theforeman/foreman-js/compare/v12.1.0...v12.1.1) (2023-05-30)
+
+
+### Bug Fixes
+
+* **vendor-dev:** fix lint failures when theforeman/stories is not installed ([9258698](https://github.com/theforeman/foreman-js/commit/9258698b261394c8fd522dd770e046872bc7704b))
+
+
+
+
+
 # [12.1.0](https://github.com/theforeman/foreman-js/compare/v12.0.2...v12.1.0) (2023-05-05)
 
 

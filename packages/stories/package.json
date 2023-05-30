@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/stories",
-  "version": "12.1.0",
+  "version": "12.1.1",
   "description": "Documentation library for the foreman project",
   "author": "Avi Sharvit <sharvita@gmail.com>",
   "license": "MIT",
@@ -40,8 +40,8 @@
     "@storybook/addon-viewport": "^6.4.0",
     "@storybook/react": "^6.4.0",
     "@storybook/source-loader": "^6.4.0",
-    "@theforeman/builder": "^12.1.0",
-    "@theforeman/vendor": "^12.1.0",
+    "@theforeman/builder": "^12.1.1",
+    "@theforeman/vendor": "^12.1.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-react-docgen": "^3.2.0",
     "commander": "^4.0.1",
