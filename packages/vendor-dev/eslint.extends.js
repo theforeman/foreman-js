@@ -17,6 +17,7 @@ const {
   foremanLocation,
 } = require('@theforeman/find-foreman');
 const createVendorModulesAliases = require('./lib/createVendorModulesAliases');
+const fs = require('fs');
 
 const isPlugin = !isForemanLocation();
 const foreman = foremanLocation(false);
@@ -28,8 +29,11 @@ const packageJsonDirectories = [
   './',
   foremanVendorRelative,
   foremanTestRelative,
-  foremanStoriesRelative,
 ];
+
+if (fs.existsSync(foremanStoriesRelative)) {
+  packageJsonDirectories.push(foremanStoriesRelative);
+}
 
 if (isPlugin && foreman) {
   packageJsonDirectories.push(foremanLocation());
