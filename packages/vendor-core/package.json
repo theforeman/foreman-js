@@ -51,7 +51,7 @@
     "history": "^4.7.2",
     "humanize-duration": "3.27.0",
     "ipaddr.js": "~1.2.0",
-    "jquery": "~2.2.4",
+    "jquery": "~3.6.4",
     "jquery-ujs": "~1.2.0",
     "jquery.cookie": "~1.4.1",
     "jstz": "~1.0.7",
