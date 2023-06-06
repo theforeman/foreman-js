@@ -35,6 +35,7 @@ module.exports = {
           'Switch',
           'TabButton',
           'TabContent',
+          'Tab',
           'Tabs',
           'Text',
           'TextInput',
