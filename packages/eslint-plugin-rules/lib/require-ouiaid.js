@@ -2,6 +2,7 @@ const getProp = require('jsx-ast-utils/getProp');
 
 module.exports = {
   create(context) {
+    const patternflyImports = new Set();
     const options = context.options.length
       ? context.options
       : [
@@ -34,6 +35,7 @@ module.exports = {
           'Switch',
           'TabButton',
           'TabContent',
+          'Tab',
           'Tabs',
           'Text',
           'TextInput',
@@ -44,17 +46,39 @@ module.exports = {
           'Tr',
         ];
 
-    return {
-      JSXElement(node) {
-        if (!options.includes(node.openingElement.name.name)) {
-          return;
-        }
+    function addPatternflyImport(node) {
+      if (
+        node.type === 'ImportDeclaration' &&
+        node.source.value.startsWith('@patternfly/react')
+      ) {
+        node.specifiers.forEach((specifier) => {
+          if (specifier.type === 'ImportSpecifier') {
+            patternflyImports.add(specifier.local.name);
+          }
+        });
+      }
+    }
 
-        const ouiaIdProp = getProp(node.openingElement.attributes, 'ouiaId');
+    function checkPatternflyComponent(node) {
+      if (!options.includes(node.name.name)) {
+        return;
+      }
+      if (
+        node.type === 'JSXOpeningElement' &&
+        patternflyImports.has(node.name.name)
+      ) {
+        const ouiaIdProp = getProp(node.attributes, 'ouiaId');
         if (!ouiaIdProp) {
-          context.report({ node, message: 'ouiaId property is missing' });
+          context.report({
+            node,
+            message: `ouiaId property is missing in PatternFly component '${node.name.name}'`,
+          });
         }
-      },
+      }
+    }
+    return {
+      ImportDeclaration: addPatternflyImport,
+      JSXOpeningElement: checkPatternflyComponent,
     };
   },
 };
