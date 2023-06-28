@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0](https://github.com/theforeman/foreman-js/compare/v12.1.1...v12.2.0) (2023-06-28)
+
+**Note:** Version bump only for package @theforeman/vendor-core
+
+
+
+
+
 ## [12.1.1](https://github.com/theforeman/foreman-js/compare/v12.1.0...v12.1.1) (2023-05-30)
 
 **Note:** Version bump only for package @theforeman/vendor-core

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0](https://github.com/theforeman/foreman-js/compare/v12.1.1...v12.2.0) (2023-06-28)
+
+
+### Features
+
+* **eslint-plugin-rules:** checking for ouiaId in pf4 components only ([#470](https://github.com/theforeman/foreman-js/issues/470)) ([afe1c7f](https://github.com/theforeman/foreman-js/commit/afe1c7f8607b7d85a83462bbc90a571208c6b808))
+
+
+
+
+
 ## [12.1.1](https://github.com/theforeman/foreman-js/compare/v12.1.0...v12.1.1) (2023-05-30)
 
 
