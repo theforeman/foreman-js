@@ -38,7 +38,8 @@
     "@babel/plugin-transform-modules-commonjs": "7.9.0",
     "@babel/plugin-transform-modules-systemjs": "7.9.0",
     "@babel/plugin-transform-object-assign": "^7.2.0",
-    "@babel/preset-env": "7.9.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "7.16.7",
     "babel-plugin-dynamic-import-node": "2.3.0"
   },
