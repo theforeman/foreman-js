@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.2](https://github.com/theforeman/foreman-js/compare/v12.2.1...v12.2.2) (2023-12-19)
+
+
+### Bug Fixes
+
+* **builder:** babel plugin rename from proposal to transform ([#472](https://github.com/theforeman/foreman-js/issues/472)) ([7ddeb96](https://github.com/theforeman/foreman-js/commit/7ddeb963c2c1f537dab4d8d9e0fd18c506e67984))
+
+
+
+
+
 ## [12.2.1](https://github.com/theforeman/foreman-js/compare/v12.2.0...v12.2.1) (2023-12-14)
 
 **Note:** Version bump only for package foreman-js
