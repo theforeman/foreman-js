@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/eslint-plugin-rules",
-  "version": "12.2.2",
+  "version": "12.2.3",
   "description": "Eslint custom rules for the foreman",
   "homepage": "https://github.com/theforeman/foreman-js#readme",
   "bugs": {

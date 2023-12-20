@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.2.3](https://github.com/theforeman/foreman-js/compare/v12.2.2...v12.2.3) (2023-12-20)
+
+
+### Reverts
+
+* Revert "chore(builder): bump babel/preset-env (#471)" ([da110da](https://github.com/theforeman/foreman-js/commit/da110dab8099c551456df0f10f9c38f54d077008)), closes [#471](https://github.com/theforeman/foreman-js/issues/471)
+* Revert "fix(builder): babel plugin rename from proposal to transform (#472)" ([e7e6066](https://github.com/theforeman/foreman-js/commit/e7e60668692ce3b4898cb8cdd9f5db412aaf9ad5)), closes [#472](https://github.com/theforeman/foreman-js/issues/472)
+
+
+
+
+
 ## [12.2.2](https://github.com/theforeman/foreman-js/compare/v12.2.1...v12.2.2) (2023-12-19)
 
 
