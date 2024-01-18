@@ -9,7 +9,7 @@ jobs:
     runs-on: 'ubuntu-latest'
     strategy:
       matrix:
-        package: ['builder', 'eslint-plugin-foreman', 'eslint-plugin-rules', 'find-foreman', 'stories', 'test', 'vendor-core', 'vendor-dev', 'vendor']
+        package: ['builder', 'eslint-plugin-foreman', 'eslint-plugin-rules', 'find-foreman', 'test', 'vendor-core', 'vendor-dev', 'vendor']
 
     steps:
     # only run if changes are detected in specified path
@@ -28,9 +28,9 @@ jobs:
     - name: Checkout foreman-js
       if: ${{ steps.changes.outputs.matched == 'true' }}
       uses: actions/checkout@v2
-    - name: Package tarball 
+    - name: Package tarball
       if: ${{ steps.changes.outputs.matched == 'true' }}
-      run:  npm pack 
+      run:  npm pack
       working-directory: ${{ github.workspace }}/packages/${{ matrix.package }}
     - name: Upload tarball locally
       if: ${{ steps.changes.outputs.matched == 'true' }}

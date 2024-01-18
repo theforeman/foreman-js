@@ -16,12 +16,7 @@ module.exports = {
   testMatch: ['**/*.test.js'],
   testURL: 'http://localhost/',
   collectCoverage: true,
-  collectCoverageFrom: [
-    'webpack/**/*.js',
-    '!webpack/**/bundle*',
-    '!webpack/stories/**',
-    '!webpack/**/*stories.js',
-  ],
+  collectCoverageFrom: ['webpack/**/*.js', '!webpack/**/bundle*'],
   snapshotSerializers: [require.resolve('enzyme-to-json/serializer')],
   coverageReporters: ['lcov'],
   coverageDirectory: `${cwd}/coverage`,

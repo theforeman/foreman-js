@@ -37,7 +37,6 @@ In your CSS code, the `@import` statements _do_ need to be explicit; see [this p
 - [@theforeman/test](packages/test) - Adds theforeman testing tools to you project, including jest, enzyme and other utils.
 - [@theforeman/eslint-plugin-foreman](packages/eslint-plugin-foreman) - Shared `eslint` configuration.  Opinionated styling for Foreman core and plugins.
 - [@theforeman/eslint-plugin-rules](packages/eslint-plugin-rules) - Shared `eslint` custom rules.  Opinionated styling for Foreman core and plugins.
-- [@theforeman/stories](packages/stories) - React Storybook for the Foreman project (JavaScript and React documentation for developers)
 - [@theforeman/find-foreman](packages/find-foreman) - Package to find full path of Foreman relative to Foreman plugin.
 
 ## Contributing
