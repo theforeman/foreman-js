@@ -27,6 +27,10 @@ module.exports = {
   coverageDirectory: `${cwd}/coverage`,
   moduleNameMapper: {
     '^.+\\.(png|gif|css|scss)$': 'identity-obj-proxy',
+    '^react$': `${cwd}/node_modules/@theforeman/test/node_modules/react`,
+    '^react-dom$': `${cwd}/node_modules/@theforeman/test/node_modules/react-dom`,
+    '^react-redux$': `${cwd}/node_modules/@theforeman/vendor-core/node_modules/react-redux`,
+    '^react-router$': `${cwd}/node_modules/@theforeman/vendor-core/node_modules/react-router`,
     '^dnd-core$': 'dnd-core/dist/cjs',
     '^react-dnd$': 'react-dnd/dist/cjs',
     '^react-dnd-html5-backend$': 'react-dnd-html5-backend/dist/cjs',
