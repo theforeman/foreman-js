@@ -12,7 +12,7 @@
     "add-to-vendor": "lerna add --scope=@theforeman/vendor-core",
     "clean": "lerna clean --yes",
     "bootstrap": "lerna bootstrap",
-    "build": "node --max_old_space_size=8192 ./node_modules/.bin/lerna run --stream build",
+    "build": "node --max-old-space-size=8192 ./node_modules/.bin/lerna run --stream build",
     "test": "lerna run --stream test",
     "lint": "eslint .",
     "lint:commit": "commitlint --from=HEAD~1",
