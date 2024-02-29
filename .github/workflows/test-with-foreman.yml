@@ -25,10 +25,10 @@ jobs:
           repository: theforeman/foreman
           path: ./projects/foreman
       - name: Install foreman-js npm dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
         working-directory: ${{ github.workspace }}/projects/foreman-js
       - name: Install foreman npm dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
         working-directory: ${{ github.workspace }}/projects/foreman
       - name: Link foreman-js to foreman
         run: npm run link -- --location '${{ github.workspace }}/projects/foreman'
