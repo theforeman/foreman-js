@@ -27,6 +27,7 @@ const config = {
     path: path.resolve(projectRoot, 'dist'),
     filename: `${filename}.js`,
     publicPath: '/webpack/',
+    hashFunction: 'sha256',
   },
 
   optimization: {
