@@ -16,6 +16,7 @@ const config = {
     filename: 'vendor-webpack-plugin.js',
     library: 'vendorWebpackPlugin',
     libraryTarget: 'umd',
+    hashFunction: 'sha256',
   },
 
   module: {
