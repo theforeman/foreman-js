@@ -24,7 +24,7 @@ jobs:
       if: ${{ steps.changes.outputs.matched == 'true' }}
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 14.x
     - name: Checkout foreman-js
       if: ${{ steps.changes.outputs.matched == 'true' }}
       uses: actions/checkout@v2
