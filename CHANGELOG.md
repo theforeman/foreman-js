@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/theforeman/foreman-js/compare/v13.0.0...v13.0.1) (2024-04-04)
+
+
+### Bug Fixes
+
+* **vendor-core:** pin frontend-component-utilities ([82403cf](https://github.com/theforeman/foreman-js/commit/82403cf6d3fbd6e0fb77e495bc93769a2c0f3835))
+
+
+
+
+
 # [13.0.0](https://github.com/theforeman/foreman-js/compare/v12.2.3...v13.0.0) (2024-02-05)
 
 
