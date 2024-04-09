@@ -40,15 +40,15 @@ jobs:
           ref: ${{ matrix.ref }}
           path: ./projects/${{ matrix.repo }}
       - name: Install foreman-js npm dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
         working-directory: ${{ github.workspace }}/projects/foreman-js
       - name: Install foreman npm dependencies
         if: ${{ matrix.use-foreman }}
-        run: npm install
+        run: npm install --legacy-peer-deps
         working-directory: ${{ github.workspace }}/projects/foreman
       - name: Install ${{ matrix.repo }} npm dependencies
         if: ${{ matrix.repo != 'foreman' }}
-        run: npm install
+        run: npm install --legacy-peer-deps
         working-directory: ${{ github.workspace }}/projects/${{ matrix.repo }}
       - name: Link foreman-js to foreman
         if: ${{ matrix.use-foreman }}

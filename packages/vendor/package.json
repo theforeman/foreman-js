@@ -12,7 +12,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=14.18.0 <15.0.0 || >=16.17.0"
   },
   "main": "dist/vendor-webpack-plugin.js",
   "files": [
@@ -23,9 +23,9 @@
   "scripts": {
     "prebuild": "rimraf dist docs",
     "postbuild": "rimraf dist/stats.development.json dist/stats.production.json",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider npm run build:bundle && NODE_OPTIONS=--openssl-legacy-provider npm run build:plugin && npm run build:scss && NODE_OPTIONS=--openssl-legacy-provider npm run build:docs",
+    "build": "npm run build:bundle && npm run build:plugin && npm run build:scss && npm run build:docs",
     "build:bundle": "npm run build:bundle:dev && npm run build:bundle:prod",
-    "build:bundle:base": "node --max-old-space-size=8192 --openssl-legacy-provider ./node_modules/.bin/webpack --config bundle/webpack.config.js",
+    "build:bundle:base": "node --max-old-space-size=8192 ./node_modules/.bin/webpack --config bundle/webpack.config.js",
     "build:bundle:dev": "npm run build:bundle:base -- --mode=development",
     "build:bundle:prod": "npm run build:bundle:base -- --mode=production",
     "build:plugin": "webpack --config vendor-webpack-plugin/webpack.config.js",
@@ -44,17 +44,17 @@
     "@theforeman/vendor-core": "^13.0.1",
     "babel-loader": "^8.2.3",
     "compression-webpack-plugin": "^6.1.1",
-    "copy-webpack-plugin": "^4.6.0",
-    "css-loader": "^3.6.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.10.0",
     "file-loader": "^6.2.0",
     "lodash": "^4.17.21",
-    "mini-css-extract-plugin": "^1.6.2",
+    "mini-css-extract-plugin": "^2.8.1",
     "rimraf": "^3.0.2",
     "sass": "^1.53.0",
     "sass-loader": "^10.2.0",
     "scss-bundle": "^3.1.0",
     "url-loader": "^4.1.1",
-    "webpack": "^4.46.0",
+    "webpack": "^5.91.0",
     "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.9.1",
     "webpack-inject-plugin": "^1.5.5",

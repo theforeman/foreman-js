@@ -14,8 +14,10 @@ const config = {
   output: {
     path: path.resolve(projectRoot, 'dist'),
     filename: 'vendor-webpack-plugin.js',
-    library: 'vendorWebpackPlugin',
-    libraryTarget: 'umd',
+    library: {
+      name: 'vendorWebpackPlugin',
+      type: 'umd',
+    },
   },
 
   module: {

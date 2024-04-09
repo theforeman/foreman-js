@@ -5,7 +5,7 @@ import Manifest from './Manifest';
 import createWebpackExternals from './createWebpackExternals';
 
 /**
- * Build for webpack@3
+ * Build for webpack@5
  * Webpack plugin to apply @theforeman/vendor into webpack
  */
 export default class WebpackForemanVendorPlugin {
@@ -18,12 +18,12 @@ export default class WebpackForemanVendorPlugin {
    * copy vendor-dist files to the consumer output path
    */
   applyCopyFiles(compiler) {
-    const fileToCopy = this.manifest.files.map((file) => ({
+    const patterns = this.manifest.files.map((file) => ({
       from: path.resolve(__dirname, '../dist', file),
       to: file,
     }));
 
-    new CopyWebpackPlugin(fileToCopy).apply(compiler);
+    new CopyWebpackPlugin({ patterns }).apply(compiler);
   }
 
   /**
