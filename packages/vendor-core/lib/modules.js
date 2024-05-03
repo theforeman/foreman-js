@@ -47,6 +47,7 @@ module.exports = [
   'patternfly-react',
   'patternfly-react-extensions',
   '@patternfly/react-core',
+  '@patternfly/react-core/next',
   '@patternfly/react-icons',
   '@patternfly/react-table',
   '@patternfly/react-tokens',
