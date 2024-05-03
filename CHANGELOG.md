@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/theforeman/foreman-js/compare/v13.0.1...v13.1.0) (2024-05-03)
+
+
+### Features
+
+* **vendor-core:** add @patternfly/react-core/next ([#480](https://github.com/theforeman/foreman-js/issues/480)) ([2a29df2](https://github.com/theforeman/foreman-js/commit/2a29df2d6f421aed1f0967e6e9485b17f61fd26d))
+
+
+
+
+
 ## [13.0.1](https://github.com/theforeman/foreman-js/compare/v13.0.0...v13.0.1) (2024-04-04)
 
 
