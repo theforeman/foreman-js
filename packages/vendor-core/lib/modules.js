@@ -113,6 +113,7 @@ module.exports = [
   'humanize-duration',
   'unidiff',
   'urijs',
+  'query-string',
   'yup',
   'select2',
   '@novnc/novnc/core/rfb',
