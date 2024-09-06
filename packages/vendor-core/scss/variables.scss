@@ -12,6 +12,14 @@ $fa-font-path: '~@patternfly/patternfly/assets/fonts/webfonts';
 $pf-global--fonticon-path: '~@patternfly/patternfly/assets/pficon';
 $pf-global--image-path: '~@patternfly/patternfly/assets/images';
 
+// patternfly v5
+$pf-v5-global--font-path: '~@patternfly/patternfly/assets/fonts';
+$fa-font-path: '~@patternfly/patternfly/assets/fonts/webfonts';
+$pf-v5-global--fonticon-path: '~@patternfly/patternfly/assets/pficon';
+$pf-v5-global--image-path: '~@patternfly/patternfly/assets/images';
+$pf-prefix: 'pf-v5-';
+$button: #{$pf-prefix + 'c-button'};
+
 // patternfly v3
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
 @import '~patternfly/dist/sass/patternfly/variables';
