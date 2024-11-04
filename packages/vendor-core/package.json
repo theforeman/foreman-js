@@ -42,7 +42,7 @@
     "classnames": "^2.2.5",
     "connected-react-router": "6.6.1",
     "core-js": "^2.5.7",
-    "datatables.net": "~1.10.12",
+    "datatables.net": "~1.11.3",
     "datatables.net-bs": "~1.10.12",
     "diff": "^4.0.1",
     "dsmorse-gridster": "^0.8.0",
