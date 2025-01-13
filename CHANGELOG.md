@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.0.0](https://github.com/theforeman/foreman-js/compare/v13.1.0...v14.0.0) (2025-01-13)
+
+
+### Features
+
+* **vendor-core:** update to jquery 3 ([#479](https://github.com/theforeman/foreman-js/issues/479)) ([eccbfc4](https://github.com/theforeman/foreman-js/commit/eccbfc4deb1245a9c4c34ebf862b909dbd195f98))
+
+
+### BREAKING CHANGES
+
+* **vendor-core:** Updates jquery,datatables,select2. removes jquery.cookie
+
+
+
+
+
 # [13.1.0](https://github.com/theforeman/foreman-js/compare/v13.0.1...v13.1.0) (2024-05-03)
 
 
