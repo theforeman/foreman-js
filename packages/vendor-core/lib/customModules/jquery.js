@@ -6,7 +6,6 @@ window.jquery = jquery;
 
 module.exports = jquery;
 
-require('jquery.cookie');
 require('jquery-ujs');
 require('multiselect');
 require('select2');
