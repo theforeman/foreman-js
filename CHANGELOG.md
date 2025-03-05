@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.0.0](https://github.com/theforeman/foreman-js/compare/v14.0.0...v15.0.0) (2025-03-05)
+
+
+### Features
+
+* **vendor-core:** update Patternfly to 5 ([#481](https://github.com/theforeman/foreman-js/issues/481)) ([88c4a81](https://github.com/theforeman/foreman-js/commit/88c4a819be177d37b3074badc4a8825c0c0d746c))
+
+
+### BREAKING CHANGES
+
+* **vendor-core:** Will break all Patternfly 4 imports
+
+
+
+
+
 # [14.0.0](https://github.com/theforeman/foreman-js/compare/v13.1.0...v14.0.0) (2025-01-13)
 
 

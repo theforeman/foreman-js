@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor-core",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -61,8 +61,6 @@
     "patternfly": "^3.59.5",
     "patternfly-react": "^ 2.40.0",
     "patternfly-react-extensions": "^3.0.15",
-    "victory-core": "~36.8.6",
-    "victory-pie": "~36.8.6",
     "prop-types": "^15.6.0",
     "rc-input-number": "^6.0.0",
     "react": "^16.9.0",
@@ -92,6 +90,8 @@
     "unidiff": "^1.0.0",
     "urijs": "^1.19.4",
     "uuid": "^3.3.2",
+    "victory-core": "~36.8.6",
+    "victory-pie": "~36.8.6",
     "yup": "^0.29.3"
   }
 }

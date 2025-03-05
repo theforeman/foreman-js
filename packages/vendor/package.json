@@ -1,6 +1,6 @@
 {
   "name": "@theforeman/vendor",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "description": "foreman supported 3rd-party node_modules",
   "license": "MIT",
   "repository": {
@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/core": "7.17.10",
     "@babel/preset-env": "7.17.10",
-    "@theforeman/vendor-core": "^14.0.0",
+    "@theforeman/vendor-core": "^15.0.0",
     "babel-loader": "^8.2.3",
     "compression-webpack-plugin": "^6.1.1",
     "copy-webpack-plugin": "^4.6.0",
