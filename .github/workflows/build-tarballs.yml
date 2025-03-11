@@ -34,7 +34,7 @@ jobs:
       working-directory: ${{ github.workspace }}/packages/${{ matrix.package }}
     - name: Upload tarball locally
       if: ${{ steps.changes.outputs.matched == 'true' }}
-      uses: 'actions/upload-artifact@v2'
+      uses: 'actions/upload-artifact@v4'
       with:
         name: foreman-js-${{ matrix.package }}-pr-${{ github.event.number }}.tgz
         path: ${{ github.workspace }}/packages/${{ matrix.package }}/theforeman-${{ matrix.package }}-*.tgz
