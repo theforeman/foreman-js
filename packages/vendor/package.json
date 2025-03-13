@@ -22,7 +22,6 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist docs",
-    "postbuild": "rimraf dist/stats.development.json dist/stats.production.json",
     "build": "npm run build:bundle && npm run build:plugin && npm run build:scss && npm run build:docs",
     "build:bundle": "npm run build:bundle:dev && npm run build:bundle:prod",
     "build:bundle:base": "node --max_old_space_size=8192 ./node_modules/.bin/webpack --config bundle/webpack.config.js",
@@ -30,11 +29,8 @@
     "build:bundle:prod": "npm run build:bundle:base -- --mode=production",
     "build:plugin": "webpack --config vendor-webpack-plugin/webpack.config.js",
     "build:scss": "./scripts/build-scss.sh",
-    "build:docs": "npm run build:docs:analyze && npm run build:docs:scss",
+    "build:docs": "npm run build:docs:scss",
     "build:docs:scss": "./scripts/build-scss-docs.sh",
-    "build:docs:analyze": "npm run build:docs:analyze:dev && npm run build:docs:analyze:prod",
-    "build:docs:analyze:dev": "webpack-bundle-analyzer --mode static -r docs/stats.development.html dist/stats.development.json",
-    "build:docs:analyze:prod": "webpack-bundle-analyzer --mode static -r docs/stats.production.html dist/stats.production.json",
     "deploy:docs": "./scripts/deploy-docs.sh",
     "postpublish": "npm run deploy:docs"
   },

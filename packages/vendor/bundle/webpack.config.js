@@ -2,6 +2,7 @@ const path = require('path');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { StatsWriterPlugin } = require('webpack-stats-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { modules } = require('@theforeman/vendor-core');
 
 const { version } = require('../package.json');
@@ -94,12 +95,10 @@ const config = {
     }),
     new WebpackExportForemanVendorPlugin({ modules }),
     new CompressionWebpackPlugin(),
-    new StatsWriterPlugin({
-      filename: `stats.${webpackMode}.json`,
-      fields: null,
-      stats: {
-        all: true,
-      },
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      reportFilename: `../docs/stats.${webpackMode}.html`,
+      openAnalyzer: false,
     }),
   ],
 };
