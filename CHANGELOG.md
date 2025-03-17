@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.1](https://github.com/theforeman/foreman-js/compare/v15.0.0...v15.0.1) (2025-03-17)
+
+
+### Bug Fixes
+
+* **root:** update upload-artifact to v4 ([25c9888](https://github.com/theforeman/foreman-js/commit/25c9888bc6c65fe3614348632f6a97517482e5f5))
+
+
+
+
+
 # [15.0.0](https://github.com/theforeman/foreman-js/compare/v14.0.0...v15.0.0) (2025-03-05)
 
 
