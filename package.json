@@ -20,7 +20,7 @@
     "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.1",
+    "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^9.1.1",
     "commander": "^6.0.0",
     "commitlint-config-cz": "^0.13.1",
