@@ -47,7 +47,7 @@
     "diff": "^4.0.1",
     "dsmorse-gridster": "^0.8.0",
     "file-saver": "^2.0.1",
-    "formik": "^1.5.8",
+    "formik": "^2.2.6",
     "graphql": "^15.5.0",
     "history": "^4.7.2",
     "humanize-duration": "3.27.0",
