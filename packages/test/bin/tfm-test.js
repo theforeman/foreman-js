@@ -33,3 +33,7 @@ const errorHandling = (error) => {
 };
 
 runScript(getJestBin(), errorHandling, jestArgs);
+
+throw new Error(
+  '@theforeman/test package has been deprecated and will not be maintained. If you wish to continue using this packages use v15 or lower. For more information and alternatives, please refer to: https://community.theforeman.org/t/testing-plugins-from-foreman-core/43293 .'
+);
