@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [16.0.0](https://github.com/theforeman/foreman-js/compare/v15.0.1...v16.0.0) (2025-10-30)
+
+
+### Features
+
+* **test:** deprecation message for test package ([5f985cd](https://github.com/theforeman/foreman-js/commit/5f985cd399d690decf590b554aabbb6a9df0c0cb))
+
+
+### BREAKING CHANGES
+
+* **test:** Breaks test with an error explaining what to do
+
+
+
+
+
 ## [15.0.1](https://github.com/theforeman/foreman-js/compare/v15.0.0...v15.0.1) (2025-03-17)
 
 **Note:** Version bump only for package @theforeman/test
